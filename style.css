@@ -107,6 +107,7 @@ height: 25px;
     font-weight: 600;
     
     line-height: 21px;
+    text-decoration-line: none;
     color: rgb(37,87,167);;
 }
 #h3-span{
@@ -139,5 +140,98 @@ height: 25px;
   background-color: white;
 }
 
+/* ===============container============= */
+#container{
+    display: flex;
+    gap: 40px;
+    /* width: 80%; */
+    justify-content: center;
+    margin: auto;
+    /* height: 900px; */
+    /* position: relative; */
+    border:  1px solid rgb(105, 51, 51);
+    background-color:rgb(250,249,248);
+
+}
+#left-bar{
+    width: 35%;
+    margin-top: 10px;
+    background-color: white;
+    /* height: 500px; */
+    /* position: absolute; */
+}
+.content{
+ border:1px solid rgb(17, 16, 16) ;
+ border-radius: 10px;
+ margin:10px 0px 10px 0px;
+ padding: 10PX;
+}
+.content>div>h2{
+    font-size: 20px;
+    font-weight: 600px;
+    /* line-height: 24px; */
+    color: rgb(45,45,45);
+}
+.content>div>h3{
+    font-size: 14px;
+    font-weight: 300px;
+    /* line-height: 24px; */
+    color: rgb(45,45,45);
+}
+
+
+
+#right-bar{
+    width: 35%;
+    /* background-color: antiquewhite; */
+    /* height: 500px; */
+    /* display: block; */
+    /* gap: 20px; */
+    position: relative;
+    /* position: relative; */
+    /* position: fixed; */
+    /* position: sticky; */
+    margin-top: 28px;
+}
+/* #right-bar:hover{
+    width: 35%;
+    background-color: antiquewhite;
+    height: 500px;
+    display: block;
+    gap: 20px;
+    position: relative;
+    position: sticky;
+    top: 0px;
+} */
+#right-bar-top{
+    /* width: 20%;
+    margin: auto; */
+    /* top: 500px; */
+    /* background-color: rgb(52, 45, 35); */
+    /* height: 200px; */
+    /* position: absolute; */
+    
+    position: sticky;
+    top: 20px;
+    opacity: 100%;
+
+
+}
+#right-bar-bottom{
+    /* width: 25%; */
+    /* margin: auto; */
+    /* top: 500px; */
+    /* position: sticky; */
+    /* background-color: rgb(146, 155, 145); */
+    /* height: 200px; */
+    /* opacity: 90%; */
+    position: sticky;
+    /* top: 600px; */
+    /* top: 0; */
+    /* bottom: 0; */
+    /* right: 0; */
+    /* width: 300px; */
+    /* border: 3px solid #73AD21; */
+}
 
 
