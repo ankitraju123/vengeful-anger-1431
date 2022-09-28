@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans&family=Poppins:wght@500&display=swap"
+        rel="stylesheet">
+    <title>Resume</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Noto Sans', sans-serif;
+            /* background-color: rgb(246, 246, 246); */
+
+        }
+
+        #upper {
+            width: 45%;
+            height: auto;
+            border: 1px solid teal;
+            border: none;
+            padding: 30px;
+            margin: auto;
+            margin-top: 50px;
+            background-color: white;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+        }
+
+        #flex {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .redirectBtn {
+            padding: 13px 40px;
+            background-color:
+            #085ff7;
+            color: white;
+            border-radius: 30px;
+            border: none;
+            font-size: 17px;
+            margin: 15px 0px;
+        }
+
+        #lower {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 12px;
+        }
+
+        .lowSize {
+            font-size: 12px;
+            margin-top: 10px;
+        }
+
+        .highSize {
+            font-size: 15px;
+            margin-top: 10px;
+        }
+
+        .heading {
+            margin-bottom: 10px;
+        }
+
+        #imageSize {
+            width: 100px;
+            height: 30px;
+            display: block;
+            margin: auto;
+            margin-top: 70px;
+        }
+    </style>
+</head>
+
+<body>
+    <div><img id="imageSize"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNz9xHl4S6EYIwGTCfnp7QBeulbKQrXHih3Q&usqp=CAU"
+            alt=""></div>
+
+    <div id="upper">
+        <h2 class="heading">Create an Indeed Resume</h2>
+        <p>abc@gmail.com</p>
+        <p class="highSize">There are two ways to create editable online resume. When you upload a resume to start, your
+            file will also be saved and available when you apply.</p>
+        <div id="flex">
+            <button class="redirectBtn">Upload your resume </button>
+            <p>or</p>
+            <button class="redirectBtn">Build a new resume</button>
+        </div>
+
+        <p class="lowSize">By continuing, you agree to build a <a href="#">public resume</a>
+            and agree to receiving job opportuinities from employers.</p>
+
+    </div>
+    <div id="lower">
+        <span><span>&#169 2022 <a href="#">Indeed</a> - </span><span><a href="#">Cookies</a>,
+
+            </span><span><a href="#">Privacy and Terms</a></span></span>
+
+    </div>
+
+</body>
+
+</html>
