@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Provide basic information</h1>
+ <h3>Country:
+    India</h3>
+    <h3>Language:
+        English</h3>
+        <h3 id="company"></h3>
+        <h3>Job title*</h3>
+        <input type="text" id="Job Title" >
+        <h3>Where will an employee report to work?*</h3>
+        <select>
+            <option value="Employees will report to a specific address">Employees will report to a specific address</option>
+            <option value="
+            Employees will not report to a specific address">
+            Employees will not report to a specific address</option>
+        </select>
+        <h3>Where would you like to advertise this job?*</h3>
+        <p>Enter a city or state</p>
+        <input type="text" id="place">
+        <h3>Start with your job description</h3
+            >
+            <p>Save time by adding the description now, and we'll skip a step later in the process.</p>
+            <h4>Add Job description</h4>
+            <input type="text" id="description">
+            <button><a href="input3.html">Save and Continue</a></button>
+            <button><a href="input1.html">Back</a></button>
+</body>
+</html>
+
+<script>
+     let n=localStorage.getItem("name")
+     console.log(n)
+    function name(){
+       
+        let n=localStorage.getItem("name")
+    document.getElementById("company").innerText=`Company Name:${n}`
+    }
+   name()
+</script>
