@@ -1,0 +1,32 @@
+#container{
+    margin: 100px;
+    width: 400px;
+    height: 750px;
+    border: 1px solid red;
+    margin-left: 300px;
+    text-align: left;
+}
+#name{
+    height: 30px;
+    width: 350px;
+}
+#full_name{
+    height: 30px;
+    width: 350px;
+}
+#phone{
+    height: 30px;
+    width: 350px;
+}
+#employee{
+    height: 30px;
+    width: 350px;
+}
+#other{
+    height: 30px;
+    width: 350px;
+}
+#manager{
+    height: 30px;
+    width: 350px;
+}
