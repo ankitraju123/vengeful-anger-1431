@@ -1,0 +1,28 @@
+#container{
+    height: 200px;
+    width: 300px;
+    border: 1px solid black;
+    margin-left: 50px;
+    margin-top: 150px;
+}
+#post{
+    color: white;
+    background-color: rgb(83, 83, 206);
+    padding: 20px 40px 20px 40px;
+    border-radius: 10px;
+}
+#create{
+    height: 250px;
+    width: 90%;
+    margin: auto;
+    border: 1px solid red;
+    margin-top: 150px;
+    display: flex;
+    gap:20px
+}
+#account{
+    height: 230px;
+    width: 30%;
+    border: 1px solid green;
+    
+}
