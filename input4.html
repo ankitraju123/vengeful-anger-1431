@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h4>What is the pay</h4>
+    <input type="number" placeholder="Minimum" id="minimumPay" /> to
+    <input type="number" placeholder="Maximum" id="maximumPay" />
+
+    <h4>Do you offer any of the following supplemental Pay</h4>
+    <select id="suppPay">
+      <option>Commission Pay</option>
+      <option>Overtime Pay</option>
+      <option>Joining Bonus</option>
+      <option>Shift Allowance</option>
+      <option>Performance Bonus</option>
+      <option>Quaterly Bonus</option>
+      <option>Yearly Bonus</option>
+      <option>Others</option>
+    </select>
+    <h4>Are any of the following benefits offered</h4>
+    <select id="benefits">
+      <option>Cell phone reimbursement</option>
+      <option>Commuter assistance</option>
+      <option>Flexiable schedule</option>
+      <option>Food provided</option>
+      <option>Health insurance</option>
+      <option>Internet reimbursement</option>
+      <option>Others</option>
+    </select>
+    <br /><br />
+    <button onclick="back()">Back</button>
+    <button onclick="submit()">Save and continue</button>
+  </body>
+</html>
+<script>
+  let submit = () => {
+    let maximumPay = document.getElementById("maximumPay").value;
+    let minimumPay = document.getElementById("minimumPay").value;
+    let suppPay = document.getElementById("suppPay").value;
+    let benefits = document.getElementById("benefits").value;
+
+    let data4 = {
+      maximumPay,
+      minimumPay,
+      suppPay,
+      benefits,
+    };
+
+    localStorage.setItem("data4", JSON.stringify(data4));
+    window.location.href = "./input5.html";
+  };
+
+  let back = () => {
+    window.location.href = "./input3.html";
+  };
+</script>

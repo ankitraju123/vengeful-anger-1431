@@ -5,34 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./input1.css">
+    <link rel="stylesheet" href="./input1.css" />
   </head>
   <body>
     <div id="container">
-        <h2>Your company's name*</h2>
-        <input  type="text" id="name" placeholder="" >
-        <h2>Your company's number of employees</h2>
-       <select name="" id="employee">
+      <h2>Your company's name*</h2>
+      <input type="text" id="name" placeholder="" />
+      <h2>Your company's number of employees</h2>
+      <select name="" id="employee">
         <option value="1 to 49">1 to 49</option>
         <option value="50 to 149">50 to 149</option>
         <option value="250 to 499">250 to 499</option>
         <option value="500 to 749">500 to 749</option>
         <option value="750 to 1000">750 to 1000</option>
-        <option value=1000++>1000++</option>
-       </select>
-       <h2>Your first and last name*</h2>
-       <input type="text" id="full_name" value="">
-       <h2>Are you a hiring manager?</h2>
-       <p>The hired candidate(s) will work in your reporting chain.</p>
-       <select name="" id="manager">
+        <option value="1000++">1000++</option>
+      </select>
+      <h2>Your first and last name*</h2>
+      <input type="text" id="full_name" value="" />
+      <h2>Are you a hiring manager?</h2>
+      <p>The hired candidate(s) will work in your reporting chain.</p>
+      <select name="" id="manager">
         <option value="Yes">Yes</option>
         <option value="No">No</option>
-       </select>
-       <h2>Your phone number </h2>
-       <p>For account management communication. Not visible to jobseekers.</p>
-       <input type="number" id="phone" value="">
-       <h2>How you heard about us</h2>
-       <select id="other">
+      </select>
+      <h2>Your phone number</h2>
+      <p>For account management communication. Not visible to jobseekers.</p>
+      <input type="number" id="phone" value="" />
+      <h2>How you heard about us</h2>
+      <select id="heardAbout">
         <option value="Podcast">Podcast</option>
         <option value="Mail">Mail</option>
         <option value="Streaming Audio">Streaming Audio</option>
@@ -40,17 +40,31 @@
         <option value="SearchEngine">SearchEngine</option>
         <option value="Word Of Mouth">Word Of Mouth</option>
         <option value="Online Video">Online Video</option>
-        
-       </select>
-       <button onclick="save()"><a href="input2.html">Save and Continue</a></button>
+      </select>
+      <button onclick="save()">
+        <a href="input2.html">Save and Continue</a>
+      </button>
     </div>
-  
   </body>
 </html>
 <script>
-    function save(){
-let name=document.getElementById("name").value
-localStorage.setItem("name",name)
-    }
-    
+  function save() {
+    let name = document.getElementById("name").value;
+    let employee = document.getElementById("employee").value;
+    let full_name = document.getElementById("full_name").value;
+    let manager = document.getElementById("manager").value;
+    let phone = document.getElementById("phone").value;
+    let heardAbout = document.getElementById("heardAbout").value;
+
+    let data1 = {
+      name,
+      employee,
+      full_name,
+      manager,
+      phone,
+      heardAbout,
+    };
+
+    localStorage.setItem("data1", JSON.stringify(data1));
+  }
 </script>
