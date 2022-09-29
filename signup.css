@@ -1,0 +1,76 @@
+
+
+#logo{
+    width: 20%;
+    /* padding-left: 550px; */
+    margin-top: 80px;
+}
+#cont_p{
+    width: 33%;
+    margin: auto;
+    height: auto;
+    margin-top: 30px;
+    box-shadow: rgba(228, 229, 231, 0.2) 0px 8px 24px;
+    border: 1px solid rgb(228, 224, 224);
+    padding: 18px;
+}
+#create {
+    color: rgb(94, 93, 93);
+    font-size: 20px;
+}
+#logo_cont{
+    width: 35%;
+    margin: auto;
+    text-align: center;
+    
+}
+
+#continue{
+    width: 93%;
+    margin: auto; 
+    height: 44px;
+    border: 1px solid rgb(221, 218, 218);
+    border-radius: 12px ;
+  margin-left: 15px;
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  background-color: rgb(69, 69, 151);   
+}
+#continue :hover{
+    background-color: rgb(12, 12, 60);
+}
+
+#input,#mail{
+    width: 90%;
+    height: 40px;
+    border: 1px solid rgb(221, 218, 218);
+border-radius: 12px ;
+padding-left: 10px;
+margin: auto;
+display: flex;
+align-items: center;
+margin-bottom: 14px;
+}
+#input img{
+    width: 5%;
+}
+#input #google{
+text-align: center;
+margin-left: 100px;
+font-weight: bold;
+font-size: 18px;
+}
+#hr{
+    color: rgb(193, 191, 191);
+
+}
+#email{
+    font-size: 20px;
+    font-weight: bold;
+}
+#para{
+    color: rgb(109, 107, 107);
+    font-size: 14px;
+}
