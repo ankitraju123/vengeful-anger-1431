@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2family=Noto+Sans&family=Poppins:wght@500&display=swap"
+        rel="stylesheet">
+    <title>Resume Page 3</title>
+    <style>
+        body{
+            font-family: 'Noto Sans', sans-serif;
+        }
+       
+
+        #resume1 {
+            margin: auto;
+            width: 38%;
+            height: auto;
+            border: 1px solid teal;
+            border: none;
+            padding: 15px;
+            margin-top: 20px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+
+        }
+
+        input {
+            width: 97%;
+            height: 28px;
+            margin-top: -20px;
+            margin-bottom: -20px;
+        }
+
+        .red {
+            color: red;
+            margin-left: 5px;
+        }
+
+        .blue {
+            color: #085ff7;
+        }
+
+        #topDiv {
+            width: 39%;
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+        }
+
+        .side {
+
+            width: 39%;
+
+            margin: auto;
+        }
+
+        .flexDiv {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        #check ,#check1{
+            width: 12px;
+            height: 12px;
+            margin-left: 5px;
+        }
+
+        #nextBtn {
+            padding: 13px 20px;
+            background-color:
+                #085ff7;
+            color: white;
+            border-radius: 30px;
+            border: none;
+            font-size: 17px;
+            margin: 15px 20px 15px 400px;
+        }
+        #saveBtn {
+            padding: 10px 20px;
+            background-color:
+                #085ff7;
+            color: white;
+            border-radius: 30px;
+            border: none;
+            font-size: 17px;
+            margin:10px 0px;
+        }
+
+        #topDiv>h2 {
+            margin-bottom: -30px;
+        }
+
+        .adjust {
+            margin-bottom: -12px;
+        }
+
+        .Phoneadjust {
+            margin-top: -10px;
+        }
+
+        .lower {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 12px;
+        }
+        .lower1{
+            font-size:12px;
+        }
+        .lowcase,#lowcase2,#lowcase1{
+            font-size:15px;
+            color:grey;
+        }
+        #required{
+            margin-bottom:-15px;
+        }
+        #nextDiv{
+            display:flex;
+            /* justify-content: center; */
+            align-items: center;
+            padding:10px;
+        }
+        a{
+            text-decoration:none;
+            color: #085ff7;
+        }
+        .from_to_div{
+            display:flex;
+        }
+        #Work_from_year,#work_to_year,#work_from_month,#work_to_month{
+            margin-left:10px;
+            padding:8px;
+            font-weight:bold;
+            /* font-size:20px; */
+        }
+        #work_from_month,#work_to_month{
+            width:200px;
+        }
+        #filling{
+            width:38%;
+            display:flex;
+            align-items:center;
+            margin:auto;
+            padding:10px 15px;
+            border:1px solid teal;
+            border:none;
+            background-color:#ebfeff;
+            margin-top: 20px;
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="topDiv">
+        <h2>Create an Indeed Resume</h2>
+        <p class="lowcase">Step 3 of 5</p>
+    </div>
+    <div id="filling">
+        <p style="margin-right:10px">&#169</p>
+        <p class="lower1">
+            Filling out 2 or more work experiences will double your chances of being contacted by an employer
+        </p>
+
+    </div>
+    
+
+    <div id="resume1">
+        <h3>Work Experience</h3>
+        <div class="flexDiv" id="required">
+            <p class="red">*</p>
+            <p class="lowcase" >Required fields</p>
+        </div>
+
+
+        <div class="flexDiv">
+            <h4>Job Title</h4>
+            <p class="red">*</p>
+        </div>
+        <input type="text" id="jobTitle" required>
+        <div class="flexDiv">
+            <h4>Company</h4>
+            <p class="red">*</p>
+        </div>
+        <input type="text" id="company" required>
+        
+        <div class="flexDiv">
+            <h4>City - India</h4>
+            <p>(</p>
+            <p class="blue">change</p>
+            <p>)</p>
+            
+        </div>
+        <p class="lowcase">e.g Mumbai</p>
+        <input type="text" id="city2" required>
+        <h4>Time Period</h4>
+       
+       
+        <h4>From</h4>
+        <div class =from_to_div>
+            <select name="" id="work_from_month">
+                <option value="Month:">Month:</option>
+                <option value="January">January</option>
+                <option value="February">February</option>
+                <option value="March">March</option>
+                <option value="April">April</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="July">July</option>
+                <option value="August">August</option>
+                <option value="September">September</option>
+                <option value="October">October</option>
+                <option value="November">November</option>
+                <option value="December">December</option>
+            </select>
+            <select name="" id="work_from_year">
+                <option value="year:">year:</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+                <option value="2020">2020</option>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+                <option value="2017">2017</option>
+                <option value="2016">2016</option>
+                <option value="2015">2015</option>
+                <option value="2014">2014</option>
+                <option value="2013">2013</option>
+                <option value="2012">2012</option>
+                <option value="2011">2011</option>
+            </select>
+        </div>
+        <h4>To</h4>
+        <div class =from_to_div>
+            <select name="" id="work_to_month">
+                <option value="Month:">Month:</option>
+                <option value="January">January</option>
+                <option value="February">February</option>
+                <option value="March">March</option>
+                <option value="April">April</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="July">July</option>
+                <option value="August">August</option>
+                <option value="September">September</option>
+                <option value="October">October</option>
+                <option value="November">November</option>
+                <option value="December">December</option>
+            </select>
+            <select name="" id="work_to_year">
+                <option value="year:">year:</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+                <option value="2020">2020</option>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+                <option value="2017">2017</option>
+                <option value="2016">2016</option>
+                <option value="2015">2015</option>
+                <option value="2014">2014</option>
+                <option value="2013">2013</option>
+                <option value="2012">2012</option>
+                <option value="2011">2011</option>
+            </select>
+        </div>
+       <h4>Description</h4>
+       <p class="lower1">In 30 or more word describe your professional responsibilities and accomplishments(Eg: Maintained inventory of office supplies and ordered as and when needed)</p>
+       <input type="text" id="desc" style="width:97%; height:150px;margin:10px 0px">
+       <button id="saveBtn" onclick="next3()">Save</button>
+       
+
+      
+        
+    </div>
+    <div id="nextDiv">
+        <a href="./resumePage4.html"><button id="nextBtn">Next</button></a>
+        <h4> <a href="./resumePage2.html"> Previous Step</a></h4>
+    </div>
+    <div class="lower">
+        <span><span>&#169 2022 <a href="#">Indeed</a> - </span><span><a href="#">Cookies</a>,
+
+            </span><span><a href="#">Privacy and Terms</a></span></span>
+
+    </div>
+
+
+
+</body>
+
+</html>
+<script>
+    let next3 = () => {
+        jobTitle = document.getElementById("jobTitle").value;
+        company = document.getElementById("company").value;
+       
+        city2 = document.getElementById("city2").value;
+        work_from_month = document.getElementById("work_from_month").value;
+        work_to_month = document.getElementById("work_to_month").value;
+        work_from_year = document.getElementById("work_from_year").value;
+        work_to_year = document.getElementById("work_to_year").value;
+        jobRoleDesc = document.getElementById("desc").value;
+
+       let  R_data3 = {
+        jobTitle,
+        company,
+        
+        city2,
+        work_from_month,
+        work_to_month,
+        work_from_year,
+        work_to_year,
+        jobRoleDesc,
+       }
+
+       localStorage.setItem("R_data3",JSON.stringify(R_data3))
+    }
+</script>

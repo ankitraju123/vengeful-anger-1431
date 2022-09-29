@@ -168,7 +168,7 @@
         
     </div>
     <div>
-        <a href="./page2.html"><button id="nextBtn">
+        <a href="./resumePage2.html"><button onclick="next1()" id="nextBtn">
 
             Next</button></a>
     </div>
@@ -184,3 +184,22 @@
 </body>
 
 </html>
+<script>
+    let next1 = () => {
+        f_name = document.getElementById("f_name").value;
+        l_name = document.getElementById("l_name").value;
+        address = document.getElementById("address").value;
+        city = document.getElementById("city").value;
+        mobile = document.getElementById("mobile").value;
+
+       let  R_data1 = {
+        f_name,
+        l_name,
+        address,
+        city,
+        mobile,
+       }
+
+       localStorage.setItem("R_data1",JSON.stringify(R_data1))
+    }
+</script>
