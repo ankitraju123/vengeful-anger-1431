@@ -364,5 +364,6 @@ color: rgb(14, 72, 188);
 .end>div>h3:hover{
     text-decoration: line;
     text-decoration: underline;
-    color: rgb(226, 39, 2);
+    /* color: rgb(226, 39, 2); */
+    color: rgb(226, 39, 2)
 }
