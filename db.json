@@ -17,7 +17,6 @@
     "name": "typicode"
   },
   "jobs": [
-    
     {
       "name": "QWERTYQWERTY",
       "employee": "1 to 49",
@@ -44,5 +43,6 @@
       "startConve": "Yes",
       "id": 4
     }
+    
   ]
 }

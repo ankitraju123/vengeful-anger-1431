@@ -1,12 +1,11 @@
 #container{
-    margin: 100px;
-    width: 400px;
-    height: 750px;
-    border: 1px solid red;
-    margin-left: 300px;
+   
+    margin-left: 200px;
     text-align: left;
+    display: flex;
+    flex-direction: column;
 }
-#name{
+/* #name{
     height: 30px;
     width: 350px;
 }
@@ -29,4 +28,17 @@
 #manager{
     height: 30px;
     width: 350px;
+} */
+input, select {
+    width: 50vw;
+}
+#btn>a {
+    text-decoration: none;
+    color: azure;
+}
+#btn {
+    width: 20vw;
+    background-color: rgba(22, 64, 129);
+    margin-top: 20px;
+    margin-left: 20vw;
 }
