@@ -16,7 +16,7 @@
     <div id = "cont_p">
         <h2>Ready to take the next step?</h2>
         <p id = "create">Create an account or sign in.</p>
-        <p id = "para">By creating an account or logging in, you understand and agree to Indeed's Terms. You also acknowledge our Cookie and Privacy policies. You will receive marketing messages from Indeed and may opt out at any time by following the unsubscribe link in our messages, or as detailed in our terms.
+        <p id = "para">By creating an account or logging in, you understand and agree to Indeed's <a href>Terms</a>. You also acknowledge our <a href>Cookie</a> and <a href>Privacy Policy</a>. You will receive marketing messages from Indeed and may opt out at any time by following the unsubscribe link in our messages, or as detailed in our terms.
         </p>
         <div id = "input">
             <img src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-suite-everything-you-need-know-about-google-newest-0.png" alt="">
@@ -38,9 +38,25 @@
 
         <p id = "email">Email address</p>
         <input type="email" id = "mail">
-        <button id = "continue" onclick="contu()">Continue</button>
+        <button id = "continue" onclick="signup()">Continue</button>
 
     </div>
     
 </body>
 </html>
+<script> 
+ 
+let signup = ()=>{
+    let email = document.getElementById("mail").value;
+    if(email==""){
+        alert("Enter your Email first");
+    }else{
+        window.location.href = "signup2.html"
+        localStorage.setItem("sign",JSON.stringify(email));
+    }
+   
+   
+
+   
+}
+</script>

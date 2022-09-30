@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- <link rel="stylesheet" href="signup.css"> -->
     <style>
+        
+          
         #logo_cont{
             width: 35%;
     margin: auto;
@@ -17,6 +18,26 @@
     /* padding-left: 550px; */
     margin-top: 80px;
 }
+#input,#mail{
+    width: 90%;
+    height: 40px;
+    border: 1px solid rgb(221, 218, 218);
+border-radius: 12px ;
+padding-left: 10px;
+margin: auto;
+display: flex;
+align-items: center;
+margin-bottom: 14px;
+}
+#input img{
+    width: 5%;
+}
+#input #google{
+text-align: center;
+margin-left: 100px;
+font-weight: bold;
+font-size: 18px;
+}
 #cont_p{
     width: 33%;
     margin: auto;
@@ -24,35 +45,52 @@
     margin-top: 30px;
     box-shadow: rgba(228, 229, 231, 0.2) 0px 8px 24px;
     border: 1px solid rgb(228, 224, 224);
-    /* padding: 10px; */
-}
-#cont_p img{
-    width: 100%;
-}
-h3,p{
-    padding-left: 15px;
-   
-   
-}
-#btn{
-    width: 90%;
+    padding: 20px;
     
-    margin-bottom: 10px;
-    padding: 10px;
-    border-radius: 12px;
-    border:1px solid rgb(204, 202, 202);
-    margin-left: 20px;
-    color: rgb(112, 112, 237);
-    font-weight: bold;
-    font-size: 16px;
-    cursor: pointer;
+}
+#continue{
+    width: 93%;
+    margin: auto; 
+    height: 44px;
+    border: 1px solid rgb(221, 218, 218);
+    border-radius: 12px ;
+  margin-left: 15px;
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  background-color: rgb(25, 25, 204);   
+}
+h4{
+    color: rgb(25, 25, 204); 
+    font-size: 20px;    
+}
+input{
+    width: 93%;
+    margin: auto; 
+    height: 40px;
+    border: 1px solid rgb(221, 218, 218);
+    border-radius: 12px ;
+  margin-left: 15px;
+  font-weight: bold;
+  font-size: 16px;
+  color: white;  
+}
+#para{
+    color: rgb(110, 108, 108);
+    font-size: 14px;
+    word-spacing: 1px;
+    line-height: 20px;
+}
+#para a {
+    color:blue
 }
 
-
-
-
-
+h3{
+     color: rgb(110, 108, 108);;
+}
     </style>
+
 </head>
 <body>
     <div id = "logo_cont">
@@ -60,18 +98,23 @@ h3,p{
         </div>
 
         <div id = "cont_p">
-            <!-- <img src="C:\Users\Hp\Desktop\projects 211\vengeful-anger-1431\img" alt="Not Found"> -->
-            <img src="./img/Screenshot (575).png" alt="Not Found">
+            <h2>Welcome Back</h2>
+            <h3>Keep your account safe.</h3>
+            <p>Continue as khushi.lovelypriya@gmail.com <a href="# ">(not you?)</a> </p>
+         
+          <p id = "para">We only use your information as described in our <a href="" >Privacy Policy</a>. Google may ask for your permission to share details with Indeed like your name, profile picture, public profile information, and email address.</p>
 
-            <h3>Ready for the next step?</h3>
-            <p>Create an account for tools to help you</p>
-            <button id = "btn" onclick="job()">Job Seeker</button>
-            <button id = "btn" onclick="job()">Employer</button>
+          <div id = "input">
+            <img src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-suite-everything-you-need-know-about-google-newest-0.png" alt="">
+            <p id = "google">Continue with Google</p>
         </div>
+
+            <a href="welcome.html">Login with a password instead</a>
+
+
+           
+        </div>
+        
+
 </body>
 </html>
-<script>
-    let job = ()=>{
-        window.location.href = "password.html"
-    }
-</script>
