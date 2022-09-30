@@ -270,7 +270,8 @@
         </div>
        <h4>Description</h4>
        <p class="lower1">In 30 or more word describe your professional responsibilities and accomplishments(Eg: Maintained inventory of office supplies and ordered as and when needed)</p>
-       <input type="text" id="desc" style="width:97%; height:150px;margin:10px 0px">
+       <!-- <input type="text" id="desc" style="width:97%; height:150px;margin:10px 0px"> -->
+       <textarea name="" id="desc" cols="65" rows="8"></textarea>
        <button id="saveBtn" onclick="next3()">Save</button>
        
 
@@ -316,6 +317,7 @@
         work_to_year,
         jobRoleDesc,
        }
+       console.log(jobRoleDesc);
 
        localStorage.setItem("R_data3",JSON.stringify(R_data3))
     }

@@ -1,3 +1,4 @@
+
 /* ============navbar===== */
 #navbar {
     display: flex;
@@ -60,7 +61,7 @@
 }
 
 /* ==============navbar done=========== */
-/* ======top section========= */
+
 #top-section {
     display: flex;
 
@@ -126,9 +127,7 @@
     color: rgb(52, 52, 53);
     ;
 }
-/* ======top section========= */
 
-/* ===========mid section============= */
 #mid-section {
     width: 50%;
     margin: auto;
@@ -288,13 +287,13 @@
     /* opacity: 90%; */
     position: sticky;
     /* top: 600px; */
-    top: 200px;
+    top: 250px;
     /* bottom: 0; */
     /* right: 0; */
     /* width: 300px; */
     /* border: 3px solid #73AD21; */
 }
-/* =================container============ */
+
 #bottom{
     text-align: center;
     margin-top: 100px;
@@ -369,3 +368,4 @@ color: rgb(14, 72, 188);
     /* color: rgb(226, 39, 2); */
     color: rgb(226, 39, 2)
 }
+

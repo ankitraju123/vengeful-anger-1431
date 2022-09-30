@@ -91,9 +91,9 @@
         <p class="highSize">There are two ways to create editable online resume. When you upload a resume to start, your
             file will also be saved and available when you apply.</p>
         <div id="flex">
-            <button class="redirectBtn">Upload your resume </button>
+            <button class="redirectBtn" id="uploadBtn" onclick = uploadResume()>Upload your resume </button>
             <p>or</p>
-            <button class="redirectBtn">Build a new resume</button>
+           <a href="./resumePage1.html"><button class="redirectBtn">Build a new resume</button></a> 
         </div>
 
         <p class="lowSize">By continuing, you agree to build a <a href="#">public resume</a>
@@ -106,7 +106,13 @@
             </span><span><a href="#">Privacy and Terms</a></span></span>
 
     </div>
+   
 
 </body>
 
 </html>
+<script>
+    let uploadResume = () => {
+       // console.log("iam working")
+    }
+</script>

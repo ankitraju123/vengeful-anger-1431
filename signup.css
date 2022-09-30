@@ -71,6 +71,12 @@ font-size: 18px;
     font-weight: bold;
 }
 #para{
-    color: rgb(109, 107, 107);
+    color: rgb(110, 108, 108);
     font-size: 14px;
+    word-spacing: 1px;
+    line-height: 20px;
+    
+}
+#para a {
+    color: blue;
 }

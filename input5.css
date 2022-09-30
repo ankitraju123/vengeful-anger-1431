@@ -1,0 +1,117 @@
+*{
+    text-align: left;
+    background-color: rgb(243, 242, 241);
+}
+
+#div1 {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    width: 40vw;
+    margin: auto;
+    border-radius: 15px;
+}
+svg{
+    width: 400px;
+    background-color: white;
+}
+h4,p,h2,input,select {
+    background-color: white;
+    margin: 20px;
+}
+
+.divs{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: white;
+    width: 40vw;
+    margin: auto;
+    border-radius: 15px;
+}
+#main>div {
+    margin-top: 50px;
+}
+
+
+#bb {
+    border-radius:5px;
+    padding: 10px 20px;
+    border: 1px solid grey;
+    color: rgb(71, 108, 172);
+    text-decoration: none;
+    background-color: white;
+    font-weight: bolder;
+}
+
+
+
+#cb {
+    background-color: rgb(37, 87, 167);
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bolder;
+}
+
+.div2{
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    width: 40vw;
+    margin: auto;
+    border-radius: 15px;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    margin-bottom: -30px;
+    background-color: white;
+    height: 50px;
+
+}
+
+#navbar-left {
+    display: flex;
+    gap: 40px;
+    background-color: white;
+
+
+}
+
+#navbar-left>h1>img {
+   width: 100px;    background-color: white;
+   position: absolute;
+   top: 25px;
+
+}
+#navbar-left>h1{
+    background-color: white;
+}
+
+
+#navbar-right {
+
+    display: flex;
+    gap: 50px;
+    justify-content: space-around;
+    background-color: white;
+
+}
+
+#navbar-right>img {
+    margin-top: 20px;
+    width: 25px;
+    height: 25px;
+}
+
+#navbar-right-text>a {
+    margin-top: 20px;
+    font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: rgb(45, 45, 45);
+}

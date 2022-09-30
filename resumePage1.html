@@ -7,15 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2family=Noto+Sans&family=Poppins:wght@500&display=swap"
+    <link href="https://fonts.googleapis.com/css2family=Noto+Sans&family=Poppins:wght@500&display=swap"
         rel="stylesheet">
     <title>Resume Page 1</title>
     <style>
-        body{
+        body {
             font-family: 'Noto Sans', sans-serif;
         }
-          
+
 
         #resume1 {
             margin: auto;
@@ -99,12 +98,16 @@
             margin-top: 10px;
             font-size: 12px;
         }
-        .lowcase,#lowcase2,#lowcase1{
-            font-size:15px;
-            color:grey;
+
+        .lowcase,
+        #lowcase2,
+        #lowcase1 {
+            font-size: 15px;
+            color: grey;
         }
-        #required{
-            margin-bottom:-15px;
+
+        #required {
+            margin-bottom: -15px;
         }
     </style>
 </head>
@@ -116,11 +119,13 @@
     </div>
     <p class="side">Or <a href="#">upload a resume</a></p>
 
+
+
     <div id="resume1">
         <h3>Profile</h3>
         <div class="flexDiv" id="required">
             <p class="red">*</p>
-            <p class="lowcase" >Required fields</p>
+            <p class="lowcase">Required fields</p>
         </div>
 
 
@@ -128,12 +133,12 @@
             <h4>First Name</h4>
             <p class="red">*</p>
         </div>
-        <input type="text" id="f_name" required>
+        <input type="text" id="f_name" required />
         <div class="flexDiv">
             <h4>Last Name</h4>
             <p class="red">*</p>
         </div>
-        <input type="text" id="l_name" required>
+        <input type="text" id="l_name" required />
         <div class="flexDiv">
             <h4>Street Address</h4>
             <p class="red">*</p>
@@ -160,26 +165,29 @@
             <p class="lowcase">Show my number on indeed</p>
         </div>
 
-        <p class="Phoneadjust" id="lowcase2">By submitting the form with this box checked, you confirm that you are the primary user
+        <p class="Phoneadjust" id="lowcase2">By submitting the form with this box checked, you confirm that you are the
+            primary user
             and subscriber to the
             telephone number provided, and you agree to receive calls (including using artificial or pre-recorded
             voice), texts, and WhatsApp messages from Indeed and employers who use Indeed at the telephone number
             provided above.</p>
-        
+
     </div>
     <div>
-        <a href="./resumePage2.html"><button onclick="next1()" id="nextBtn">
+        <!-- <a href="./resumePage2.html"><button onclick="next1()" id="nextBtn">
 
-            Next</button></a>
+            Next</button></a> -->
+        <button onclick="next1()" id="nextBtn">
+
+            Next</button>
     </div>
+
     <div id="lower">
         <span><span>&#169 2022 <a href="#">Indeed</a> - </span><span><a href="#">Cookies</a>,
 
             </span><span><a href="#">Privacy and Terms</a></span></span>
 
     </div>
-
-
 
 </body>
 
@@ -192,14 +200,21 @@
         city = document.getElementById("city").value;
         mobile = document.getElementById("mobile").value;
 
-       let  R_data1 = {
-        f_name,
-        l_name,
-        address,
-        city,
-        mobile,
-       }
+        let R_data1 = {
+            f_name,
+            l_name,
+            address,
+            city,
+            mobile,
+        };
 
-       localStorage.setItem("R_data1",JSON.stringify(R_data1))
+        if (f_name.length <= 0 || l_name.length <= 0 || address.length <= 0 || city.length <= 0) {
+            alert("Fill the mandatory fields");
+        } else {
+
+            localStorage.setItem("R_data1", JSON.stringify(R_data1));
+            window.location.href = "resumePage2.html";
+        }
+
     }
 </script>

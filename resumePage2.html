@@ -252,7 +252,7 @@
         
     </div>
     <div id="nextDiv">
-       <a href="resumePage3.html"><button id="nextBtn" onclick="next2()">Next</button></a> 
+       <button id="nextBtn" onclick="next2()">Next</button>
         <h4> <a href="./resumePage1.html"> Previous Step</a></h4>
     </div>
     <div id="lower">
@@ -284,8 +284,16 @@
         to_month,
         from_year,
         to_year,
-       }
+       };
 
-       localStorage.setItem("R_data2",JSON.stringify(R_data2))
+       if (degree.length <= 0 || fieldStudy.length <= 0 || college.length <= 0) {
+            alert(" Fill the mandatory fields");
+        } else {
+
+            localStorage.setItem("R_data2",JSON.stringify(R_data2));
+            window.location.href = "resumePage3.html";
+        }
+
+       
     }
 </script>
