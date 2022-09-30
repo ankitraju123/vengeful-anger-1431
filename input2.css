@@ -1,0 +1,20 @@
+*{
+    text-align: center;
+    background-color: rgb(243, 242, 241);
+}
+svg{
+    width: 300px;
+    background-color: white;
+}
+
+.divs{
+    display: flex;
+    background-color: white;
+    width: 40vw;
+    justify-content: space-around;
+    margin: auto;
+    border-radius: 15px;
+}
+h1{
+    background-color: white;
+}
