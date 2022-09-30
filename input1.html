@@ -8,1444 +8,1451 @@
     <link rel="stylesheet" href="./input1.css" />
   </head>
   <body>
-    <div id="container">
-      <h2>Your company's name*</h2>
-      <input type="text" id="name" placeholder="" />
-      <h2>Your company's number of employees</h2>
-      <select name="" id="employee">
-        <option value="1 to 49">1 to 49</option>
-        <option value="50 to 149">50 to 149</option>
-        <option value="250 to 499">250 to 499</option>
-        <option value="500 to 749">500 to 749</option>
-        <option value="750 to 1000">750 to 1000</option>
-        <option value="1000++">1000++</option>
-      </select>
-      <h2>Your first and last name*</h2>
-      <input type="text" id="full_name" value="" />
-      <h2>Are you a hiring manager?</h2>
-      <p>The hired candidate(s) will work in your reporting chain.</p>
-      <select name="" id="manager">
-        <option value="Yes">Yes</option>
-        <option value="No">No</option>
-      </select>
-      <h2>Your phone number</h2>
-      <p>For account management communication. Not visible to jobseekers.</p>
-      <input type="number" id="phone" value="" />
-      <h2>How you heard about us</h2>
-      <select id="heardAbout">
-        <option value="Podcast">Podcast</option>
-        <option value="Mail">Mail</option>
-        <option value="Streaming Audio">Streaming Audio</option>
-        <option value="BillBoard">BillBoard</option>
-        <option value="SearchEngine">SearchEngine</option>
-        <option value="Word Of Mouth">Word Of Mouth</option>
-        <option value="Online Video">Online Video</option>
-      </select>
-      <button onclick="save()" id="btn">
-        <a href="input2.html">Save and Continue</a>
-      </button>
-    </div>
-    <div id="src">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 390 369"
-        aria-hidden="true"
-        data-testid="ipl-illustration-hero"
-      >
-        <defs>
-          <filter id="hero-at-work-before-you-leave_svg__b" x="0%" y="0%">
-            <feTurbulence
-              baseFrequency="2.5"
-              numOctaves="4"
-              result="noise"
-              seed="14"
-            ></feTurbulence>
-            <feComponentTransfer in="noise" result="opacity">
-              <feFuncA slope="0.6" type="linear"></feFuncA>
-            </feComponentTransfer>
-            <feBlend
-              in="opacity"
-              in2="SourceGraphic"
-              mode="overlay"
-              result="blend"
-            ></feBlend>
-          </filter>
-          <filter
-            id="hero-at-work-before-you-leave_svg__c"
-            width="99.377"
-            height="93.912"
-            x="156.789"
-            y="-0.616"
-            color-interpolation-filters="sRGB"
-            filterUnits="userSpaceOnUse"
-          >
-            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-            <feColorMatrix
-              in="SourceAlpha"
-              result="hardAlpha"
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-            ></feColorMatrix>
-            <feOffset dx="2" dy="2"></feOffset>
-            <feGaussianBlur stdDeviation="1.5"></feGaussianBlur>
-            <feColorMatrix
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"
-            ></feColorMatrix>
-            <feBlend
-              in2="BackgroundImageFix"
-              result="effect1_dropShadow_295_2262"
-            ></feBlend>
-            <feBlend
-              in="SourceGraphic"
-              in2="effect1_dropShadow_295_2262"
-              result="shape"
-            ></feBlend>
-            <feColorMatrix
-              in="SourceAlpha"
-              result="hardAlpha"
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-            ></feColorMatrix>
-            <feOffset dx="-1.5" dy="1"></feOffset>
-            <feGaussianBlur stdDeviation="0.75"></feGaussianBlur>
-            <feComposite
-              in2="hardAlpha"
-              k2="-1"
-              k3="1"
-              operator="arithmetic"
-            ></feComposite>
-            <feColorMatrix
-              values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.3 0"
-            ></feColorMatrix>
-            <feBlend
-              in2="shape"
-              mode="soft-light"
-              result="effect2_innerShadow_295_2262"
-            ></feBlend>
-          </filter>
-          <filter
-            id="hero-at-work-before-you-leave_svg__e"
-            width="86.927"
-            height="91.573"
-            x="177.892"
-            y="282.309"
-            color-interpolation-filters="sRGB"
-            filterUnits="userSpaceOnUse"
-          >
-            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-            <feColorMatrix
-              in="SourceAlpha"
-              result="hardAlpha"
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-            ></feColorMatrix>
-            <feOffset dx="2" dy="2"></feOffset>
-            <feGaussianBlur stdDeviation="1.5"></feGaussianBlur>
-            <feColorMatrix
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"
-            ></feColorMatrix>
-            <feBlend
-              in2="BackgroundImageFix"
-              result="effect1_dropShadow_295_2262"
-            ></feBlend>
-            <feBlend
-              in="SourceGraphic"
-              in2="effect1_dropShadow_295_2262"
-              result="shape"
-            ></feBlend>
-            <feColorMatrix
-              in="SourceAlpha"
-              result="hardAlpha"
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-            ></feColorMatrix>
-            <feOffset dx="-1.5" dy="1"></feOffset>
-            <feGaussianBlur stdDeviation="0.75"></feGaussianBlur>
-            <feComposite
-              in2="hardAlpha"
-              k2="-1"
-              k3="1"
-              operator="arithmetic"
-            ></feComposite>
-            <feColorMatrix
-              values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.3 0"
-            ></feColorMatrix>
-            <feBlend
-              in2="shape"
-              mode="soft-light"
-              result="effect2_innerShadow_295_2262"
-            ></feBlend>
-          </filter>
-          <filter
-            id="hero-at-work-before-you-leave_svg__g"
-            width="10.589"
-            height="64.21"
-            x="115.758"
-            y="257.91"
-            color-interpolation-filters="sRGB"
-            filterUnits="userSpaceOnUse"
-          >
-            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-            <feColorMatrix
-              in="SourceAlpha"
-              result="hardAlpha"
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-            ></feColorMatrix>
-            <feOffset dx="2" dy="2"></feOffset>
-            <feGaussianBlur stdDeviation="1.5"></feGaussianBlur>
-            <feColorMatrix
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"
-            ></feColorMatrix>
-            <feBlend
-              in2="BackgroundImageFix"
-              result="effect1_dropShadow_295_2262"
-            ></feBlend>
-            <feBlend
-              in="SourceGraphic"
-              in2="effect1_dropShadow_295_2262"
-              result="shape"
-            ></feBlend>
-            <feColorMatrix
-              in="SourceAlpha"
-              result="hardAlpha"
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-            ></feColorMatrix>
-            <feOffset dx="-1.5" dy="1"></feOffset>
-            <feGaussianBlur stdDeviation="0.75"></feGaussianBlur>
-            <feComposite
-              in2="hardAlpha"
-              k2="-1"
-              k3="1"
-              operator="arithmetic"
-            ></feComposite>
-            <feColorMatrix
-              values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.3 0"
-            ></feColorMatrix>
-            <feBlend
-              in2="shape"
-              mode="soft-light"
-              result="effect2_innerShadow_295_2262"
-            ></feBlend>
-          </filter>
-          <filter
-            id="hero-at-work-before-you-leave_svg__h"
-            width="76.677"
-            height="70.172"
-            x="96.853"
-            y="240.639"
-            color-interpolation-filters="sRGB"
-            filterUnits="userSpaceOnUse"
-          >
-            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-            <feColorMatrix
-              in="SourceAlpha"
-              result="hardAlpha"
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-            ></feColorMatrix>
-            <feOffset dx="2" dy="2"></feOffset>
-            <feGaussianBlur stdDeviation="1.5"></feGaussianBlur>
-            <feColorMatrix
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"
-            ></feColorMatrix>
-            <feBlend
-              in2="BackgroundImageFix"
-              result="effect1_dropShadow_295_2262"
-            ></feBlend>
-            <feBlend
-              in="SourceGraphic"
-              in2="effect1_dropShadow_295_2262"
-              result="shape"
-            ></feBlend>
-            <feColorMatrix
-              in="SourceAlpha"
-              result="hardAlpha"
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-            ></feColorMatrix>
-            <feOffset dx="-1.5" dy="1"></feOffset>
-            <feGaussianBlur stdDeviation="0.75"></feGaussianBlur>
-            <feComposite
-              in2="hardAlpha"
-              k2="-1"
-              k3="1"
-              operator="arithmetic"
-            ></feComposite>
-            <feColorMatrix
-              values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.3 0"
-            ></feColorMatrix>
-            <feBlend
-              in2="shape"
-              mode="soft-light"
-              result="effect2_innerShadow_295_2262"
-            ></feBlend>
-          </filter>
-          <filter
-            id="hero-at-work-before-you-leave_svg__i"
-            width="78.833"
-            height="69.027"
-            x="46.044"
-            y="271.532"
-            color-interpolation-filters="sRGB"
-            filterUnits="userSpaceOnUse"
-          >
-            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-            <feColorMatrix
-              in="SourceAlpha"
-              result="hardAlpha"
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-            ></feColorMatrix>
-            <feOffset dx="2" dy="2"></feOffset>
-            <feGaussianBlur stdDeviation="1.5"></feGaussianBlur>
-            <feColorMatrix
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"
-            ></feColorMatrix>
-            <feBlend
-              in2="BackgroundImageFix"
-              result="effect1_dropShadow_295_2262"
-            ></feBlend>
-            <feBlend
-              in="SourceGraphic"
-              in2="effect1_dropShadow_295_2262"
-              result="shape"
-            ></feBlend>
-            <feColorMatrix
-              in="SourceAlpha"
-              result="hardAlpha"
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-            ></feColorMatrix>
-            <feOffset dx="-1.5" dy="1"></feOffset>
-            <feGaussianBlur stdDeviation="0.75"></feGaussianBlur>
-            <feComposite
-              in2="hardAlpha"
-              k2="-1"
-              k3="1"
-              operator="arithmetic"
-            ></feComposite>
-            <feColorMatrix
-              values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.3 0"
-            ></feColorMatrix>
-            <feBlend
-              in2="shape"
-              mode="soft-light"
-              result="effect2_innerShadow_295_2262"
-            ></feBlend>
-          </filter>
-          <filter
-            id="hero-at-work-before-you-leave_svg__j"
-            width="26.483"
-            height="162.49"
-            x="98.775"
-            y="208.767"
-            color-interpolation-filters="sRGB"
-            filterUnits="userSpaceOnUse"
-          >
-            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-            <feColorMatrix
-              in="SourceAlpha"
-              result="hardAlpha"
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-            ></feColorMatrix>
-            <feOffset dx="2" dy="2"></feOffset>
-            <feGaussianBlur stdDeviation="1.5"></feGaussianBlur>
-            <feColorMatrix
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"
-            ></feColorMatrix>
-            <feBlend
-              in2="BackgroundImageFix"
-              result="effect1_dropShadow_295_2262"
-            ></feBlend>
-            <feBlend
-              in="SourceGraphic"
-              in2="effect1_dropShadow_295_2262"
-              result="shape"
-            ></feBlend>
-            <feColorMatrix
-              in="SourceAlpha"
-              result="hardAlpha"
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-            ></feColorMatrix>
-            <feOffset dx="-1.5" dy="1"></feOffset>
-            <feGaussianBlur stdDeviation="0.75"></feGaussianBlur>
-            <feComposite
-              in2="hardAlpha"
-              k2="-1"
-              k3="1"
-              operator="arithmetic"
-            ></feComposite>
-            <feColorMatrix
-              values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.3 0"
-            ></feColorMatrix>
-            <feBlend
-              in2="shape"
-              mode="soft-light"
-              result="effect2_innerShadow_295_2262"
-            ></feBlend>
-          </filter>
-          <filter
-            id="hero-at-work-before-you-leave_svg__k"
-            width="97.73"
-            height="54.809"
-            x="-1.158"
-            y="265.075"
-            color-interpolation-filters="sRGB"
-            filterUnits="userSpaceOnUse"
-          >
-            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-            <feColorMatrix
-              in="SourceAlpha"
-              result="hardAlpha"
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-            ></feColorMatrix>
-            <feOffset dx="2" dy="2"></feOffset>
-            <feGaussianBlur stdDeviation="1.5"></feGaussianBlur>
-            <feColorMatrix
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"
-            ></feColorMatrix>
-            <feBlend
-              in2="BackgroundImageFix"
-              result="effect1_dropShadow_295_2262"
-            ></feBlend>
-            <feBlend
-              in="SourceGraphic"
-              in2="effect1_dropShadow_295_2262"
-              result="shape"
-            ></feBlend>
-            <feColorMatrix
-              in="SourceAlpha"
-              result="hardAlpha"
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-            ></feColorMatrix>
-            <feOffset dx="-1.5" dy="1"></feOffset>
-            <feGaussianBlur stdDeviation="0.75"></feGaussianBlur>
-            <feComposite
-              in2="hardAlpha"
-              k2="-1"
-              k3="1"
-              operator="arithmetic"
-            ></feComposite>
-            <feColorMatrix
-              values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.3 0"
-            ></feColorMatrix>
-            <feBlend
-              in2="shape"
-              mode="soft-light"
-              result="effect2_innerShadow_295_2262"
-            ></feBlend>
-          </filter>
-          <filter
-            id="hero-at-work-before-you-leave_svg__l"
-            width="89.757"
-            height="42.706"
-            x="37.587"
-            y="301.385"
-            color-interpolation-filters="sRGB"
-            filterUnits="userSpaceOnUse"
-          >
-            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-            <feColorMatrix
-              in="SourceAlpha"
-              result="hardAlpha"
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-            ></feColorMatrix>
-            <feOffset dx="2" dy="2"></feOffset>
-            <feGaussianBlur stdDeviation="1.5"></feGaussianBlur>
-            <feColorMatrix
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"
-            ></feColorMatrix>
-            <feBlend
-              in2="BackgroundImageFix"
-              result="effect1_dropShadow_295_2262"
-            ></feBlend>
-            <feBlend
-              in="SourceGraphic"
-              in2="effect1_dropShadow_295_2262"
-              result="shape"
-            ></feBlend>
-            <feColorMatrix
-              in="SourceAlpha"
-              result="hardAlpha"
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-            ></feColorMatrix>
-            <feOffset dx="-1.5" dy="1"></feOffset>
-            <feGaussianBlur stdDeviation="0.75"></feGaussianBlur>
-            <feComposite
-              in2="hardAlpha"
-              k2="-1"
-              k3="1"
-              operator="arithmetic"
-            ></feComposite>
-            <feColorMatrix
-              values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.3 0"
-            ></feColorMatrix>
-            <feBlend
-              in2="shape"
-              mode="soft-light"
-              result="effect2_innerShadow_295_2262"
-            ></feBlend>
-          </filter>
-          <filter
-            id="hero-at-work-before-you-leave_svg__m"
-            width="115.578"
-            height="49.501"
-            x="22.955"
-            y="190.175"
-            color-interpolation-filters="sRGB"
-            filterUnits="userSpaceOnUse"
-          >
-            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-            <feColorMatrix
-              in="SourceAlpha"
-              result="hardAlpha"
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-            ></feColorMatrix>
-            <feOffset dx="2" dy="2"></feOffset>
-            <feGaussianBlur stdDeviation="1.5"></feGaussianBlur>
-            <feColorMatrix
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"
-            ></feColorMatrix>
-            <feBlend
-              in2="BackgroundImageFix"
-              result="effect1_dropShadow_295_2262"
-            ></feBlend>
-            <feBlend
-              in="SourceGraphic"
-              in2="effect1_dropShadow_295_2262"
-              result="shape"
-            ></feBlend>
-            <feColorMatrix
-              in="SourceAlpha"
-              result="hardAlpha"
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-            ></feColorMatrix>
-            <feOffset dx="-1.5" dy="1"></feOffset>
-            <feGaussianBlur stdDeviation="0.75"></feGaussianBlur>
-            <feComposite
-              in2="hardAlpha"
-              k2="-1"
-              k3="1"
-              operator="arithmetic"
-            ></feComposite>
-            <feColorMatrix
-              values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.3 0"
-            ></feColorMatrix>
-            <feBlend
-              in2="shape"
-              mode="soft-light"
-              result="effect2_innerShadow_295_2262"
-            ></feBlend>
-          </filter>
-          <filter
-            id="hero-at-work-before-you-leave_svg__n"
-            width="112.33"
-            height="96.117"
-            x="147.5"
-            y="277.882"
-            color-interpolation-filters="sRGB"
-            filterUnits="userSpaceOnUse"
-          >
-            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-            <feColorMatrix
-              in="SourceAlpha"
-              result="hardAlpha"
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-            ></feColorMatrix>
-            <feOffset dx="2" dy="2"></feOffset>
-            <feGaussianBlur stdDeviation="1.5"></feGaussianBlur>
-            <feColorMatrix
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"
-            ></feColorMatrix>
-            <feBlend
-              in2="BackgroundImageFix"
-              result="effect1_dropShadow_295_2262"
-            ></feBlend>
-            <feBlend
-              in="SourceGraphic"
-              in2="effect1_dropShadow_295_2262"
-              result="shape"
-            ></feBlend>
-            <feColorMatrix
-              in="SourceAlpha"
-              result="hardAlpha"
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-            ></feColorMatrix>
-            <feOffset dx="-1.5" dy="1"></feOffset>
-            <feGaussianBlur stdDeviation="0.75"></feGaussianBlur>
-            <feComposite
-              in2="hardAlpha"
-              k2="-1"
-              k3="1"
-              operator="arithmetic"
-            ></feComposite>
-            <feColorMatrix
-              values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.3 0"
-            ></feColorMatrix>
-            <feBlend
-              in2="shape"
-              mode="soft-light"
-              result="effect2_innerShadow_295_2262"
-            ></feBlend>
-          </filter>
-          <filter
-            id="hero-at-work-before-you-leave_svg__p"
-            width="35.4"
-            height="54.704"
-            x="281.733"
-            y="313.054"
-            color-interpolation-filters="sRGB"
-            filterUnits="userSpaceOnUse"
-          >
-            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-            <feColorMatrix
-              in="SourceAlpha"
-              result="hardAlpha"
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-            ></feColorMatrix>
-            <feOffset dx="2" dy="2"></feOffset>
-            <feGaussianBlur stdDeviation="1.5"></feGaussianBlur>
-            <feColorMatrix
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"
-            ></feColorMatrix>
-            <feBlend
-              in2="BackgroundImageFix"
-              result="effect1_dropShadow_295_2262"
-            ></feBlend>
-            <feBlend
-              in="SourceGraphic"
-              in2="effect1_dropShadow_295_2262"
-              result="shape"
-            ></feBlend>
-            <feColorMatrix
-              in="SourceAlpha"
-              result="hardAlpha"
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-            ></feColorMatrix>
-            <feOffset dx="-1.5" dy="1"></feOffset>
-            <feGaussianBlur stdDeviation="0.75"></feGaussianBlur>
-            <feComposite
-              in2="hardAlpha"
-              k2="-1"
-              k3="1"
-              operator="arithmetic"
-            ></feComposite>
-            <feColorMatrix
-              values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.3 0"
-            ></feColorMatrix>
-            <feBlend
-              in2="shape"
-              mode="soft-light"
-              result="effect2_innerShadow_295_2262"
-            ></feBlend>
-          </filter>
-          <filter
-            id="hero-at-work-before-you-leave_svg__q"
-            width="36.602"
-            height="17.323"
-            x="281.312"
-            y="304.677"
-            color-interpolation-filters="sRGB"
-            filterUnits="userSpaceOnUse"
-          >
-            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-            <feColorMatrix
-              in="SourceAlpha"
-              result="hardAlpha"
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-            ></feColorMatrix>
-            <feOffset dx="2" dy="2"></feOffset>
-            <feGaussianBlur stdDeviation="1.5"></feGaussianBlur>
-            <feColorMatrix
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"
-            ></feColorMatrix>
-            <feBlend
-              in2="BackgroundImageFix"
-              result="effect1_dropShadow_295_2262"
-            ></feBlend>
-            <feBlend
-              in="SourceGraphic"
-              in2="effect1_dropShadow_295_2262"
-              result="shape"
-            ></feBlend>
-            <feColorMatrix
-              in="SourceAlpha"
-              result="hardAlpha"
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-            ></feColorMatrix>
-            <feOffset dx="-1.5" dy="1"></feOffset>
-            <feGaussianBlur stdDeviation="0.75"></feGaussianBlur>
-            <feComposite
-              in2="hardAlpha"
-              k2="-1"
-              k3="1"
-              operator="arithmetic"
-            ></feComposite>
-            <feColorMatrix
-              values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.3 0"
-            ></feColorMatrix>
-            <feBlend
-              in2="shape"
-              mode="soft-light"
-              result="effect2_innerShadow_295_2262"
-            ></feBlend>
-          </filter>
-          <filter
-            id="hero-at-work-before-you-leave_svg__r"
-            width="73.857"
-            height="112.283"
-            x="249.955"
-            y="227.257"
-            color-interpolation-filters="sRGB"
-            filterUnits="userSpaceOnUse"
-          >
-            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-            <feColorMatrix
-              in="SourceAlpha"
-              result="hardAlpha"
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-            ></feColorMatrix>
-            <feOffset dx="2" dy="2"></feOffset>
-            <feGaussianBlur stdDeviation="1.5"></feGaussianBlur>
-            <feColorMatrix
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"
-            ></feColorMatrix>
-            <feBlend
-              in2="BackgroundImageFix"
-              result="effect1_dropShadow_295_2262"
-            ></feBlend>
-            <feBlend
-              in="SourceGraphic"
-              in2="effect1_dropShadow_295_2262"
-              result="shape"
-            ></feBlend>
-            <feColorMatrix
-              in="SourceAlpha"
-              result="hardAlpha"
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-            ></feColorMatrix>
-            <feOffset dx="-1.5" dy="1"></feOffset>
-            <feGaussianBlur stdDeviation="0.75"></feGaussianBlur>
-            <feComposite
-              in2="hardAlpha"
-              k2="-1"
-              k3="1"
-              operator="arithmetic"
-            ></feComposite>
-            <feColorMatrix
-              values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.3 0"
-            ></feColorMatrix>
-            <feBlend
-              in2="shape"
-              mode="soft-light"
-              result="effect2_innerShadow_295_2262"
-            ></feBlend>
-          </filter>
-          <filter
-            id="hero-at-work-before-you-leave_svg__s"
-            width="137.503"
-            height="200.878"
-            x="153.014"
-            y="107.759"
-            color-interpolation-filters="sRGB"
-            filterUnits="userSpaceOnUse"
-          >
-            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-            <feColorMatrix
-              in="SourceAlpha"
-              result="hardAlpha"
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-            ></feColorMatrix>
-            <feOffset dx="2" dy="2"></feOffset>
-            <feGaussianBlur stdDeviation="1.5"></feGaussianBlur>
-            <feColorMatrix
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"
-            ></feColorMatrix>
-            <feBlend
-              in2="BackgroundImageFix"
-              result="effect1_dropShadow_295_2262"
-            ></feBlend>
-            <feBlend
-              in="SourceGraphic"
-              in2="effect1_dropShadow_295_2262"
-              result="shape"
-            ></feBlend>
-            <feColorMatrix
-              in="SourceAlpha"
-              result="hardAlpha"
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-            ></feColorMatrix>
-            <feOffset dx="-1.5" dy="1"></feOffset>
-            <feGaussianBlur stdDeviation="0.75"></feGaussianBlur>
-            <feComposite
-              in2="hardAlpha"
-              k2="-1"
-              k3="1"
-              operator="arithmetic"
-            ></feComposite>
-            <feColorMatrix
-              values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.3 0"
-            ></feColorMatrix>
-            <feBlend
-              in2="shape"
-              mode="soft-light"
-              result="effect2_innerShadow_295_2262"
-            ></feBlend>
-          </filter>
-          <filter
-            id="hero-at-work-before-you-leave_svg__u"
-            width="53.916"
-            height="76.845"
-            x="182.241"
-            y="62.799"
-            color-interpolation-filters="sRGB"
-            filterUnits="userSpaceOnUse"
-          >
-            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-            <feColorMatrix
-              in="SourceAlpha"
-              result="hardAlpha"
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-            ></feColorMatrix>
-            <feOffset dx="2" dy="2"></feOffset>
-            <feGaussianBlur stdDeviation="1.5"></feGaussianBlur>
-            <feColorMatrix
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"
-            ></feColorMatrix>
-            <feBlend
-              in2="BackgroundImageFix"
-              result="effect1_dropShadow_295_2262"
-            ></feBlend>
-            <feBlend
-              in="SourceGraphic"
-              in2="effect1_dropShadow_295_2262"
-              result="shape"
-            ></feBlend>
-            <feColorMatrix
-              in="SourceAlpha"
-              result="hardAlpha"
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-            ></feColorMatrix>
-            <feOffset dx="-1.5" dy="1"></feOffset>
-            <feGaussianBlur stdDeviation="0.75"></feGaussianBlur>
-            <feComposite
-              in2="hardAlpha"
-              k2="-1"
-              k3="1"
-              operator="arithmetic"
-            ></feComposite>
-            <feColorMatrix
-              values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.3 0"
-            ></feColorMatrix>
-            <feBlend
-              in2="shape"
-              mode="soft-light"
-              result="effect2_innerShadow_295_2262"
-            ></feBlend>
-          </filter>
-          <filter
-            id="hero-at-work-before-you-leave_svg__v"
-            width="173.985"
-            height="16.103"
-            x="184.339"
-            y="244.68"
-            color-interpolation-filters="sRGB"
-            filterUnits="userSpaceOnUse"
-          >
-            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-            <feColorMatrix
-              in="SourceAlpha"
-              result="hardAlpha"
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-            ></feColorMatrix>
-            <feOffset dx="2" dy="2"></feOffset>
-            <feGaussianBlur stdDeviation="1.5"></feGaussianBlur>
-            <feColorMatrix
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"
-            ></feColorMatrix>
-            <feBlend
-              in2="BackgroundImageFix"
-              result="effect1_dropShadow_295_2262"
-            ></feBlend>
-            <feBlend
-              in="SourceGraphic"
-              in2="effect1_dropShadow_295_2262"
-              result="shape"
-            ></feBlend>
-            <feColorMatrix
-              in="SourceAlpha"
-              result="hardAlpha"
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-            ></feColorMatrix>
-            <feOffset dx="-1.5" dy="1"></feOffset>
-            <feGaussianBlur stdDeviation="0.75"></feGaussianBlur>
-            <feComposite
-              in2="hardAlpha"
-              k2="-1"
-              k3="1"
-              operator="arithmetic"
-            ></feComposite>
-            <feColorMatrix
-              values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.3 0"
-            ></feColorMatrix>
-            <feBlend
-              in2="shape"
-              mode="soft-light"
-              result="effect2_innerShadow_295_2262"
-            ></feBlend>
-          </filter>
-          <filter
-            id="hero-at-work-before-you-leave_svg__w"
-            width="139.788"
-            height="92.023"
-            x="254.479"
-            y="158.656"
-            color-interpolation-filters="sRGB"
-            filterUnits="userSpaceOnUse"
-          >
-            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-            <feColorMatrix
-              in="SourceAlpha"
-              result="hardAlpha"
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-            ></feColorMatrix>
-            <feOffset dx="2" dy="2"></feOffset>
-            <feGaussianBlur stdDeviation="1.5"></feGaussianBlur>
-            <feColorMatrix
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"
-            ></feColorMatrix>
-            <feBlend
-              in2="BackgroundImageFix"
-              result="effect1_dropShadow_295_2262"
-            ></feBlend>
-            <feBlend
-              in="SourceGraphic"
-              in2="effect1_dropShadow_295_2262"
-              result="shape"
-            ></feBlend>
-            <feColorMatrix
-              in="SourceAlpha"
-              result="hardAlpha"
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-            ></feColorMatrix>
-            <feOffset dx="-1.5" dy="1"></feOffset>
-            <feGaussianBlur stdDeviation="0.75"></feGaussianBlur>
-            <feComposite
-              in2="hardAlpha"
-              k2="-1"
-              k3="1"
-              operator="arithmetic"
-            ></feComposite>
-            <feColorMatrix
-              values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.3 0"
-            ></feColorMatrix>
-            <feBlend
-              in2="shape"
-              mode="soft-light"
-              result="effect2_innerShadow_295_2262"
-            ></feBlend>
-          </filter>
-          <filter
-            id="hero-at-work-before-you-leave_svg__x"
-            width="22.846"
-            height="27.536"
-            x="311.652"
-            y="236.639"
-            color-interpolation-filters="sRGB"
-            filterUnits="userSpaceOnUse"
-          >
-            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-            <feColorMatrix
-              in="SourceAlpha"
-              result="hardAlpha"
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-            ></feColorMatrix>
-            <feOffset dx="2" dy="2"></feOffset>
-            <feGaussianBlur stdDeviation="1.5"></feGaussianBlur>
-            <feColorMatrix
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"
-            ></feColorMatrix>
-            <feBlend
-              in2="BackgroundImageFix"
-              result="effect1_dropShadow_295_2262"
-            ></feBlend>
-            <feBlend
-              in="SourceGraphic"
-              in2="effect1_dropShadow_295_2262"
-              result="shape"
-            ></feBlend>
-            <feColorMatrix
-              in="SourceAlpha"
-              result="hardAlpha"
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-            ></feColorMatrix>
-            <feOffset dx="-1.5" dy="1"></feOffset>
-            <feGaussianBlur stdDeviation="0.75"></feGaussianBlur>
-            <feComposite
-              in2="hardAlpha"
-              k2="-1"
-              k3="1"
-              operator="arithmetic"
-            ></feComposite>
-            <feColorMatrix
-              values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.3 0"
-            ></feColorMatrix>
-            <feBlend
-              in2="shape"
-              mode="soft-light"
-              result="effect2_innerShadow_295_2262"
-            ></feBlend>
-          </filter>
-          <filter
-            id="hero-at-work-before-you-leave_svg__y"
-            width="25.771"
-            height="44.116"
-            x="303.345"
-            y="225.037"
-            color-interpolation-filters="sRGB"
-            filterUnits="userSpaceOnUse"
-          >
-            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-            <feColorMatrix
-              in="SourceAlpha"
-              result="hardAlpha"
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-            ></feColorMatrix>
-            <feOffset dx="2" dy="2"></feOffset>
-            <feGaussianBlur stdDeviation="1.5"></feGaussianBlur>
-            <feColorMatrix
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"
-            ></feColorMatrix>
-            <feBlend
-              in2="BackgroundImageFix"
-              result="effect1_dropShadow_295_2262"
-            ></feBlend>
-            <feBlend
-              in="SourceGraphic"
-              in2="effect1_dropShadow_295_2262"
-              result="shape"
-            ></feBlend>
-            <feColorMatrix
-              in="SourceAlpha"
-              result="hardAlpha"
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-            ></feColorMatrix>
-            <feOffset dx="-1.5" dy="1"></feOffset>
-            <feGaussianBlur stdDeviation="0.75"></feGaussianBlur>
-            <feComposite
-              in2="hardAlpha"
-              k2="-1"
-              k3="1"
-              operator="arithmetic"
-            ></feComposite>
-            <feColorMatrix
-              values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.3 0"
-            ></feColorMatrix>
-            <feBlend
-              in2="shape"
-              mode="soft-light"
-              result="effect2_innerShadow_295_2262"
-            ></feBlend>
-          </filter>
-          <filter
-            id="hero-at-work-before-you-leave_svg__z"
-            width="136.847"
-            height="53.146"
-            x="184.183"
-            y="227.445"
-            color-interpolation-filters="sRGB"
-            filterUnits="userSpaceOnUse"
-          >
-            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-            <feColorMatrix
-              in="SourceAlpha"
-              result="hardAlpha"
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-            ></feColorMatrix>
-            <feOffset dx="2" dy="2"></feOffset>
-            <feGaussianBlur stdDeviation="1.5"></feGaussianBlur>
-            <feColorMatrix
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"
-            ></feColorMatrix>
-            <feBlend
-              in2="BackgroundImageFix"
-              result="effect1_dropShadow_295_2262"
-            ></feBlend>
-            <feBlend
-              in="SourceGraphic"
-              in2="effect1_dropShadow_295_2262"
-              result="shape"
-            ></feBlend>
-            <feColorMatrix
-              in="SourceAlpha"
-              result="hardAlpha"
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-            ></feColorMatrix>
-            <feOffset dx="-1.5" dy="1"></feOffset>
-            <feGaussianBlur stdDeviation="0.75"></feGaussianBlur>
-            <feComposite
-              in2="hardAlpha"
-              k2="-1"
-              k3="1"
-              operator="arithmetic"
-            ></feComposite>
-            <feColorMatrix
-              values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.3 0"
-            ></feColorMatrix>
-            <feBlend
-              in2="shape"
-              mode="soft-light"
-              result="effect2_innerShadow_295_2262"
-            ></feBlend>
-          </filter>
-          <filter
-            id="hero-at-work-before-you-leave_svg__A"
-            width="61.696"
-            height="157.647"
-            x="145.631"
-            y="122.933"
-            color-interpolation-filters="sRGB"
-            filterUnits="userSpaceOnUse"
-          >
-            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-            <feColorMatrix
-              in="SourceAlpha"
-              result="hardAlpha"
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-            ></feColorMatrix>
-            <feOffset dx="2" dy="2"></feOffset>
-            <feGaussianBlur stdDeviation="1.5"></feGaussianBlur>
-            <feColorMatrix
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"
-            ></feColorMatrix>
-            <feBlend
-              in2="BackgroundImageFix"
-              result="effect1_dropShadow_295_2262"
-            ></feBlend>
-            <feBlend
-              in="SourceGraphic"
-              in2="effect1_dropShadow_295_2262"
-              result="shape"
-            ></feBlend>
-            <feColorMatrix
-              in="SourceAlpha"
-              result="hardAlpha"
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-            ></feColorMatrix>
-            <feOffset dx="-1.5" dy="1"></feOffset>
-            <feGaussianBlur stdDeviation="0.75"></feGaussianBlur>
-            <feComposite
-              in2="hardAlpha"
-              k2="-1"
-              k3="1"
-              operator="arithmetic"
-            ></feComposite>
-            <feColorMatrix
-              values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.3 0"
-            ></feColorMatrix>
-            <feBlend
-              in2="shape"
-              mode="soft-light"
-              result="effect2_innerShadow_295_2262"
-            ></feBlend>
-          </filter>
-          <filter
-            id="hero-at-work-before-you-leave_svg__C"
-            width="78.988"
-            height="90.104"
-            x="162.381"
-            y="18.322"
-            color-interpolation-filters="sRGB"
-            filterUnits="userSpaceOnUse"
-          >
-            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-            <feColorMatrix
-              in="SourceAlpha"
-              result="hardAlpha"
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-            ></feColorMatrix>
-            <feOffset dx="2" dy="2"></feOffset>
-            <feGaussianBlur stdDeviation="1.5"></feGaussianBlur>
-            <feColorMatrix
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"
-            ></feColorMatrix>
-            <feBlend
-              in2="BackgroundImageFix"
-              result="effect1_dropShadow_295_2262"
-            ></feBlend>
-            <feBlend
-              in="SourceGraphic"
-              in2="effect1_dropShadow_295_2262"
-              result="shape"
-            ></feBlend>
-            <feColorMatrix
-              in="SourceAlpha"
-              result="hardAlpha"
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-            ></feColorMatrix>
-            <feOffset dx="-1.5" dy="1"></feOffset>
-            <feGaussianBlur stdDeviation="0.75"></feGaussianBlur>
-            <feComposite
-              in2="hardAlpha"
-              k2="-1"
-              k3="1"
-              operator="arithmetic"
-            ></feComposite>
-            <feColorMatrix
-              values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.3 0"
-            ></feColorMatrix>
-            <feBlend
-              in2="shape"
-              mode="soft-light"
-              result="effect2_innerShadow_295_2262"
-            ></feBlend>
-          </filter>
-          <linearGradient
-            id="hero-at-work-before-you-leave_svg__d"
-            x1="222.739"
-            x2="195.206"
-            y1="-5.451"
-            y2="70.829"
-            gradientUnits="userSpaceOnUse"
-          >
-            <stop offset="0.053" stop-color="#462615"></stop>
-            <stop offset="0.99" stop-color="#161718"></stop>
-          </linearGradient>
-          <linearGradient
-            id="hero-at-work-before-you-leave_svg__f"
-            x1="218.346"
-            x2="218.346"
-            y1="283.309"
-            y2="406.663"
-            gradientUnits="userSpaceOnUse"
-          >
-            <stop stop-color="#767676"></stop>
-            <stop offset="1" stop-color="#595959"></stop>
-          </linearGradient>
-          <linearGradient
-            id="hero-at-work-before-you-leave_svg__o"
-            x1="212.096"
-            x2="212.096"
-            y1="278.882"
-            y2="415.772"
-            gradientUnits="userSpaceOnUse"
-          >
-            <stop stop-color="#767676"></stop>
-            <stop offset="1" stop-color="#595959"></stop>
-          </linearGradient>
-          <linearGradient
-            id="hero-at-work-before-you-leave_svg__t"
-            x1="220.015"
-            x2="220.015"
-            y1="108.759"
-            y2="303.637"
-            gradientUnits="userSpaceOnUse"
-          >
-            <stop stop-color="#1F5F7B"></stop>
-            <stop offset="1" stop-color="#1D465C"></stop>
-          </linearGradient>
-          <linearGradient
-            id="hero-at-work-before-you-leave_svg__B"
-            x1="174.729"
-            x2="174.729"
-            y1="123.933"
-            y2="275.579"
-            gradientUnits="userSpaceOnUse"
-          >
-            <stop stop-color="#1F5F7B"></stop>
-            <stop offset="1" stop-color="#1D465C"></stop>
-          </linearGradient>
-          <clipPath id="hero-at-work-before-you-leave_svg__a">
-            <path
-              xmlns="http://www.w3.org/2000/svg"
-              fill="#fff"
-              d="M39.294 132.59l14.069 66.308c-21.63 11.952-28.908 33.568-28.908 33.568s9.053.64 21.942 1.231l14.187 37.645c-7.697-4.01-24.84-10.424-39.32 2.006C1.924 289.954.341 314.884.341 314.884s9.537-10.09 22.618-12.095c6.915-1.059 27.293-7.278 44.057-14.376l5.28 14.009c-2.376.153-4.838.788-7.357 2.045-19.244 9.606-25.853 34.624-25.853 34.624s9.895-6.697 20.909-3.769c4.168 1.108 14.51 2.172 25.597 2.383l11.749 31.177h242l11.024-113.099h2.958V245.68l35.944-86.024h-29.533l5.439-55.798a183.534 183.534 0 00-22.877-6.091L343.894.382l-22.191 4.794a278.923 278.923 0 00-72.093 26.391 42.09 42.09 0 00-12.435-20.002c-17.535-15.487-53.36-15.242-69.211 2.965a39.584 39.584 0 00-8.168 36.748c.971 3.367 3.22 6.167 5.725 8.764a64.758 64.758 0 001.797 5.931s-2.469 6.855 6.327 17.221l.143.168a278.685 278.685 0 01-34.429 17.956 33.416 33.416 0 00-10.787-26.805l.031.011a33.421 33.421 0 00-20.349-8.703V19.407c-.74-.63-1.482.185-2.226 1.002-.74.813-1.482 1.629-2.228 1.027V65.82a33.414 33.414 0 00-25.577 14.781 33.418 33.418 0 00-3.083 31.356 33.417 33.417 0 005.336 8.762L39.294 132.59z"
-            ></path>
-          </clipPath>
-        </defs>
-        <g
-          clip-path="url(#hero-at-work-before-you-leave_svg__a)"
-          filter="url(#hero-at-work-before-you-leave_svg__b)"
+    <div id="mainCont">
+      <div id="container">
+        <h1>Creat an employer account</h1>
+        <p>
+          You haven't posted a job before, so you'll need to create an employer
+          account.
+        </p>
+        <h2>Your company's name*</h2>
+        <input type="text" id="name" placeholder="" />
+        <h2>Your company's number of employees</h2>
+        <select name="" id="employee">
+          <option value="1 to 49">1 to 49</option>
+          <option value="50 to 149">50 to 149</option>
+          <option value="250 to 499">250 to 499</option>
+          <option value="500 to 749">500 to 749</option>
+          <option value="750 to 1000">750 to 1000</option>
+          <option value="1000++">1000++</option>
+        </select>
+        <h2>Your first and last name*</h2>
+        <input type="text" id="full_name" value="" />
+        <h2>Are you a hiring manager?</h2>
+        <p>The hired candidate(s) will work in your reporting chain.</p>
+        <select name="" id="manager">
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+        <h2>Your phone number</h2>
+        <p>For account management communication. Not visible to jobseekers.</p>
+        <input type="number" id="phone" value="" />
+        <h2>How you heard about us</h2>
+        <select id="heardAbout">
+          <option value="Podcast">Podcast</option>
+          <option value="Mail">Mail</option>
+          <option value="Streaming Audio">Streaming Audio</option>
+          <option value="BillBoard">BillBoard</option>
+          <option value="SearchEngine">SearchEngine</option>
+          <option value="Word Of Mouth">Word Of Mouth</option>
+          <option value="Online Video">Online Video</option>
+        </select>
+        <button onclick="save()" id="btn">
+          <a href="input2.html">Save and Continue</a>
+        </button>
+      </div>
+      <div id="srcs">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 390 369"
+          aria-hidden="true"
+          data-testid="ipl-illustration-hero"
         >
-          <path
-            fill="#F5CB9D"
-            d="M151.328 222.546c31.074-32.318 89.215-104.224 152.463-98.375a131.36 131.36 0 0137.916 9.55L343.894.382l-22.191 4.794A278.916 278.916 0 00204.26 61.72a278.715 278.715 0 01-103.15 53.052L39.294 132.59l28.272 133.25c41.071 3.116 65.787-24.609 83.762-43.294z"
-          ></path>
-          <g filter="url(#hero-at-work-before-you-leave_svg__c)">
+          <defs>
+            <filter id="hero-at-work-before-you-leave_svg__b" x="0%" y="0%">
+              <feTurbulence
+                baseFrequency="2.5"
+                numOctaves="4"
+                result="noise"
+                seed="14"
+              ></feTurbulence>
+              <feComponentTransfer in="noise" result="opacity">
+                <feFuncA slope="0.6" type="linear"></feFuncA>
+              </feComponentTransfer>
+              <feBlend
+                in="opacity"
+                in2="SourceGraphic"
+                mode="overlay"
+                result="blend"
+              ></feBlend>
+            </filter>
+            <filter
+              id="hero-at-work-before-you-leave_svg__c"
+              width="99.377"
+              height="93.912"
+              x="156.789"
+              y="-0.616"
+              color-interpolation-filters="sRGB"
+              filterUnits="userSpaceOnUse"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+              <feColorMatrix
+                in="SourceAlpha"
+                result="hardAlpha"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              ></feColorMatrix>
+              <feOffset dx="2" dy="2"></feOffset>
+              <feGaussianBlur stdDeviation="1.5"></feGaussianBlur>
+              <feColorMatrix
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"
+              ></feColorMatrix>
+              <feBlend
+                in2="BackgroundImageFix"
+                result="effect1_dropShadow_295_2262"
+              ></feBlend>
+              <feBlend
+                in="SourceGraphic"
+                in2="effect1_dropShadow_295_2262"
+                result="shape"
+              ></feBlend>
+              <feColorMatrix
+                in="SourceAlpha"
+                result="hardAlpha"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              ></feColorMatrix>
+              <feOffset dx="-1.5" dy="1"></feOffset>
+              <feGaussianBlur stdDeviation="0.75"></feGaussianBlur>
+              <feComposite
+                in2="hardAlpha"
+                k2="-1"
+                k3="1"
+                operator="arithmetic"
+              ></feComposite>
+              <feColorMatrix
+                values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.3 0"
+              ></feColorMatrix>
+              <feBlend
+                in2="shape"
+                mode="soft-light"
+                result="effect2_innerShadow_295_2262"
+              ></feBlend>
+            </filter>
+            <filter
+              id="hero-at-work-before-you-leave_svg__e"
+              width="86.927"
+              height="91.573"
+              x="177.892"
+              y="282.309"
+              color-interpolation-filters="sRGB"
+              filterUnits="userSpaceOnUse"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+              <feColorMatrix
+                in="SourceAlpha"
+                result="hardAlpha"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              ></feColorMatrix>
+              <feOffset dx="2" dy="2"></feOffset>
+              <feGaussianBlur stdDeviation="1.5"></feGaussianBlur>
+              <feColorMatrix
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"
+              ></feColorMatrix>
+              <feBlend
+                in2="BackgroundImageFix"
+                result="effect1_dropShadow_295_2262"
+              ></feBlend>
+              <feBlend
+                in="SourceGraphic"
+                in2="effect1_dropShadow_295_2262"
+                result="shape"
+              ></feBlend>
+              <feColorMatrix
+                in="SourceAlpha"
+                result="hardAlpha"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              ></feColorMatrix>
+              <feOffset dx="-1.5" dy="1"></feOffset>
+              <feGaussianBlur stdDeviation="0.75"></feGaussianBlur>
+              <feComposite
+                in2="hardAlpha"
+                k2="-1"
+                k3="1"
+                operator="arithmetic"
+              ></feComposite>
+              <feColorMatrix
+                values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.3 0"
+              ></feColorMatrix>
+              <feBlend
+                in2="shape"
+                mode="soft-light"
+                result="effect2_innerShadow_295_2262"
+              ></feBlend>
+            </filter>
+            <filter
+              id="hero-at-work-before-you-leave_svg__g"
+              width="10.589"
+              height="64.21"
+              x="115.758"
+              y="257.91"
+              color-interpolation-filters="sRGB"
+              filterUnits="userSpaceOnUse"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+              <feColorMatrix
+                in="SourceAlpha"
+                result="hardAlpha"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              ></feColorMatrix>
+              <feOffset dx="2" dy="2"></feOffset>
+              <feGaussianBlur stdDeviation="1.5"></feGaussianBlur>
+              <feColorMatrix
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"
+              ></feColorMatrix>
+              <feBlend
+                in2="BackgroundImageFix"
+                result="effect1_dropShadow_295_2262"
+              ></feBlend>
+              <feBlend
+                in="SourceGraphic"
+                in2="effect1_dropShadow_295_2262"
+                result="shape"
+              ></feBlend>
+              <feColorMatrix
+                in="SourceAlpha"
+                result="hardAlpha"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              ></feColorMatrix>
+              <feOffset dx="-1.5" dy="1"></feOffset>
+              <feGaussianBlur stdDeviation="0.75"></feGaussianBlur>
+              <feComposite
+                in2="hardAlpha"
+                k2="-1"
+                k3="1"
+                operator="arithmetic"
+              ></feComposite>
+              <feColorMatrix
+                values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.3 0"
+              ></feColorMatrix>
+              <feBlend
+                in2="shape"
+                mode="soft-light"
+                result="effect2_innerShadow_295_2262"
+              ></feBlend>
+            </filter>
+            <filter
+              id="hero-at-work-before-you-leave_svg__h"
+              width="76.677"
+              height="70.172"
+              x="96.853"
+              y="240.639"
+              color-interpolation-filters="sRGB"
+              filterUnits="userSpaceOnUse"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+              <feColorMatrix
+                in="SourceAlpha"
+                result="hardAlpha"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              ></feColorMatrix>
+              <feOffset dx="2" dy="2"></feOffset>
+              <feGaussianBlur stdDeviation="1.5"></feGaussianBlur>
+              <feColorMatrix
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"
+              ></feColorMatrix>
+              <feBlend
+                in2="BackgroundImageFix"
+                result="effect1_dropShadow_295_2262"
+              ></feBlend>
+              <feBlend
+                in="SourceGraphic"
+                in2="effect1_dropShadow_295_2262"
+                result="shape"
+              ></feBlend>
+              <feColorMatrix
+                in="SourceAlpha"
+                result="hardAlpha"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              ></feColorMatrix>
+              <feOffset dx="-1.5" dy="1"></feOffset>
+              <feGaussianBlur stdDeviation="0.75"></feGaussianBlur>
+              <feComposite
+                in2="hardAlpha"
+                k2="-1"
+                k3="1"
+                operator="arithmetic"
+              ></feComposite>
+              <feColorMatrix
+                values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.3 0"
+              ></feColorMatrix>
+              <feBlend
+                in2="shape"
+                mode="soft-light"
+                result="effect2_innerShadow_295_2262"
+              ></feBlend>
+            </filter>
+            <filter
+              id="hero-at-work-before-you-leave_svg__i"
+              width="78.833"
+              height="69.027"
+              x="46.044"
+              y="271.532"
+              color-interpolation-filters="sRGB"
+              filterUnits="userSpaceOnUse"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+              <feColorMatrix
+                in="SourceAlpha"
+                result="hardAlpha"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              ></feColorMatrix>
+              <feOffset dx="2" dy="2"></feOffset>
+              <feGaussianBlur stdDeviation="1.5"></feGaussianBlur>
+              <feColorMatrix
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"
+              ></feColorMatrix>
+              <feBlend
+                in2="BackgroundImageFix"
+                result="effect1_dropShadow_295_2262"
+              ></feBlend>
+              <feBlend
+                in="SourceGraphic"
+                in2="effect1_dropShadow_295_2262"
+                result="shape"
+              ></feBlend>
+              <feColorMatrix
+                in="SourceAlpha"
+                result="hardAlpha"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              ></feColorMatrix>
+              <feOffset dx="-1.5" dy="1"></feOffset>
+              <feGaussianBlur stdDeviation="0.75"></feGaussianBlur>
+              <feComposite
+                in2="hardAlpha"
+                k2="-1"
+                k3="1"
+                operator="arithmetic"
+              ></feComposite>
+              <feColorMatrix
+                values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.3 0"
+              ></feColorMatrix>
+              <feBlend
+                in2="shape"
+                mode="soft-light"
+                result="effect2_innerShadow_295_2262"
+              ></feBlend>
+            </filter>
+            <filter
+              id="hero-at-work-before-you-leave_svg__j"
+              width="26.483"
+              height="162.49"
+              x="98.775"
+              y="208.767"
+              color-interpolation-filters="sRGB"
+              filterUnits="userSpaceOnUse"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+              <feColorMatrix
+                in="SourceAlpha"
+                result="hardAlpha"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              ></feColorMatrix>
+              <feOffset dx="2" dy="2"></feOffset>
+              <feGaussianBlur stdDeviation="1.5"></feGaussianBlur>
+              <feColorMatrix
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"
+              ></feColorMatrix>
+              <feBlend
+                in2="BackgroundImageFix"
+                result="effect1_dropShadow_295_2262"
+              ></feBlend>
+              <feBlend
+                in="SourceGraphic"
+                in2="effect1_dropShadow_295_2262"
+                result="shape"
+              ></feBlend>
+              <feColorMatrix
+                in="SourceAlpha"
+                result="hardAlpha"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              ></feColorMatrix>
+              <feOffset dx="-1.5" dy="1"></feOffset>
+              <feGaussianBlur stdDeviation="0.75"></feGaussianBlur>
+              <feComposite
+                in2="hardAlpha"
+                k2="-1"
+                k3="1"
+                operator="arithmetic"
+              ></feComposite>
+              <feColorMatrix
+                values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.3 0"
+              ></feColorMatrix>
+              <feBlend
+                in2="shape"
+                mode="soft-light"
+                result="effect2_innerShadow_295_2262"
+              ></feBlend>
+            </filter>
+            <filter
+              id="hero-at-work-before-you-leave_svg__k"
+              width="97.73"
+              height="54.809"
+              x="-1.158"
+              y="265.075"
+              color-interpolation-filters="sRGB"
+              filterUnits="userSpaceOnUse"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+              <feColorMatrix
+                in="SourceAlpha"
+                result="hardAlpha"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              ></feColorMatrix>
+              <feOffset dx="2" dy="2"></feOffset>
+              <feGaussianBlur stdDeviation="1.5"></feGaussianBlur>
+              <feColorMatrix
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"
+              ></feColorMatrix>
+              <feBlend
+                in2="BackgroundImageFix"
+                result="effect1_dropShadow_295_2262"
+              ></feBlend>
+              <feBlend
+                in="SourceGraphic"
+                in2="effect1_dropShadow_295_2262"
+                result="shape"
+              ></feBlend>
+              <feColorMatrix
+                in="SourceAlpha"
+                result="hardAlpha"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              ></feColorMatrix>
+              <feOffset dx="-1.5" dy="1"></feOffset>
+              <feGaussianBlur stdDeviation="0.75"></feGaussianBlur>
+              <feComposite
+                in2="hardAlpha"
+                k2="-1"
+                k3="1"
+                operator="arithmetic"
+              ></feComposite>
+              <feColorMatrix
+                values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.3 0"
+              ></feColorMatrix>
+              <feBlend
+                in2="shape"
+                mode="soft-light"
+                result="effect2_innerShadow_295_2262"
+              ></feBlend>
+            </filter>
+            <filter
+              id="hero-at-work-before-you-leave_svg__l"
+              width="89.757"
+              height="42.706"
+              x="37.587"
+              y="301.385"
+              color-interpolation-filters="sRGB"
+              filterUnits="userSpaceOnUse"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+              <feColorMatrix
+                in="SourceAlpha"
+                result="hardAlpha"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              ></feColorMatrix>
+              <feOffset dx="2" dy="2"></feOffset>
+              <feGaussianBlur stdDeviation="1.5"></feGaussianBlur>
+              <feColorMatrix
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"
+              ></feColorMatrix>
+              <feBlend
+                in2="BackgroundImageFix"
+                result="effect1_dropShadow_295_2262"
+              ></feBlend>
+              <feBlend
+                in="SourceGraphic"
+                in2="effect1_dropShadow_295_2262"
+                result="shape"
+              ></feBlend>
+              <feColorMatrix
+                in="SourceAlpha"
+                result="hardAlpha"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              ></feColorMatrix>
+              <feOffset dx="-1.5" dy="1"></feOffset>
+              <feGaussianBlur stdDeviation="0.75"></feGaussianBlur>
+              <feComposite
+                in2="hardAlpha"
+                k2="-1"
+                k3="1"
+                operator="arithmetic"
+              ></feComposite>
+              <feColorMatrix
+                values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.3 0"
+              ></feColorMatrix>
+              <feBlend
+                in2="shape"
+                mode="soft-light"
+                result="effect2_innerShadow_295_2262"
+              ></feBlend>
+            </filter>
+            <filter
+              id="hero-at-work-before-you-leave_svg__m"
+              width="115.578"
+              height="49.501"
+              x="22.955"
+              y="190.175"
+              color-interpolation-filters="sRGB"
+              filterUnits="userSpaceOnUse"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+              <feColorMatrix
+                in="SourceAlpha"
+                result="hardAlpha"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              ></feColorMatrix>
+              <feOffset dx="2" dy="2"></feOffset>
+              <feGaussianBlur stdDeviation="1.5"></feGaussianBlur>
+              <feColorMatrix
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"
+              ></feColorMatrix>
+              <feBlend
+                in2="BackgroundImageFix"
+                result="effect1_dropShadow_295_2262"
+              ></feBlend>
+              <feBlend
+                in="SourceGraphic"
+                in2="effect1_dropShadow_295_2262"
+                result="shape"
+              ></feBlend>
+              <feColorMatrix
+                in="SourceAlpha"
+                result="hardAlpha"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              ></feColorMatrix>
+              <feOffset dx="-1.5" dy="1"></feOffset>
+              <feGaussianBlur stdDeviation="0.75"></feGaussianBlur>
+              <feComposite
+                in2="hardAlpha"
+                k2="-1"
+                k3="1"
+                operator="arithmetic"
+              ></feComposite>
+              <feColorMatrix
+                values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.3 0"
+              ></feColorMatrix>
+              <feBlend
+                in2="shape"
+                mode="soft-light"
+                result="effect2_innerShadow_295_2262"
+              ></feBlend>
+            </filter>
+            <filter
+              id="hero-at-work-before-you-leave_svg__n"
+              width="112.33"
+              height="96.117"
+              x="147.5"
+              y="277.882"
+              color-interpolation-filters="sRGB"
+              filterUnits="userSpaceOnUse"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+              <feColorMatrix
+                in="SourceAlpha"
+                result="hardAlpha"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              ></feColorMatrix>
+              <feOffset dx="2" dy="2"></feOffset>
+              <feGaussianBlur stdDeviation="1.5"></feGaussianBlur>
+              <feColorMatrix
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"
+              ></feColorMatrix>
+              <feBlend
+                in2="BackgroundImageFix"
+                result="effect1_dropShadow_295_2262"
+              ></feBlend>
+              <feBlend
+                in="SourceGraphic"
+                in2="effect1_dropShadow_295_2262"
+                result="shape"
+              ></feBlend>
+              <feColorMatrix
+                in="SourceAlpha"
+                result="hardAlpha"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              ></feColorMatrix>
+              <feOffset dx="-1.5" dy="1"></feOffset>
+              <feGaussianBlur stdDeviation="0.75"></feGaussianBlur>
+              <feComposite
+                in2="hardAlpha"
+                k2="-1"
+                k3="1"
+                operator="arithmetic"
+              ></feComposite>
+              <feColorMatrix
+                values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.3 0"
+              ></feColorMatrix>
+              <feBlend
+                in2="shape"
+                mode="soft-light"
+                result="effect2_innerShadow_295_2262"
+              ></feBlend>
+            </filter>
+            <filter
+              id="hero-at-work-before-you-leave_svg__p"
+              width="35.4"
+              height="54.704"
+              x="281.733"
+              y="313.054"
+              color-interpolation-filters="sRGB"
+              filterUnits="userSpaceOnUse"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+              <feColorMatrix
+                in="SourceAlpha"
+                result="hardAlpha"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              ></feColorMatrix>
+              <feOffset dx="2" dy="2"></feOffset>
+              <feGaussianBlur stdDeviation="1.5"></feGaussianBlur>
+              <feColorMatrix
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"
+              ></feColorMatrix>
+              <feBlend
+                in2="BackgroundImageFix"
+                result="effect1_dropShadow_295_2262"
+              ></feBlend>
+              <feBlend
+                in="SourceGraphic"
+                in2="effect1_dropShadow_295_2262"
+                result="shape"
+              ></feBlend>
+              <feColorMatrix
+                in="SourceAlpha"
+                result="hardAlpha"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              ></feColorMatrix>
+              <feOffset dx="-1.5" dy="1"></feOffset>
+              <feGaussianBlur stdDeviation="0.75"></feGaussianBlur>
+              <feComposite
+                in2="hardAlpha"
+                k2="-1"
+                k3="1"
+                operator="arithmetic"
+              ></feComposite>
+              <feColorMatrix
+                values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.3 0"
+              ></feColorMatrix>
+              <feBlend
+                in2="shape"
+                mode="soft-light"
+                result="effect2_innerShadow_295_2262"
+              ></feBlend>
+            </filter>
+            <filter
+              id="hero-at-work-before-you-leave_svg__q"
+              width="36.602"
+              height="17.323"
+              x="281.312"
+              y="304.677"
+              color-interpolation-filters="sRGB"
+              filterUnits="userSpaceOnUse"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+              <feColorMatrix
+                in="SourceAlpha"
+                result="hardAlpha"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              ></feColorMatrix>
+              <feOffset dx="2" dy="2"></feOffset>
+              <feGaussianBlur stdDeviation="1.5"></feGaussianBlur>
+              <feColorMatrix
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"
+              ></feColorMatrix>
+              <feBlend
+                in2="BackgroundImageFix"
+                result="effect1_dropShadow_295_2262"
+              ></feBlend>
+              <feBlend
+                in="SourceGraphic"
+                in2="effect1_dropShadow_295_2262"
+                result="shape"
+              ></feBlend>
+              <feColorMatrix
+                in="SourceAlpha"
+                result="hardAlpha"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              ></feColorMatrix>
+              <feOffset dx="-1.5" dy="1"></feOffset>
+              <feGaussianBlur stdDeviation="0.75"></feGaussianBlur>
+              <feComposite
+                in2="hardAlpha"
+                k2="-1"
+                k3="1"
+                operator="arithmetic"
+              ></feComposite>
+              <feColorMatrix
+                values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.3 0"
+              ></feColorMatrix>
+              <feBlend
+                in2="shape"
+                mode="soft-light"
+                result="effect2_innerShadow_295_2262"
+              ></feBlend>
+            </filter>
+            <filter
+              id="hero-at-work-before-you-leave_svg__r"
+              width="73.857"
+              height="112.283"
+              x="249.955"
+              y="227.257"
+              color-interpolation-filters="sRGB"
+              filterUnits="userSpaceOnUse"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+              <feColorMatrix
+                in="SourceAlpha"
+                result="hardAlpha"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              ></feColorMatrix>
+              <feOffset dx="2" dy="2"></feOffset>
+              <feGaussianBlur stdDeviation="1.5"></feGaussianBlur>
+              <feColorMatrix
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"
+              ></feColorMatrix>
+              <feBlend
+                in2="BackgroundImageFix"
+                result="effect1_dropShadow_295_2262"
+              ></feBlend>
+              <feBlend
+                in="SourceGraphic"
+                in2="effect1_dropShadow_295_2262"
+                result="shape"
+              ></feBlend>
+              <feColorMatrix
+                in="SourceAlpha"
+                result="hardAlpha"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              ></feColorMatrix>
+              <feOffset dx="-1.5" dy="1"></feOffset>
+              <feGaussianBlur stdDeviation="0.75"></feGaussianBlur>
+              <feComposite
+                in2="hardAlpha"
+                k2="-1"
+                k3="1"
+                operator="arithmetic"
+              ></feComposite>
+              <feColorMatrix
+                values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.3 0"
+              ></feColorMatrix>
+              <feBlend
+                in2="shape"
+                mode="soft-light"
+                result="effect2_innerShadow_295_2262"
+              ></feBlend>
+            </filter>
+            <filter
+              id="hero-at-work-before-you-leave_svg__s"
+              width="137.503"
+              height="200.878"
+              x="153.014"
+              y="107.759"
+              color-interpolation-filters="sRGB"
+              filterUnits="userSpaceOnUse"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+              <feColorMatrix
+                in="SourceAlpha"
+                result="hardAlpha"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              ></feColorMatrix>
+              <feOffset dx="2" dy="2"></feOffset>
+              <feGaussianBlur stdDeviation="1.5"></feGaussianBlur>
+              <feColorMatrix
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"
+              ></feColorMatrix>
+              <feBlend
+                in2="BackgroundImageFix"
+                result="effect1_dropShadow_295_2262"
+              ></feBlend>
+              <feBlend
+                in="SourceGraphic"
+                in2="effect1_dropShadow_295_2262"
+                result="shape"
+              ></feBlend>
+              <feColorMatrix
+                in="SourceAlpha"
+                result="hardAlpha"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              ></feColorMatrix>
+              <feOffset dx="-1.5" dy="1"></feOffset>
+              <feGaussianBlur stdDeviation="0.75"></feGaussianBlur>
+              <feComposite
+                in2="hardAlpha"
+                k2="-1"
+                k3="1"
+                operator="arithmetic"
+              ></feComposite>
+              <feColorMatrix
+                values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.3 0"
+              ></feColorMatrix>
+              <feBlend
+                in2="shape"
+                mode="soft-light"
+                result="effect2_innerShadow_295_2262"
+              ></feBlend>
+            </filter>
+            <filter
+              id="hero-at-work-before-you-leave_svg__u"
+              width="53.916"
+              height="76.845"
+              x="182.241"
+              y="62.799"
+              color-interpolation-filters="sRGB"
+              filterUnits="userSpaceOnUse"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+              <feColorMatrix
+                in="SourceAlpha"
+                result="hardAlpha"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              ></feColorMatrix>
+              <feOffset dx="2" dy="2"></feOffset>
+              <feGaussianBlur stdDeviation="1.5"></feGaussianBlur>
+              <feColorMatrix
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"
+              ></feColorMatrix>
+              <feBlend
+                in2="BackgroundImageFix"
+                result="effect1_dropShadow_295_2262"
+              ></feBlend>
+              <feBlend
+                in="SourceGraphic"
+                in2="effect1_dropShadow_295_2262"
+                result="shape"
+              ></feBlend>
+              <feColorMatrix
+                in="SourceAlpha"
+                result="hardAlpha"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              ></feColorMatrix>
+              <feOffset dx="-1.5" dy="1"></feOffset>
+              <feGaussianBlur stdDeviation="0.75"></feGaussianBlur>
+              <feComposite
+                in2="hardAlpha"
+                k2="-1"
+                k3="1"
+                operator="arithmetic"
+              ></feComposite>
+              <feColorMatrix
+                values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.3 0"
+              ></feColorMatrix>
+              <feBlend
+                in2="shape"
+                mode="soft-light"
+                result="effect2_innerShadow_295_2262"
+              ></feBlend>
+            </filter>
+            <filter
+              id="hero-at-work-before-you-leave_svg__v"
+              width="173.985"
+              height="16.103"
+              x="184.339"
+              y="244.68"
+              color-interpolation-filters="sRGB"
+              filterUnits="userSpaceOnUse"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+              <feColorMatrix
+                in="SourceAlpha"
+                result="hardAlpha"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              ></feColorMatrix>
+              <feOffset dx="2" dy="2"></feOffset>
+              <feGaussianBlur stdDeviation="1.5"></feGaussianBlur>
+              <feColorMatrix
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"
+              ></feColorMatrix>
+              <feBlend
+                in2="BackgroundImageFix"
+                result="effect1_dropShadow_295_2262"
+              ></feBlend>
+              <feBlend
+                in="SourceGraphic"
+                in2="effect1_dropShadow_295_2262"
+                result="shape"
+              ></feBlend>
+              <feColorMatrix
+                in="SourceAlpha"
+                result="hardAlpha"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              ></feColorMatrix>
+              <feOffset dx="-1.5" dy="1"></feOffset>
+              <feGaussianBlur stdDeviation="0.75"></feGaussianBlur>
+              <feComposite
+                in2="hardAlpha"
+                k2="-1"
+                k3="1"
+                operator="arithmetic"
+              ></feComposite>
+              <feColorMatrix
+                values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.3 0"
+              ></feColorMatrix>
+              <feBlend
+                in2="shape"
+                mode="soft-light"
+                result="effect2_innerShadow_295_2262"
+              ></feBlend>
+            </filter>
+            <filter
+              id="hero-at-work-before-you-leave_svg__w"
+              width="139.788"
+              height="92.023"
+              x="254.479"
+              y="158.656"
+              color-interpolation-filters="sRGB"
+              filterUnits="userSpaceOnUse"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+              <feColorMatrix
+                in="SourceAlpha"
+                result="hardAlpha"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              ></feColorMatrix>
+              <feOffset dx="2" dy="2"></feOffset>
+              <feGaussianBlur stdDeviation="1.5"></feGaussianBlur>
+              <feColorMatrix
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"
+              ></feColorMatrix>
+              <feBlend
+                in2="BackgroundImageFix"
+                result="effect1_dropShadow_295_2262"
+              ></feBlend>
+              <feBlend
+                in="SourceGraphic"
+                in2="effect1_dropShadow_295_2262"
+                result="shape"
+              ></feBlend>
+              <feColorMatrix
+                in="SourceAlpha"
+                result="hardAlpha"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              ></feColorMatrix>
+              <feOffset dx="-1.5" dy="1"></feOffset>
+              <feGaussianBlur stdDeviation="0.75"></feGaussianBlur>
+              <feComposite
+                in2="hardAlpha"
+                k2="-1"
+                k3="1"
+                operator="arithmetic"
+              ></feComposite>
+              <feColorMatrix
+                values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.3 0"
+              ></feColorMatrix>
+              <feBlend
+                in2="shape"
+                mode="soft-light"
+                result="effect2_innerShadow_295_2262"
+              ></feBlend>
+            </filter>
+            <filter
+              id="hero-at-work-before-you-leave_svg__x"
+              width="22.846"
+              height="27.536"
+              x="311.652"
+              y="236.639"
+              color-interpolation-filters="sRGB"
+              filterUnits="userSpaceOnUse"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+              <feColorMatrix
+                in="SourceAlpha"
+                result="hardAlpha"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              ></feColorMatrix>
+              <feOffset dx="2" dy="2"></feOffset>
+              <feGaussianBlur stdDeviation="1.5"></feGaussianBlur>
+              <feColorMatrix
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"
+              ></feColorMatrix>
+              <feBlend
+                in2="BackgroundImageFix"
+                result="effect1_dropShadow_295_2262"
+              ></feBlend>
+              <feBlend
+                in="SourceGraphic"
+                in2="effect1_dropShadow_295_2262"
+                result="shape"
+              ></feBlend>
+              <feColorMatrix
+                in="SourceAlpha"
+                result="hardAlpha"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              ></feColorMatrix>
+              <feOffset dx="-1.5" dy="1"></feOffset>
+              <feGaussianBlur stdDeviation="0.75"></feGaussianBlur>
+              <feComposite
+                in2="hardAlpha"
+                k2="-1"
+                k3="1"
+                operator="arithmetic"
+              ></feComposite>
+              <feColorMatrix
+                values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.3 0"
+              ></feColorMatrix>
+              <feBlend
+                in2="shape"
+                mode="soft-light"
+                result="effect2_innerShadow_295_2262"
+              ></feBlend>
+            </filter>
+            <filter
+              id="hero-at-work-before-you-leave_svg__y"
+              width="25.771"
+              height="44.116"
+              x="303.345"
+              y="225.037"
+              color-interpolation-filters="sRGB"
+              filterUnits="userSpaceOnUse"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+              <feColorMatrix
+                in="SourceAlpha"
+                result="hardAlpha"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              ></feColorMatrix>
+              <feOffset dx="2" dy="2"></feOffset>
+              <feGaussianBlur stdDeviation="1.5"></feGaussianBlur>
+              <feColorMatrix
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"
+              ></feColorMatrix>
+              <feBlend
+                in2="BackgroundImageFix"
+                result="effect1_dropShadow_295_2262"
+              ></feBlend>
+              <feBlend
+                in="SourceGraphic"
+                in2="effect1_dropShadow_295_2262"
+                result="shape"
+              ></feBlend>
+              <feColorMatrix
+                in="SourceAlpha"
+                result="hardAlpha"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              ></feColorMatrix>
+              <feOffset dx="-1.5" dy="1"></feOffset>
+              <feGaussianBlur stdDeviation="0.75"></feGaussianBlur>
+              <feComposite
+                in2="hardAlpha"
+                k2="-1"
+                k3="1"
+                operator="arithmetic"
+              ></feComposite>
+              <feColorMatrix
+                values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.3 0"
+              ></feColorMatrix>
+              <feBlend
+                in2="shape"
+                mode="soft-light"
+                result="effect2_innerShadow_295_2262"
+              ></feBlend>
+            </filter>
+            <filter
+              id="hero-at-work-before-you-leave_svg__z"
+              width="136.847"
+              height="53.146"
+              x="184.183"
+              y="227.445"
+              color-interpolation-filters="sRGB"
+              filterUnits="userSpaceOnUse"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+              <feColorMatrix
+                in="SourceAlpha"
+                result="hardAlpha"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              ></feColorMatrix>
+              <feOffset dx="2" dy="2"></feOffset>
+              <feGaussianBlur stdDeviation="1.5"></feGaussianBlur>
+              <feColorMatrix
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"
+              ></feColorMatrix>
+              <feBlend
+                in2="BackgroundImageFix"
+                result="effect1_dropShadow_295_2262"
+              ></feBlend>
+              <feBlend
+                in="SourceGraphic"
+                in2="effect1_dropShadow_295_2262"
+                result="shape"
+              ></feBlend>
+              <feColorMatrix
+                in="SourceAlpha"
+                result="hardAlpha"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              ></feColorMatrix>
+              <feOffset dx="-1.5" dy="1"></feOffset>
+              <feGaussianBlur stdDeviation="0.75"></feGaussianBlur>
+              <feComposite
+                in2="hardAlpha"
+                k2="-1"
+                k3="1"
+                operator="arithmetic"
+              ></feComposite>
+              <feColorMatrix
+                values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.3 0"
+              ></feColorMatrix>
+              <feBlend
+                in2="shape"
+                mode="soft-light"
+                result="effect2_innerShadow_295_2262"
+              ></feBlend>
+            </filter>
+            <filter
+              id="hero-at-work-before-you-leave_svg__A"
+              width="61.696"
+              height="157.647"
+              x="145.631"
+              y="122.933"
+              color-interpolation-filters="sRGB"
+              filterUnits="userSpaceOnUse"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+              <feColorMatrix
+                in="SourceAlpha"
+                result="hardAlpha"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              ></feColorMatrix>
+              <feOffset dx="2" dy="2"></feOffset>
+              <feGaussianBlur stdDeviation="1.5"></feGaussianBlur>
+              <feColorMatrix
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"
+              ></feColorMatrix>
+              <feBlend
+                in2="BackgroundImageFix"
+                result="effect1_dropShadow_295_2262"
+              ></feBlend>
+              <feBlend
+                in="SourceGraphic"
+                in2="effect1_dropShadow_295_2262"
+                result="shape"
+              ></feBlend>
+              <feColorMatrix
+                in="SourceAlpha"
+                result="hardAlpha"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              ></feColorMatrix>
+              <feOffset dx="-1.5" dy="1"></feOffset>
+              <feGaussianBlur stdDeviation="0.75"></feGaussianBlur>
+              <feComposite
+                in2="hardAlpha"
+                k2="-1"
+                k3="1"
+                operator="arithmetic"
+              ></feComposite>
+              <feColorMatrix
+                values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.3 0"
+              ></feColorMatrix>
+              <feBlend
+                in2="shape"
+                mode="soft-light"
+                result="effect2_innerShadow_295_2262"
+              ></feBlend>
+            </filter>
+            <filter
+              id="hero-at-work-before-you-leave_svg__C"
+              width="78.988"
+              height="90.104"
+              x="162.381"
+              y="18.322"
+              color-interpolation-filters="sRGB"
+              filterUnits="userSpaceOnUse"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+              <feColorMatrix
+                in="SourceAlpha"
+                result="hardAlpha"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              ></feColorMatrix>
+              <feOffset dx="2" dy="2"></feOffset>
+              <feGaussianBlur stdDeviation="1.5"></feGaussianBlur>
+              <feColorMatrix
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"
+              ></feColorMatrix>
+              <feBlend
+                in2="BackgroundImageFix"
+                result="effect1_dropShadow_295_2262"
+              ></feBlend>
+              <feBlend
+                in="SourceGraphic"
+                in2="effect1_dropShadow_295_2262"
+                result="shape"
+              ></feBlend>
+              <feColorMatrix
+                in="SourceAlpha"
+                result="hardAlpha"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              ></feColorMatrix>
+              <feOffset dx="-1.5" dy="1"></feOffset>
+              <feGaussianBlur stdDeviation="0.75"></feGaussianBlur>
+              <feComposite
+                in2="hardAlpha"
+                k2="-1"
+                k3="1"
+                operator="arithmetic"
+              ></feComposite>
+              <feColorMatrix
+                values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.3 0"
+              ></feColorMatrix>
+              <feBlend
+                in2="shape"
+                mode="soft-light"
+                result="effect2_innerShadow_295_2262"
+              ></feBlend>
+            </filter>
+            <linearGradient
+              id="hero-at-work-before-you-leave_svg__d"
+              x1="222.739"
+              x2="195.206"
+              y1="-5.451"
+              y2="70.829"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop offset="0.053" stop-color="#462615"></stop>
+              <stop offset="0.99" stop-color="#161718"></stop>
+            </linearGradient>
+            <linearGradient
+              id="hero-at-work-before-you-leave_svg__f"
+              x1="218.346"
+              x2="218.346"
+              y1="283.309"
+              y2="406.663"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#767676"></stop>
+              <stop offset="1" stop-color="#595959"></stop>
+            </linearGradient>
+            <linearGradient
+              id="hero-at-work-before-you-leave_svg__o"
+              x1="212.096"
+              x2="212.096"
+              y1="278.882"
+              y2="415.772"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#767676"></stop>
+              <stop offset="1" stop-color="#595959"></stop>
+            </linearGradient>
+            <linearGradient
+              id="hero-at-work-before-you-leave_svg__t"
+              x1="220.015"
+              x2="220.015"
+              y1="108.759"
+              y2="303.637"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#1F5F7B"></stop>
+              <stop offset="1" stop-color="#1D465C"></stop>
+            </linearGradient>
+            <linearGradient
+              id="hero-at-work-before-you-leave_svg__B"
+              x1="174.729"
+              x2="174.729"
+              y1="123.933"
+              y2="275.579"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#1F5F7B"></stop>
+              <stop offset="1" stop-color="#1D465C"></stop>
+            </linearGradient>
+            <clipPath id="hero-at-work-before-you-leave_svg__a">
+              <path
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#fff"
+                d="M39.294 132.59l14.069 66.308c-21.63 11.952-28.908 33.568-28.908 33.568s9.053.64 21.942 1.231l14.187 37.645c-7.697-4.01-24.84-10.424-39.32 2.006C1.924 289.954.341 314.884.341 314.884s9.537-10.09 22.618-12.095c6.915-1.059 27.293-7.278 44.057-14.376l5.28 14.009c-2.376.153-4.838.788-7.357 2.045-19.244 9.606-25.853 34.624-25.853 34.624s9.895-6.697 20.909-3.769c4.168 1.108 14.51 2.172 25.597 2.383l11.749 31.177h242l11.024-113.099h2.958V245.68l35.944-86.024h-29.533l5.439-55.798a183.534 183.534 0 00-22.877-6.091L343.894.382l-22.191 4.794a278.923 278.923 0 00-72.093 26.391 42.09 42.09 0 00-12.435-20.002c-17.535-15.487-53.36-15.242-69.211 2.965a39.584 39.584 0 00-8.168 36.748c.971 3.367 3.22 6.167 5.725 8.764a64.758 64.758 0 001.797 5.931s-2.469 6.855 6.327 17.221l.143.168a278.685 278.685 0 01-34.429 17.956 33.416 33.416 0 00-10.787-26.805l.031.011a33.421 33.421 0 00-20.349-8.703V19.407c-.74-.63-1.482.185-2.226 1.002-.74.813-1.482 1.629-2.228 1.027V65.82a33.414 33.414 0 00-25.577 14.781 33.418 33.418 0 00-3.083 31.356 33.417 33.417 0 005.336 8.762L39.294 132.59z"
+              ></path>
+            </clipPath>
+          </defs>
+          <g
+            clip-path="url(#hero-at-work-before-you-leave_svg__a)"
+            filter="url(#hero-at-work-before-you-leave_svg__b)"
+          >
             <path
-              fill="url(#hero-at-work-before-you-leave_svg__d)"
-              d="M222.448 84.746c11.164-6.125 21.669-15.204 26.174-27.43a42.101 42.101 0 00-11.447-45.751c-17.535-15.487-53.36-15.242-69.211 2.965a39.584 39.584 0 00-8.168 36.748c1.502 5.209 6.063 9.06 9.896 12.905 10.052 10.052 22.988 21.914 37.696 23.924 5.466.748 10.442-.804 15.06-3.36z"
+              fill="#F5CB9D"
+              d="M151.328 222.546c31.074-32.318 89.215-104.224 152.463-98.375a131.36 131.36 0 0137.916 9.55L343.894.382l-22.191 4.794A278.916 278.916 0 00204.26 61.72a278.715 278.715 0 01-103.15 53.052L39.294 132.59l28.272 133.25c41.071 3.116 65.787-24.609 83.762-43.294z"
             ></path>
-          </g>
-          <path
-            fill="#E0A961"
-            d="M339.342 368.882l25.832-265.024a183.424 183.424 0 00-44.343-9.04c-73.948-5.536-141.953 62.5-178.286 93.078-21.022 17.692-49.922 43.916-97.973 40.957l52.77 140.029h242z"
-          ></path>
-          <g filter="url(#hero-at-work-before-you-leave_svg__e)">
+            <g filter="url(#hero-at-work-before-you-leave_svg__c)">
+              <path
+                fill="url(#hero-at-work-before-you-leave_svg__d)"
+                d="M222.448 84.746c11.164-6.125 21.669-15.204 26.174-27.43a42.101 42.101 0 00-11.447-45.751c-17.535-15.487-53.36-15.242-69.211 2.965a39.584 39.584 0 00-8.168 36.748c1.502 5.209 6.063 9.06 9.896 12.905 10.052 10.052 22.988 21.914 37.696 23.924 5.466.748 10.442-.804 15.06-3.36z"
+              ></path>
+            </g>
             <path
-              fill="url(#hero-at-work-before-you-leave_svg__f)"
-              d="M253.749 368.882c.079-.414.156-.827.233-1.24a356.925 356.925 0 005.836-64.524l-60.521-19.809-19.905 85.573h74.357z"
+              fill="#E0A961"
+              d="M339.342 368.882l25.832-265.024a183.424 183.424 0 00-44.343-9.04c-73.948-5.536-141.953 62.5-178.286 93.078-21.022 17.692-49.922 43.916-97.973 40.957l52.77 140.029h242z"
             ></path>
-          </g>
-          <path
-            fill="#fff"
-            d="M106.029 132.583a33.422 33.422 0 0030.861-20.642 33.416 33.416 0 00-58.667-31.34 33.418 33.418 0 0027.806 51.982z"
-          ></path>
-          <path
-            fill="#2D2D2D"
-            d="M106.028 20.41c.744-.818 1.486-1.633 2.226-1.003v46.414a33.421 33.421 0 0120.349 8.703c-18.007-6.773-37.615-1.991-45.783.597a33.418 33.418 0 0120.98-9.3V21.437c.746.602 1.488-.214 2.228-1.027z"
-          ></path>
-          <g filter="url(#hero-at-work-before-you-leave_svg__g)">
-            <path
-              fill="#234840"
-              d="M121.347 258.91s-7.828 28.273-1.822 58.21l1.822-58.21z"
-            ></path>
-          </g>
-          <g filter="url(#hero-at-work-before-you-leave_svg__h)">
-            <path
-              fill="#234840"
-              d="M166.969 305.811s13.583-45.462-39.418-64.172c0 0-7.476.258-3.141 20.005 0 0-20.846-18.446-25.816-9.343-4.97 9.104 68.375 53.51 68.375 53.51z"
-            ></path>
-          </g>
-          <g filter="url(#hero-at-work-before-you-leave_svg__i)">
-            <path
-              fill="#234840"
-              d="M47.544 275.158s56.84 9.141 72.333 60.402c.006.019-10.976-78.164-72.333-60.402z"
-            ></path>
-          </g>
-          <g filter="url(#hero-at-work-before-you-leave_svg__j)">
-            <path
-              fill="#234840"
-              d="M119.57 366.257s6.314-78.955-19.295-156.49l19.295 156.49z"
-            ></path>
-          </g>
-          <g filter="url(#hero-at-work-before-you-leave_svg__k)">
-            <path
-              fill="#234840"
-              d="M68.924 271.307a8.938 8.938 0 01-8.3.056c-7.677-4.008-24.854-10.467-39.36 1.985C1.924 289.954.341 314.884.341 314.884s9.537-10.09 22.618-12.095c13.08-2.004 74.324-22.467 68.18-32.419-4.398-7.08-15.927-2.368-22.216.937z"
-            ></path>
-          </g>
-          <g filter="url(#hero-at-work-before-you-leave_svg__l)">
-            <path
-              fill="#234840"
-              d="M100.073 321.613s-15.889-26.752-35.133-17.146c-19.244 9.606-25.853 34.624-25.853 34.624s9.895-6.697 20.909-3.769c11.014 2.927 65.114 5.547 62.237-7.056-2.878-12.603-22.16-6.653-22.16-6.653z"
-            ></path>
-          </g>
-          <g filter="url(#hero-at-work-before-you-leave_svg__m)">
-            <path
-              fill="#234840"
-              d="M24.455 232.466s19.037-56.545 87.047-37.294c0 0 6.723 5.095-8.525 20.167a1.355 1.355 0 00.247 2.132c.237.144.513.211.789.193 8.985-.559 30.666-.842 29.473 9.424-1.508 12.974-109.03 5.378-109.03 5.378z"
-            ></path>
-          </g>
-          <path
-            fill="#B4602B"
-            d="M228.323 134.645a55.802 55.802 0 01-23.51-5.403 49.489 49.489 0 01-5.102-2.859c-11.108-7.112-15.707-16.335-15.971-16.901 5.699-1.884 11.592-7.91 17.202-14.971a165.366 165.366 0 003.286-4.291c12.773-17.184 23.435-36.811 25.728-20.017 3.449 25.395-1.633 64.442-1.633 64.442z"
-          ></path>
-          <g filter="url(#hero-at-work-before-you-leave_svg__n)">
-            <path
-              fill="url(#hero-at-work-before-you-leave_svg__o)"
-              d="M235.909 328.964s7.928 16.662 18.339 38.796l.582 1.239h-99.451c-15.507-44.386 2.135-71.406 2.135-71.406 2.274-1.093 39.021-19.155 51.724-18.703 4.046.145 8.143 4.989 11.868 11.611a92.909 92.909 0 013.33 6.547c6.66 14.324 11.473 31.916 11.473 31.916z"
-            ></path>
-          </g>
-          <g filter="url(#hero-at-work-before-you-leave_svg__p)">
+            <g filter="url(#hero-at-work-before-you-leave_svg__e)">
+              <path
+                fill="url(#hero-at-work-before-you-leave_svg__f)"
+                d="M253.749 368.882c.079-.414.156-.827.233-1.24a356.925 356.925 0 005.836-64.524l-60.521-19.809-19.905 85.573h74.357z"
+              ></path>
+            </g>
             <path
               fill="#fff"
-              d="M312.134 314.054h-28.901l3.984 48.704h20.927l3.99-48.704z"
+              d="M106.029 132.583a33.422 33.422 0 0030.861-20.642 33.416 33.416 0 00-58.667-31.34 33.418 33.418 0 0027.806 51.982z"
             ></path>
-          </g>
-          <g filter="url(#hero-at-work-before-you-leave_svg__q)">
             <path
-              fill="#231F20"
-              d="M282.827 314.274a1.207 1.207 0 00.967 1.37 92.702 92.702 0 0013.91 1.331c7.106.107 13.194-.131 15.129-.628l.082-3.455a.892.892 0 00-.855-.629 1.219 1.219 0 01-1.137-.779l-.993-2.475a2.71 2.71 0 00-2.293-1.709l-17.478-1.608a3.061 3.061 0 00-1.257.138l-.898.283a3.132 3.132 0 00-2.011 1.941l-1.181 3.248a1.78 1.78 0 00-1.759 1.521l-.226 1.451z"
+              fill="#2D2D2D"
+              d="M106.028 20.41c.744-.818 1.486-1.633 2.226-1.003v46.414a33.421 33.421 0 0120.349 8.703c-18.007-6.773-37.615-1.991-45.783.597a33.418 33.418 0 0120.98-9.3V21.437c.746.602 1.488-.214 2.228-1.027z"
             ></path>
-          </g>
-          <g filter="url(#hero-at-work-before-you-leave_svg__r)">
+            <g filter="url(#hero-at-work-before-you-leave_svg__g)">
+              <path
+                fill="#234840"
+                d="M121.347 258.91s-7.828 28.273-1.822 58.21l1.822-58.21z"
+              ></path>
+            </g>
+            <g filter="url(#hero-at-work-before-you-leave_svg__h)">
+              <path
+                fill="#234840"
+                d="M166.969 305.811s13.583-45.462-39.418-64.172c0 0-7.476.258-3.141 20.005 0 0-20.846-18.446-25.816-9.343-4.97 9.104 68.375 53.51 68.375 53.51z"
+              ></path>
+            </g>
+            <g filter="url(#hero-at-work-before-you-leave_svg__i)">
+              <path
+                fill="#234840"
+                d="M47.544 275.158s56.84 9.141 72.333 60.402c.006.019-10.976-78.164-72.333-60.402z"
+              ></path>
+            </g>
+            <g filter="url(#hero-at-work-before-you-leave_svg__j)">
+              <path
+                fill="#234840"
+                d="M119.57 366.257s6.314-78.955-19.295-156.49l19.295 156.49z"
+              ></path>
+            </g>
+            <g filter="url(#hero-at-work-before-you-leave_svg__k)">
+              <path
+                fill="#234840"
+                d="M68.924 271.307a8.938 8.938 0 01-8.3.056c-7.677-4.008-24.854-10.467-39.36 1.985C1.924 289.954.341 314.884.341 314.884s9.537-10.09 22.618-12.095c13.08-2.004 74.324-22.467 68.18-32.419-4.398-7.08-15.927-2.368-22.216.937z"
+              ></path>
+            </g>
+            <g filter="url(#hero-at-work-before-you-leave_svg__l)">
+              <path
+                fill="#234840"
+                d="M100.073 321.613s-15.889-26.752-35.133-17.146c-19.244 9.606-25.853 34.624-25.853 34.624s9.895-6.697 20.909-3.769c11.014 2.927 65.114 5.547 62.237-7.056-2.878-12.603-22.16-6.653-22.16-6.653z"
+              ></path>
+            </g>
+            <g filter="url(#hero-at-work-before-you-leave_svg__m)">
+              <path
+                fill="#234840"
+                d="M24.455 232.466s19.037-56.545 87.047-37.294c0 0 6.723 5.095-8.525 20.167a1.355 1.355 0 00.247 2.132c.237.144.513.211.789.193 8.985-.559 30.666-.842 29.473 9.424-1.508 12.974-109.03 5.378-109.03 5.378z"
+              ></path>
+            </g>
+            <path
+              fill="#B4602B"
+              d="M228.323 134.645a55.802 55.802 0 01-23.51-5.403 49.489 49.489 0 01-5.102-2.859c-11.108-7.112-15.707-16.335-15.971-16.901 5.699-1.884 11.592-7.91 17.202-14.971a165.366 165.366 0 003.286-4.291c12.773-17.184 23.435-36.811 25.728-20.017 3.449 25.395-1.633 64.442-1.633 64.442z"
+            ></path>
+            <g filter="url(#hero-at-work-before-you-leave_svg__n)">
+              <path
+                fill="url(#hero-at-work-before-you-leave_svg__o)"
+                d="M235.909 328.964s7.928 16.662 18.339 38.796l.582 1.239h-99.451c-15.507-44.386 2.135-71.406 2.135-71.406 2.274-1.093 39.021-19.155 51.724-18.703 4.046.145 8.143 4.989 11.868 11.611a92.909 92.909 0 013.33 6.547c6.66 14.324 11.473 31.916 11.473 31.916z"
+              ></path>
+            </g>
+            <g filter="url(#hero-at-work-before-you-leave_svg__p)">
+              <path
+                fill="#fff"
+                d="M312.134 314.054h-28.901l3.984 48.704h20.927l3.99-48.704z"
+              ></path>
+            </g>
+            <g filter="url(#hero-at-work-before-you-leave_svg__q)">
+              <path
+                fill="#231F20"
+                d="M282.827 314.274a1.207 1.207 0 00.967 1.37 92.702 92.702 0 0013.91 1.331c7.106.107 13.194-.131 15.129-.628l.082-3.455a.892.892 0 00-.855-.629 1.219 1.219 0 01-1.137-.779l-.993-2.475a2.71 2.71 0 00-2.293-1.709l-17.478-1.608a3.061 3.061 0 00-1.257.138l-.898.283a3.132 3.132 0 00-2.011 1.941l-1.181 3.248a1.78 1.78 0 00-1.759 1.521l-.226 1.451z"
+              ></path>
+            </g>
+            <g filter="url(#hero-at-work-before-you-leave_svg__r)">
+              <path
+                fill="#89471E"
+                d="M283.981 236.205l4.102 44.098a16.718 16.718 0 0014.067 14.959 14.379 14.379 0 018.631 4.758l8.031 9.209-2.393 25.03c-3.004 1.085-6.184-1.106-6.24-4.3l-.225-12.864-2.714-8.168-13.596-2.72a6.968 6.968 0 00-8.25 5.768l-1.032 7.562a16.358 16.358 0 01-4.006 8.681 1.239 1.239 0 01-2.125-.52l-8.097-31.895-18.679-67.546 32.526 7.948z"
+              ></path>
+            </g>
+            <g filter="url(#hero-at-work-before-you-leave_svg__s)">
+              <path
+                fill="url(#hero-at-work-before-you-leave_svg__t)"
+                d="M154.514 129.241s8.576-17.674 29.227-19.759c20.651-2.086 58.932.452 66.999 6.22 0 0 19.477 14.984 20.614 28.353 1.137 13.37 14.45 40.097 14.067 48.189 0 0 1.841 10.14-10.606 21.437 0 0-11.623 41.698-15.022 89.956 0 0-30.948-2.808-46.856-10.172-15.908-7.363-55.986 4.21-55.986 4.21s20.627-7.596-2.437-168.434z"
+              ></path>
+            </g>
+            <g filter="url(#hero-at-work-before-you-leave_svg__u)">
+              <path
+                fill="#B4602B"
+                d="M228.323 134.644a55.809 55.809 0 01-23.51-5.403 49.579 49.579 0 01-5.101-2.859c-11.108-7.112-15.707-16.335-15.971-16.901 5.699-1.884 11.592-7.91 17.202-14.971a165.537 165.537 0 003.286-4.291c12.773-17.184 23.435-36.811 25.728-20.017 3.449 25.395-1.634 64.442-1.634 64.442z"
+              ></path>
+            </g>
             <path
               fill="#89471E"
-              d="M283.981 236.205l4.102 44.098a16.718 16.718 0 0014.067 14.959 14.379 14.379 0 018.631 4.758l8.031 9.209-2.393 25.03c-3.004 1.085-6.184-1.106-6.24-4.3l-.225-12.864-2.714-8.168-13.596-2.72a6.968 6.968 0 00-8.25 5.768l-1.032 7.562a16.358 16.358 0 01-4.006 8.681 1.239 1.239 0 01-2.125-.52l-8.097-31.895-18.679-67.546 32.526 7.948z"
+              d="M204.813 129.242a49.489 49.489 0 01-5.102-2.859c-11.108-7.112-15.707-16.335-15.971-16.9 5.303-4.857 8.451-15.23 10.832-25.955l4.511-5.616 22.215-2.513-16.485 53.843z"
             ></path>
-          </g>
-          <g filter="url(#hero-at-work-before-you-leave_svg__s)">
+            <g filter="url(#hero-at-work-before-you-leave_svg__v)">
+              <path
+                fill="#E4E2E0"
+                d="M353.324 245.68H185.839v10.103h167.485V245.68z"
+              ></path>
+            </g>
+            <g filter="url(#hero-at-work-before-you-leave_svg__w)">
+              <path
+                fill="#E4E2E0"
+                d="M353.324 245.68h-97.345l35.938-86.024h97.351l-35.944 86.024z"
+              ></path>
+            </g>
+            <g filter="url(#hero-at-work-before-you-leave_svg__x)">
+              <path
+                fill="#B4602B"
+                d="M313.152 252.54c.332-.113 9.291-10.93 11.941-14.136a2.054 2.054 0 011.879-.744c.844.122 1.681.284 2.509.486.522.258-11.365 21.028-11.365 21.028l-4.964-6.634z"
+              ></path>
+            </g>
+            <g filter="url(#hero-at-work-before-you-leave_svg__y)">
+              <path
+                fill="#B4602B"
+                d="M308.919 238.473l6.282-11.579s3.619-1.929 5.655 0l-1.445 6.283 3.619-2.168 1.087 2.513-4.587 24.842s-1.445 5.912-10.611 5.787c-9.167-.126 0-25.678 0-25.678z"
+              ></path>
+            </g>
+            <g filter="url(#hero-at-work-before-you-leave_svg__z)">
+              <path
+                fill="#B4602B"
+                d="M202.545 275.59s50.564-3.769 54.974-3.48c4.411.289 17.322-1.829 17.322-1.829s32.576 0 33.587-2.048c1.012-2.048 7.923-20.061 7.59-20.909-.333-.848-6.239-11.799-6.239-11.799l-.678-7.08s-6.402 3.713-5.391 7.759c1.012 4.046 1.345 12.301 1.345 12.301s-3.902 7.276-10.983 7.276c0 0 6.283-8.055 4.681-10.492-1.602-2.438-4.159.062-9.047 4.611a20.686 20.686 0 01-7.098 4.163l-1.491.512-87.003-6.805-8.431-5.152.094 32.369 16.768.603z"
+              ></path>
+            </g>
+            <g filter="url(#hero-at-work-before-you-leave_svg__A)">
+              <path
+                fill="url(#hero-at-work-before-you-leave_svg__B)"
+                d="M164.334 123.938c-11.082-.345-14.488 15.707-14.488 15.707-3.606 21.123-4.121 98.143 1.546 112.568 5.667 14.425 4.404 21.594 16.768 22.128 12.365.534 34.167 1.238 34.167 1.238s-8.118-.729-10.078-15.921c-1.961-15.192 2.023-12.107 2.023-12.107l-8.432-5.152s3.644-11.309 2.375-14.682c0 0 3.072-2.576 0-13.91 0 0 8.331-47.655 2.369-68.005 0 .032-1.716-21.091-26.25-21.864z"
+              ></path>
+            </g>
+            <g filter="url(#hero-at-work-before-you-leave_svg__C)">
+              <path
+                fill="#B4602B"
+                d="M236.202 54.916c-.974 14.5-11.24 13.501-11.24 13.501s-.176 5.096-.879 10.543c-.704 5.447-6.855 11.246-13.005 16.693-3.77 3.349-8.683 5.768-11.906 7.131a7.685 7.685 0 01-6.911-.383h-.038c-6.226-3.682-11.145-10.442-18.578-19.207-8.796-10.366-6.327-17.22-6.327-17.22a64.77 64.77 0 01-3.009-11.938c-2.859-19.86 8.657-29.906 32.884-34.297 25.841-4.68 27.531 31.614 27.531 31.614s13.275-23.108 11.478 3.563z"
+              ></path>
+            </g>
             <path
-              fill="url(#hero-at-work-before-you-leave_svg__t)"
-              d="M154.514 129.241s8.576-17.674 29.227-19.759c20.651-2.086 58.932.452 66.999 6.22 0 0 19.477 14.984 20.614 28.353 1.137 13.37 14.45 40.097 14.067 48.189 0 0 1.841 10.14-10.606 21.437 0 0-11.623 41.698-15.022 89.956 0 0-30.948-2.808-46.856-10.172-15.908-7.363-55.986 4.21-55.986 4.21s20.627-7.596-2.437-168.434z"
+              fill="#89471E"
+              d="M192.247 102.383c-6.226-3.681-11.145-10.441-18.578-19.206-8.796-10.366-6.327-17.22-6.327-17.22a64.77 64.77 0 01-3.009-11.938c3.141-3.192 7.432-4.222 9.738-2.513 4.687 3.43 5.793 6.91 5.121 10.159-.673 3.248-5.818 11.66.553 12.132 0 0 1.168 1.753 4.435.835 0 2.262-8.224 7.678 8.067 27.751z"
             ></path>
-          </g>
-          <g filter="url(#hero-at-work-before-you-leave_svg__u)">
             <path
-              fill="#B4602B"
-              d="M228.323 134.644a55.809 55.809 0 01-23.51-5.403 49.579 49.579 0 01-5.101-2.859c-11.108-7.112-15.707-16.335-15.971-16.901 5.699-1.884 11.592-7.91 17.202-14.971a165.537 165.537 0 003.286-4.291c12.773-17.184 23.435-36.811 25.728-20.017 3.449 25.395-1.634 64.442-1.634 64.442z"
+              fill="#462615"
+              d="M198.574 78.05c-1.589 0-3.084.289-4.636 0a13.38 13.38 0 00-2.74-.277c-1.504.15-2.964.6-4.291 1.326l-5.968 2.802a2.517 2.517 0 00-1.207.924 4.388 4.388 0 012.099 2.701 8.25 8.25 0 002.048.817c1.395.289 3.462-.038 4.863-.245 3.198-.465 6.339-2.344 8.796-4.398a4.89 4.89 0 01.986-.628.384.384 0 01.138-.296c1.464-1.074 3.966-2.011 4.211-3.519-1.338.61-2.697.793-4.299.793z"
             ></path>
-          </g>
-          <path
-            fill="#89471E"
-            d="M204.813 129.242a49.489 49.489 0 01-5.102-2.859c-11.108-7.112-15.707-16.335-15.971-16.9 5.303-4.857 8.451-15.23 10.832-25.955l4.511-5.616 22.215-2.513-16.485 53.843z"
-          ></path>
-          <g filter="url(#hero-at-work-before-you-leave_svg__v)">
             <path
-              fill="#E4E2E0"
-              d="M353.324 245.68H185.839v10.103h167.485V245.68z"
+              fill="#FCF0E6"
+              d="M180.944 81.926s.201 2.557 1.81 2.28c1.608-.276 9.55-1.884 13.457-6.282-5.007-.126-12.684 2.77-15.267 4.002z"
             ></path>
-          </g>
-          <g filter="url(#hero-at-work-before-you-leave_svg__w)">
             <path
-              fill="#E4E2E0"
-              d="M353.324 245.68h-97.345l35.938-86.024h97.351l-35.944 86.024z"
+              fill="#462615"
+              d="M189.861 42.992c-4.103 2.513-6.126.628-6.126.628-.835-8.758 20.891-3.877 20.891-3.877s-10.662.735-14.765 3.249zm-14.795 4.944c1.84 1.54-.993 3.556-.993 3.556-7.03-2.438-9.6 4.31-9.6 4.31a8.169 8.169 0 012.482-7.433c1.796-1.614 6.27-1.972 8.111-.433zm19.052 7.867c.915-.051 1.586-1.337 1.499-2.872-.056-.995-.417-1.85-.913-2.314.216-.102.443-.188.684-.256 2.281-.64 6.836.396 6.836.396s-.201-3.663-6.421-3.185c-6.22.477-5.027 7.243-5.027 7.243.308-.366.603-.78.907-1.203a34.6 34.6 0 01.615-.844 5.14 5.14 0 00.007.35c.087 1.535.898 2.737 1.813 2.685zm-23.06 6.265c.786-.044 1.361-1.184 1.284-2.545-.043-.778-.29-1.46-.641-1.893a6.693 6.693 0 013.821.145s-2.369-2.77-4.474-2.28c-1.317.306-2.823 1.437-3.865 2.219-.623.467-1.079.81-1.23.777 0 0 2.117.767 3.581 0l.079-.04a3.896 3.896 0 00-.118 1.232c.076 1.362.776 2.43 1.563 2.385zm19.525 8.272s-5.303-.835-4.693 2.01l4.693-2.01z"
             ></path>
-          </g>
-          <g filter="url(#hero-at-work-before-you-leave_svg__x)">
             <path
-              fill="#B4602B"
-              d="M313.152 252.54c.332-.113 9.291-10.93 11.941-14.136a2.054 2.054 0 011.879-.744c.844.122 1.681.284 2.509.486.522.258-11.365 21.028-11.365 21.028l-4.964-6.634z"
+              fill="#C08A38"
+              d="M234.04 70.784c1.208-4.195-.359-8.328-3.5-9.233-3.141-.905-6.666 1.762-7.875 5.956-1.208 4.195.359 8.329 3.5 9.234 3.141.904 6.666-1.763 7.875-5.957z"
             ></path>
-          </g>
-          <g filter="url(#hero-at-work-before-you-leave_svg__y)">
             <path
-              fill="#B4602B"
-              d="M308.919 238.473l6.282-11.579s3.619-1.929 5.655 0l-1.445 6.283 3.619-2.168 1.087 2.513-4.587 24.842s-1.445 5.912-10.611 5.787c-9.167-.126 0-25.678 0-25.678z"
+              fill="#74234E"
+              d="M203.601 76.805s-1.162.666-4.442.515c-3.279-.15-9.6-1.527-13.194 1.162 0 0-12.263.679-4.435 6.145 0 0-2.136-1.257 5.61-3.223 3.349-.86 5.504-1.49 6.874-1.923a23.144 23.144 0 014.398-.923 11.736 11.736 0 005.189-1.753z"
             ></path>
-          </g>
-          <g filter="url(#hero-at-work-before-you-leave_svg__z)">
             <path
-              fill="#B4602B"
-              d="M202.545 275.59s50.564-3.769 54.974-3.48c4.411.289 17.322-1.829 17.322-1.829s32.576 0 33.587-2.048c1.012-2.048 7.923-20.061 7.59-20.909-.333-.848-6.239-11.799-6.239-11.799l-.678-7.08s-6.402 3.713-5.391 7.759c1.012 4.046 1.345 12.301 1.345 12.301s-3.902 7.276-10.983 7.276c0 0 6.283-8.055 4.681-10.492-1.602-2.438-4.159.062-9.047 4.611a20.686 20.686 0 01-7.098 4.163l-1.491.512-87.003-6.805-8.431-5.152.094 32.369 16.768.603z"
+              fill="#4F1C36"
+              d="M203.6 76.805s-1.219 3.097-6.71 5.874c-5.491 2.777-13.942 7.954-15.374 1.948 0 0-.12 1.671 6.151-.993 6.27-2.664 11.604-4.26 15.933-6.83z"
             ></path>
           </g>
-          <g filter="url(#hero-at-work-before-you-leave_svg__A)">
-            <path
-              fill="url(#hero-at-work-before-you-leave_svg__B)"
-              d="M164.334 123.938c-11.082-.345-14.488 15.707-14.488 15.707-3.606 21.123-4.121 98.143 1.546 112.568 5.667 14.425 4.404 21.594 16.768 22.128 12.365.534 34.167 1.238 34.167 1.238s-8.118-.729-10.078-15.921c-1.961-15.192 2.023-12.107 2.023-12.107l-8.432-5.152s3.644-11.309 2.375-14.682c0 0 3.072-2.576 0-13.91 0 0 8.331-47.655 2.369-68.005 0 .032-1.716-21.091-26.25-21.864z"
-            ></path>
-          </g>
-          <g filter="url(#hero-at-work-before-you-leave_svg__C)">
-            <path
-              fill="#B4602B"
-              d="M236.202 54.916c-.974 14.5-11.24 13.501-11.24 13.501s-.176 5.096-.879 10.543c-.704 5.447-6.855 11.246-13.005 16.693-3.77 3.349-8.683 5.768-11.906 7.131a7.685 7.685 0 01-6.911-.383h-.038c-6.226-3.682-11.145-10.442-18.578-19.207-8.796-10.366-6.327-17.22-6.327-17.22a64.77 64.77 0 01-3.009-11.938c-2.859-19.86 8.657-29.906 32.884-34.297 25.841-4.68 27.531 31.614 27.531 31.614s13.275-23.108 11.478 3.563z"
-            ></path>
-          </g>
-          <path
-            fill="#89471E"
-            d="M192.247 102.383c-6.226-3.681-11.145-10.441-18.578-19.206-8.796-10.366-6.327-17.22-6.327-17.22a64.77 64.77 0 01-3.009-11.938c3.141-3.192 7.432-4.222 9.738-2.513 4.687 3.43 5.793 6.91 5.121 10.159-.673 3.248-5.818 11.66.553 12.132 0 0 1.168 1.753 4.435.835 0 2.262-8.224 7.678 8.067 27.751z"
-          ></path>
-          <path
-            fill="#462615"
-            d="M198.574 78.05c-1.589 0-3.084.289-4.636 0a13.38 13.38 0 00-2.74-.277c-1.504.15-2.964.6-4.291 1.326l-5.968 2.802a2.517 2.517 0 00-1.207.924 4.388 4.388 0 012.099 2.701 8.25 8.25 0 002.048.817c1.395.289 3.462-.038 4.863-.245 3.198-.465 6.339-2.344 8.796-4.398a4.89 4.89 0 01.986-.628.384.384 0 01.138-.296c1.464-1.074 3.966-2.011 4.211-3.519-1.338.61-2.697.793-4.299.793z"
-          ></path>
-          <path
-            fill="#FCF0E6"
-            d="M180.944 81.926s.201 2.557 1.81 2.28c1.608-.276 9.55-1.884 13.457-6.282-5.007-.126-12.684 2.77-15.267 4.002z"
-          ></path>
-          <path
-            fill="#462615"
-            d="M189.861 42.992c-4.103 2.513-6.126.628-6.126.628-.835-8.758 20.891-3.877 20.891-3.877s-10.662.735-14.765 3.249zm-14.795 4.944c1.84 1.54-.993 3.556-.993 3.556-7.03-2.438-9.6 4.31-9.6 4.31a8.169 8.169 0 012.482-7.433c1.796-1.614 6.27-1.972 8.111-.433zm19.052 7.867c.915-.051 1.586-1.337 1.499-2.872-.056-.995-.417-1.85-.913-2.314.216-.102.443-.188.684-.256 2.281-.64 6.836.396 6.836.396s-.201-3.663-6.421-3.185c-6.22.477-5.027 7.243-5.027 7.243.308-.366.603-.78.907-1.203a34.6 34.6 0 01.615-.844 5.14 5.14 0 00.007.35c.087 1.535.898 2.737 1.813 2.685zm-23.06 6.265c.786-.044 1.361-1.184 1.284-2.545-.043-.778-.29-1.46-.641-1.893a6.693 6.693 0 013.821.145s-2.369-2.77-4.474-2.28c-1.317.306-2.823 1.437-3.865 2.219-.623.467-1.079.81-1.23.777 0 0 2.117.767 3.581 0l.079-.04a3.896 3.896 0 00-.118 1.232c.076 1.362.776 2.43 1.563 2.385zm19.525 8.272s-5.303-.835-4.693 2.01l4.693-2.01z"
-          ></path>
-          <path
-            fill="#C08A38"
-            d="M234.04 70.784c1.208-4.195-.359-8.328-3.5-9.233-3.141-.905-6.666 1.762-7.875 5.956-1.208 4.195.359 8.329 3.5 9.234 3.141.904 6.666-1.763 7.875-5.957z"
-          ></path>
-          <path
-            fill="#74234E"
-            d="M203.601 76.805s-1.162.666-4.442.515c-3.279-.15-9.6-1.527-13.194 1.162 0 0-12.263.679-4.435 6.145 0 0-2.136-1.257 5.61-3.223 3.349-.86 5.504-1.49 6.874-1.923a23.144 23.144 0 014.398-.923 11.736 11.736 0 005.189-1.753z"
-          ></path>
-          <path
-            fill="#4F1C36"
-            d="M203.6 76.805s-1.219 3.097-6.71 5.874c-5.491 2.777-13.942 7.954-15.374 1.948 0 0-.12 1.671 6.151-.993 6.27-2.664 11.604-4.26 15.933-6.83z"
-          ></path>
-        </g>
-      </svg>
+        </svg>
+      </div>
     </div>
   </body>
 </html>
