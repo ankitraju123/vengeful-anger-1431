@@ -85,82 +85,30 @@
 
         </div>
 
-
-
         <div id="right-bar">
 
             <div id="right-bar-top">
                 <div class="content">
-                    <div>
-                        <h2>Web Developer</h2>
-                        <h3>Amani Group &#9733 &#9733 &#9733 &#9733 2 reviews</h3>
-                        <h3>Ahemdabad,Gujrat</h3>
-                        <h3> ₹3,00,000 - ₹5,00,000 a year</h3>
-                        <div class="content-btn">
-                            <button>Apply now</button>
-                            <button> &#9825 </button>
-                        </div>
-
+                   
                     </div>
                 </div>
-            </div>
+          
 
             <div id="right-bar-bottom">
-                <div class="content">
-                    <div>
-                        <h2>Web Developer</h2>
-                        <h3>Amani Group 4.5 &#9733</h3>
-                        <h3>Ahemdabad,Gujrat</h3>
-                    </div>
+                <div id="right-bar-content">
+                   
+                 
 
-                    <div>
-                        <h3> <span>&#x20B9 3,00,00 - &#x20B9 5,00,00 a year</span> &#128092 Full-time<span></span>
-                            <span></span>
-                        </h3>
-                        <h3>&#9201 Flexible shift <span> +1 </span> </h3>
-                        <h3> <span>&#10146 </span> Apply security with Indeed Resume</h3>
-                        <h3><span> &#9006</span> Hiring multiple candidates</h3>
-                    </div>
+                  
+                  
 
-                    <div>
-                        <li>Proven working experince in web programming</li>
-                        <li>Integrate data from various back-end services and databases</li>
-                        <li>Create and maintain software documentation</li>
-                        <li>Create and maintain software documentation</li>
-                        <li>Create and maintain software documentation</li>
+                  
 
-                        <h5>Posted 17n days ago .From <span>react</span></h5>
-
-                    </div>
-
-                    <div>
-                        <h2>Web Developer</h2>
-                        <h3>Amani Group 4.5 &#9733</h3>
-                        <h3>Ahemdabad,Gujrat</h3>
-                    </div>
-
-                    <div>
-                        <h3> <span>&#x20B9 3,00,00 - &#x20B9 5,00,00 a year</span> &#128092 Full-time<span></span>
-                            <span></span>
-                        </h3>
-                        <h3>&#9201 Flexible shift <span> +1 </span> </h3>
-                        <h3> <span>&#10146 </span> Apply security with Indeed Resume</h3>
-                        <h3><span> &#9006</span> Hiring multiple candidates</h3>
-                    </div>
-
-                    <div>
-                        <li>Proven working experince in web programming</li>
-                        <li>Integrate data from various back-end services and databases</li>
-                        <li>Create and maintain software documentation</li>
-                        <li>Create and maintain software documentation</li>
-                        <li>Create and maintain software documentation</li>
-
-                        <h5>Posted 17n days ago .From <span>react</span></h5>
-
-                    </div>
+                   
                 </div>
             </div>
         </div>
+
     </div>
 
 
@@ -220,6 +168,8 @@
 
 
 </html>
+<script src="homepage.js"></script>
+
 <script type="text/javascript">
     function googleTranslateElementInit() {
         new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
@@ -230,69 +180,3 @@
     src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 
-<script>
-    const options = {
-        method: 'GET',
-        headers: {
-            'Content-Type': 'application/json',
-            'X-RapidAPI-Key': 'eb47528526mshaab4e00c9c2a762p1c7fe0jsn37a11683a71e',
-            'X-RapidAPI-Host': 'arbeitnow-free-job-board.p.rapidapi.com'
-        }
-    };
-
-    fetch('https://arbeitnow-free-job-board.p.rapidapi.com/api/job-board-api', options)
-        .then(response => response.json())
-        .then(response => getdata(response.data))
-        .catch(err => console.error(err));
-
-    let getdata = (data) => {
-        console.log("my data", data)
-
-        let content = document.getElementById("content");
-        // let content_top=document.getElementById("content-top")
-        // let content_mid=document.getElementById("content-mid")
-        // let content_end=document.getElementById("content-end")
-        data.forEach((ele) => {
-
-
-            // let top_div = document.createElement("div");
-            // let mid_div = document.createElement("div");
-            let div = document.createElement("div");
-
-            let title = document.createElement("h4");
-            title.innerText = ele.title
-
-            let company_name = document.createElement("h4");
-            company_name.innerText = ele.company_name
-
-            let location = document.createElement("h4");
-            location.innerText = ele.location
-
-
-
-            let job_types = document.createElement("h3");
-            if (ele.job_types === null || undefined) {
-                job_types.innerText = "full time"
-            } else {
-                job_types.innerText = ele.job_types
-            }
-
-
-            let slug = document.createElement("h3");
-            slug.innerText = ele.slug
-
-            let tags = document.createElement("h3");
-            tags.innerText = ele.tags
-
-
-
-            let url = document.createElement("h6");
-            url.innerText =`${"Apply Resume:-"}` + ele.url
-            div.append(title, company_name, location, job_types, slug, tags, url)
-            content.append(div)
-        })
-
-    }
-
-
-</script>
