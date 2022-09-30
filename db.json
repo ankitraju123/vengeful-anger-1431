@@ -1,0 +1,48 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "jobs": [
+    {
+      "name": "QWERTYQWERTY",
+      "employee": "1 to 49",
+      "full_name": "Ayush Singh",
+      "manager": "Yes",
+      "phone": "07978631882",
+      "heardAbout": "Podcast",
+      "JobTitle": "FSWD",
+      "reportTo": "Employees will report to a specific address",
+      "place": "banglore",
+      "description": "VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV",
+      "jobType": "FullTime",
+      "WeekHours": "56",
+      "startDate": "Yes",
+      "openingNo": "1",
+      "hireTime": "1 to 3 days",
+      "maximumPay": "8700000",
+      "minimumPay": "560000",
+      "suppPay": "Commission Pay",
+      "benefits": "Cell phone reimbursement",
+      "phoneNo": "7978631882",
+      "uploadResume": "Yes",
+      "deadline": "Yes",
+      "startConve": "Yes",
+      "id": 4
+    }
+    
+  ]
+}

@@ -1,0 +1,44 @@
+#container{
+   
+    margin-left: 200px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+/* #name{
+    height: 30px;
+    width: 350px;
+}
+#full_name{
+    height: 30px;
+    width: 350px;
+}
+#phone{
+    height: 30px;
+    width: 350px;
+}
+#employee{
+    height: 30px;
+    width: 350px;
+}
+#other{
+    height: 30px;
+    width: 350px;
+}
+#manager{
+    height: 30px;
+    width: 350px;
+} */
+input, select {
+    width: 50vw;
+}
+#btn>a {
+    text-decoration: none;
+    color: azure;
+}
+#btn {
+    width: 20vw;
+    background-color: rgba(22, 64, 129);
+    margin-top: 20px;
+    margin-left: 20vw;
+}

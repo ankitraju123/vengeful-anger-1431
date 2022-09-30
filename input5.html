@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h4>Let applicants call you directly</h4>
+    <input
+      type="number"
+      placeholder="Enter a 10 digit phone number"
+      id="phoneNo"
+    />
+    <h4>Would you like to submit a resume</h4>
+    <select id="uploadResume">
+      <option>Yes</option>
+      <option>No</option>
+      <option>Optional</option>
+    </select>
+    <h4>Is there an application deadline</h4>
+    <select id="deadline">
+      <option>Yes</option>
+      <option>No</option>
+    </select>
+    <h2>Communication Settings</h2>
+    <h4>Send daily updates about this job and applications to:</h4>
+    <input type="email" id="email" />
+    <h2>Message Setting</h2>
+    <h4>
+      Do you want to let the people who apply to your job start the conversation
+    </h4>
+    <select id="startConve">
+      <option>Yes</option>
+      <option>No</option>
+    </select>
+    <br /><br />
+    <button onclick="back()">Back</button>
+    <button onclick="submit()">Submit</button>
+  </body>
+</html>
+<script>
+  let api = `http://localhost:3000/api/jobs`;
+  let submit = async () => {
+    let phoneNo = document.getElementById("phoneNo").value;
+    let uploadResume = document.getElementById("uploadResume").value;
+    let deadline = document.getElementById("deadline").value;
+    let startConve = document.getElementById("startConve").value;
+
+    let data5 = {
+      phoneNo,
+      uploadResume,
+      deadline,
+      startConve,
+    };
+
+    localStorage.setItem("data5", JSON.stringify(data5));
+
+    let data1 = JSON.parse(localStorage.getItem("data1"));
+    let data2 = JSON.parse(localStorage.getItem("data2"));
+    let data3 = JSON.parse(localStorage.getItem("data3"));
+    let data4 = JSON.parse(localStorage.getItem("data4"));
+
+    let mainData = Object.assign({}, data1, data2, data3, data4, data5);
+
+    let res = await fetch(api, {
+      method: "POST",
+      body: JSON.stringify(mainData),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+  };
+
+  let back = () => {
+    window.location.href = "./input4.html";
+  };
+</script>

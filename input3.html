@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Include details</h1>
+    <div>
+      <h3>What is the job type?*</h3>
+      <select id="jobType">
+        <option>FullTime</option>
+        <option>Parttime</option>
+        <option>Regular/Permanent</option>
+        <option>Freelance</option>
+        <option>Volunteer</option>
+        <option>Internship</option>
+        <option>Fresher</option>
+        <option>Contractual/Temporar</option>
+      </select>
+      <!-- <button onclick="add()" id="btn1">FullTime</button>
+    <button  onclick="add()"id="btn1">Parttime</button>
+    <button  onclick="add()" id="btn1">Regular/Permanent</button>
+    <button  onclick="add()"id="btn1">Contractual/Temporary</button>
+    <button  onclick="add()"id="btn1">Freelance</button>
+    <button  onclick="add()"id="btn1">Volunteer</button>
+    <button  onclick="add()"id="btn1">Internship</button>
+    <button  onclick="add()"id="btn1">Fresher</button> -->
+      <h3>How many hours per week?</h3>
+      <input type="number" id="WeekHours" />
+    </div>
+    <div>
+      <h3>Is there a planned start date for this job?</h3>
+      <select id="startDate">
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+    </div>
+    <div>
+      <h3>How many people do you want to hire for this opening?*</h3>
+      <p>The more openings you have the more applications you'll need.</p>
+      <select id="openingNo">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+      </select>
+      <h3>How quickly do you need to hire?*</h3>
+      <p>If you need someone fast, you may need higher visibility.</p>
+      <select name="" id="hireTime">
+        <option value="1 to 3 days">1 to 3 days</option>
+        <option value="4 to 7 days">4 to 7 days</option>
+        <option value="1 to 2 weeks">1 to 2 weeks</option>
+        <option value="2 to 4 weeks">2 to 4 weeks</option>
+      </select>
+    </div>
+    <div>
+      <button><a href="input2.html">Back</a></button>
+      <button onclick="submit()">Save and continue</button>
+    </div>
+  </body>
+</html>
+<script>
+  let submit = () => {
+    let jobType = document.getElementById("jobType").value;
+    let WeekHours = document.getElementById("WeekHours").value;
+    let startDate = document.getElementById("startDate").value;
+    let openingNo = document.getElementById("openingNo").value;
+    let hireTime = document.getElementById("hireTime").value;
+
+    let data3 = {
+      jobType,
+      WeekHours,
+      startDate,
+      openingNo,
+      hireTime,
+    };
+
+    localStorage.setItem("data3", JSON.stringify(data3));
+
+    window.location.href = "./input4.html";
+  };
+</script>

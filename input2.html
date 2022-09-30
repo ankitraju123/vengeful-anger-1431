@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Provide basic information</h1>
+    <h3>Country: India</h3>
+    <h3>Language: English</h3>
+    <h3 id="company"></h3>
+    <h3>Job title*</h3>
+    <input type="text" id="JobTitle" />
+    <h3>Where will an employee report to work?*</h3>
+    <select id="reportTo">
+      <option value="Employees will report to a specific address">
+        Employees will report to a specific address
+      </option>
+      <option
+        value="
+            Employees will not report to a specific address"
+      >
+        Employees will not report to a specific address
+      </option>
+    </select>
+    <h3>Where would you like to advertise this job?*</h3>
+    <p>Enter a city or state</p>
+    <input type="text" id="place" />
+    <h3>Start with your job description</h3>
+    <p>
+      Save time by adding the description now, and we'll skip a step later in
+      the process.
+    </p>
+    <h4>Add Job description</h4>
+    <input type="text" id="description" />
+    <button onclick="submit()">
+      <a href="input3.html">Save and Continue</a>
+    </button>
+    <button><a href="input1.html">Back</a></button>
+  </body>
+</html>
+
+<script>
+  function name() {
+    let n = JSON.parse(localStorage.getItem("data1"));
+    console.log(n);
+    document.getElementById("company").innerText = `Company Name:${n.name}`;
+  }
+  name();
+
+  let submit = () => {
+    let JobTitle = document.getElementById("JobTitle").value;
+    let reportTo = document.getElementById("reportTo").value;
+    let place = document.getElementById("place").value;
+    let description = document.getElementById("description").value;
+
+    let data2 = {
+      JobTitle,
+      reportTo,
+      place,
+      description,
+    };
+
+    localStorage.setItem("data2", JSON.stringify(data2));
+  };
+</script>

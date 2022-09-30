@@ -1,0 +1,23 @@
+{
+  "name": "vengeful-anger-1431",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ankitraju123/vengeful-anger-1431.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ankitraju123/vengeful-anger-1431/issues"
+  },
+  "homepage": "https://github.com/ankitraju123/vengeful-anger-1431#readme",
+  "dependencies": {
+    "json-server": "^0.17.0"
+  }
+}

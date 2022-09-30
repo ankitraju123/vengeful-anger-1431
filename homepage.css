@@ -1,3 +1,4 @@
+
 /* ============navbar===== */
 #navbar {
     display: flex;
@@ -157,7 +158,7 @@
     margin: auto;
     /* height: 900px; */
     /* position: relative; */
-    /* border: 1px solid rgb(105, 51, 51); */
+    /* border: 3px solid rgb(211, 14, 14); */
     background-color: rgb(250, 249, 248);
 
 }
@@ -166,8 +167,15 @@
     width: 35%;
     margin-top: 10px;
     background-color: white;
+    /* border: 1px solid rgb(211, 14, 14); */
     /* height: 500px; */
     /* position: absolute; */
+}
+#content>div {
+    border: 1px solid rgb(17, 16, 16);
+    border-radius: 10px;
+    margin: 10px 0px 10px 0px;
+    padding: 10PX;
 }
 
 .content {
@@ -357,6 +365,6 @@ color: rgb(14, 72, 188);
 .end>div>h3:hover{
     text-decoration: line;
     text-decoration: underline;
-    color: rgb(226, 39, 2);
+    /* color: rgb(226, 39, 2); */
+    color: rgb(226, 39, 2)
 }
-
