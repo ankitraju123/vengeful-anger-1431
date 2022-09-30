@@ -39,3 +39,56 @@ p{
     color: grey;
     font-size: small;
 }
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    margin-bottom: -30px;
+    background-color: white;
+    height: 50px;
+
+}
+
+#navbar-left {
+    display: flex;
+    gap: 40px;
+    background-color: white;
+
+
+}
+
+#navbar-left>h1>img {
+   width: 100px;    background-color: white;
+   position: absolute;
+   top: 25px;
+
+}
+#navbar-left>h1{
+    background-color: white;
+}
+
+
+#navbar-right {
+
+    display: flex;
+    gap: 50px;
+    justify-content: space-around;
+    background-color: white;
+
+}
+
+#navbar-right>img {
+    margin-top: 20px;
+    width: 25px;
+    height: 25px;
+}
+
+#navbar-right-text>a {
+    margin-top: 20px;
+    font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: rgb(45, 45, 45);
+}

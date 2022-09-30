@@ -2,10 +2,6 @@
     text-align: left;
     background-color: rgb(243, 242, 241);
 }
-svg{
-    width: 300px;
-    background-color: white;
-}
 
 #div1 {
     display: flex;
@@ -14,6 +10,14 @@ svg{
     width: 40vw;
     margin: auto;
     border-radius: 15px;
+}
+svg{
+    width: 400px;
+    background-color: white;
+}
+h4,p,h2,input,select {
+    background-color: white;
+    margin: 20px;
 }
 
 .divs{
@@ -25,20 +29,31 @@ svg{
     margin: auto;
     border-radius: 15px;
 }
-
-h3,h1,p,h4{
-    background-color: white;
-    margin: 20px;
-}
-
 #main>div {
     margin-top: 50px;
 }
-input, select{
-    margin:20px;
-    border-radius: 5px;
+
+
+#bb {
+    border-radius:5px;
+    padding: 10px 20px;
+    border: 1px solid grey;
+    color: rgb(71, 108, 172);
+    text-decoration: none;
     background-color: white;
+    font-weight: bolder;
 }
+
+
+
+#cb {
+    background-color: rgb(37, 87, 167);
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bolder;
+}
+
 .div2{
     display: flex;
     justify-content: space-around;
@@ -46,32 +61,6 @@ input, select{
     width: 40vw;
     margin: auto;
     border-radius: 15px;
-}
-
-#bb>a {
-    color: rgb(71, 108, 172);
-    text-decoration: none;
-    background-color: white;
-    font-weight: bolder;
-}
-
-#bb {
-    border-radius:5px;
-    padding: 10px 20px;
-    border: 1px solid grey;
-}
-
-#cb>a {
-    text-decoration: none;
-    background-color: rgb(37, 87, 167);
-    font-weight: bolder;
-    color: white;
-}
-
-#cb {
-    background-color: rgb(37, 87, 167);
-    border-radius: 5px;
-    padding: 10px 20px;
 }
 
 #navbar {
