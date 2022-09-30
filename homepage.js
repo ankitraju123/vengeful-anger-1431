@@ -104,6 +104,7 @@ let viewmore = (data) => {
 
     let applybtn=document.createElement("button");
     applybtn.innerText="Apply"
+    applybtn.setAttribute("id","applybtn")
 
     
 
