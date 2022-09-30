@@ -44,6 +44,7 @@
       "id": 4
     },
     {
+
       "name": "google",
       "employee": "250 to 499",
       "full_name": "Ankit chauhan",
@@ -64,11 +65,12 @@
       "suppPay": "Joining Bonus",
       "benefits": "Flexiable schedule",
       "phoneNo": "8668904122",
+
       "uploadResume": "Yes",
       "deadline": "Yes",
       "startConve": "Yes",
       "id": 5
+
     }
-    
   ]
 }
