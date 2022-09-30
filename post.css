@@ -1,0 +1,179 @@
+#navbar{
+    display: flex;
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 0;
+    width: 100%;
+    min-height: 4rem;
+    background-color: #2d2d2d;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#navbar1{
+    height: 100%;
+    width: 50%;
+    display: flex;
+ gap:30px;
+    
+}
+#navbar2{
+    height: 100%;
+    width: 30%;
+    display: flex;
+ gap:30px; 
+}
+#cont{
+    display: flex;
+}
+
+#container{
+    height: 200px;
+    width: 500px;
+   font-size: x-large;
+   font-weight: 600;
+    font-weight: 500;
+    margin-left: 100px;
+    margin-top: 150px;
+}
+#post{
+    color: white;
+    background-color: rgb(18, 105, 166);
+    padding: 25px 45px 25px 45px;
+    border-radius: 10px;
+}
+#create{
+    height: 250px;
+    width: 90%;
+    margin: auto;
+   
+    margin-top: 150px;
+    display: flex;
+    gap:20px;
+    
+}
+#account{
+    margin: auto;
+    height: 230px;
+    width: 25%;
+    border: 1px solid #e4e2e0;
+    border-radius: 1rem;
+    
+    
+}
+#num{
+    color: blue;
+}
+#save{
+    height: 300px;
+    width: 100%;
+   
+    margin-top: 150px;
+    background-color: #f3f2f1;
+}
+#get{
+    height: 200px;
+    width: 80%;
+    
+    margin-top: 75px;
+    margin-left: 110px;
+    display: flex;
+}
+#get-div{
+    height: 100%;
+    width: 50%;
+   
+}
+#start{
+    margin-top: 50px;
+    display: flex;
+    height: 50px;
+    width: 80%;
+    margin-top: 75px;
+    margin-left: 110px;
+    
+}
+#btn{
+    color: white;
+    background-color: rgb(18, 105, 166);
+    padding: 20px 40px 20px 40px;
+    border-radius: 15px;
+    text-align: center;
+    margin-left: 100px;
+}
+#Nokia{
+    margin-top: 50px;
+    height: 350px;
+    width: 75%;
+    
+    display: flex;
+    margin-left: 140px;
+}
+#Nokia_div{
+    height: 350px;
+    width: 30%;
+    margin: auto;
+    
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+#blueimg{
+    margin-top: 70px;
+    height: 550px;
+    width: 100%;
+    
+    display: flex;
+}
+#blueimg_div{
+    background-color: rgb(38, 38, 78);
+    height: 550px;
+    width: 50%;
+}
+
+#last{
+    margin-top: 75px;
+    height: 250px;
+    width: 100%;
+    border-bottom: 1px solid #e4e2e0;
+    display: flex;
+    background-color: #f3f2f1;
+}
+#last_1{
+    height: 250px;
+    width: 50%;
+   
+    text-align: center;
+}
+
+#last_2{
+    text-align: center;
+    height: 250px;
+    width: 15%;
+    
+}
+#last_3{
+    text-align: center;
+    height: 250px;
+    width: 15%;
+   
+}
+#last_4{
+    text-align: center;
+    height: 250px;
+    width: 15%;
+    
+}
+#help{
+    color:rgb(18, 105, 166);
+    background-color: white;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    
+    
+}
+#Contact{
+    color:rgb(18, 105, 166);
+    background-color: white;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+}
