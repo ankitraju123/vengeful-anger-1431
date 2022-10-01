@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2family=Noto+Sans&family=Poppins:wght@500&display=swap"
+        rel="stylesheet">
+    <title>Resume Preview</title>
+    <link rel="stylesheet" href="./resumeNavbar.css">
+    <style>
+        body {
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        #flexDiv {
+            display: flex;
+            width: 40%;
+            align-items: center;
+            justify-content: space-around;
+            margin: auto;
+        }
+
+        #save_cont_Btn {
+            padding: 10px 20px;
+            background-color:
+                #085ff7;
+            color: white;
+            border-radius: 30px;
+            border: none;
+            font-size: 17px;
+            margin: 10px 0px;
+        
+        }
+        .nameDiv{
+            display:flex;
+        }
+        #display,#display2{
+            width:40%;
+            padding:15px;
+            margin:auto;
+            border:1px solid teal;
+            
+        }
+        #TotalDisplay,#TotalDisplay2{
+            width:100%;
+            border:1px solid red;
+        }
+    </style>
+    <style>
+        body{
+           font-family: 'Noto Sans', sans-serif;
+       }
+       #topDiv {
+           width: 39%;
+           display: flex;
+           justify-content: space-between;
+           margin: auto;
+       }
+       .lowcase{
+           font-size:15px;
+           color:grey;
+       }
+
+       #resume1 {
+           margin: auto;
+           width: 38%;
+           height: auto;
+           border: 1px solid teal;
+           border: none;
+           padding: 15px;
+           margin-top: 20px;
+           box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+
+       }
+
+       .flexDiv {
+           display: flex;
+           justify-content: flex-start;
+           align-items: center;
+       }
+
+       .red {
+           color: red;
+           margin-left: 5px;
+       }
+
+       .lower1 {
+           font-size: 12px;
+           color: grey;
+       }
+
+       #newSkillDiv {
+           display: flex;
+           justify-content: space-around;
+           align-items: center;
+       }
+
+       #addBtn {
+           padding: 10px 20px;
+           background-color:
+               #085ff7;
+           color: white;
+           border-radius: 30px;
+           border: none;
+           font-size: 17px;
+           margin: 10px 0px;
+       }
+
+       #new_skill {
+           width: 80%;
+           height: 30px;
+       }
+
+       #ITSkillsDiv {
+           width: 92%;
+           padding: 15px;
+           background-color: #ebfeff;
+           border-radius: 10px;
+
+       }
+
+       #appendSkills {
+           display: grid;
+           width: 90%;
+           margin: auto;
+
+           grid-template-columns: repeat(2, 1fr);
+           column-gap: 20px;
+           row-gap: 15px;
+
+       }
+
+       .SkillBtn {
+           width: 100%;
+           height: 30px;
+           background-color: white;
+           border-color: grey;
+
+           border-radius: 5px;
+           color: #085ff7;
+       }
+       #nextDiv{
+           display:flex;
+           /* justify-content: center; */
+           align-items: center;
+           padding:10px;
+       }
+       .lower {
+           text-align: center;
+           margin-top: 10px;
+           font-size: 12px;
+       }
+       #nextBtn {
+           padding: 13px 20px;
+           background-color:
+               #085ff7;
+           color: white;
+           border-radius: 30px;
+           border: none;
+           font-size: 17px;
+           margin: 15px 20px 15px 400px;
+       }
+       a{
+           text-decoration:none;
+           color: #085ff7;
+       }
+   </style>
+</head>
+
+<body>
+    <div id="navbar">
+
+    </div>
+    <div id="flexDiv" f>
+        <h2>Review draft and save</h2>
+        <button id="save_cont_Btn" onclick="nextPage()">Save and Continue</button>
+    </div>
+    <div id="display"></div>
+    <div id="resume1">
+        <h3>Skills? IT Skills</h3>
+        <div id="ITSkillsDiv">
+            <div class="flexDiv">
+                <p><i class="fa-regular fa-lightbulb-on"></i></p>
+                <h4>Do you have any of these top skills employers are looking for?</h4>
+            </div>
+            <div id="appendSkills">
+
+            </div>
+        </div>
+
+        <div class="flexDiv" id="required">
+            <p class="red">*</p>
+            <p class="lowcase">Required fields</p>
+        </div>
+        <div class="flexDiv" id="required">
+
+            <h3 class="lowcase1">Add a new skill</h3>
+            <p class="red">*</p>
+        </div>
+        <p class="lower1">
+            e.g. Microsoft Office, Java, Tally, Python etc.
+        </p>
+        <div id="newSkillDiv">
+            <input type="text" id="new_skill">
+            <button id="addBtn" onclick ="addSkill()">Add</button>
+        </div>
+
+        <div id="renderDiv">
+
+
+        </div>
+
+    </div>
+
+    <div id="display2">
+
+    </div>
+
+</body>
+
+</html>
+<script type="module">
+
+import navbar from  "./components/ResumeNav.js";
+
+console.log(navbar());
+document.getElementById("navbar").innerHTML = navbar();
+
+    let R_data1 = JSON.parse(localStorage.getItem("R_data1"));
+    let R_data2 = JSON.parse(localStorage.getItem("R_data2"));
+    let R_data3 = JSON.parse(localStorage.getItem("R_data3"));
+    // let R_data4 = JSON.parse(localStorage.getItem("R_data4"));
+
+    let mainData = Object.assign({}, R_data1, R_data2, R_data3);
+    let  data =[];
+    data.push(mainData);
+    console.log(R_data3);
+
+    localStorage.setItem("maindata", JSON.stringify(mainData));
+
+    let renderDom = (data) => {
+        let cont = document.getElementById("display");
+        cont.innerHTML = null;
+        data.forEach(function (el) {
+            let div = document.createElement("div");
+            div.id= "TotalDisplay";
+            
+            let fname = document.createElement("h3");
+            fname.innerText = el.f_name;
+            let lname = document.createElement("h3");
+            lname.innerText = el.l_name;
+
+            let nameDiv = document.createElement("div");
+            nameDiv.className = "nameDiv";
+            nameDiv.append(fname,lname);
+
+            let address = document.createElement("p");
+            address.innerText = el.address;
+
+            let mobile = document.createElement("p");
+            mobile.innerText = el.mobile;
+
+            let work = document.createElement("h4");
+            work.innerText = "Work Experience";
+            work.style.color = "grey";
+
+            
+            let hr1 = document.createElement("hr");
+
+
+            let workin = document.createElement("h5");
+            workin.innerText = el.jobTitle;
+
+            let workComp = document.createElement("p");
+            workComp.innerText = el.company + " - " + el.city2;
+
+            let workyears = document.createElement("p");
+            workyears.innerText = el.work_from_month + " " +el.work_from_year +" to " + el.work_to_month+ " " + el.work_to_year;
+
+
+            let workDesc = document.createElement("p");
+            workDesc.innerText = el.jobRoleDesc;
+
+            let ed = document.createElement("h4");
+            ed.innerText = "Education";
+            ed.style.color = "grey";
+
+            let hr = document.createElement("hr");
+
+            let edin = document.createElement("h5");
+            edin.innerText = el.degree +"'s" + " in " + el.fieldStudy;
+
+            let uni = document.createElement("p");
+            uni.innerText = el.college + " - " + el.city1;
+
+            let edyears = document.createElement("p");
+            edyears.innerText = el.from_month + " " +el.from_year +" to " + el.to_month+ " " + el.to_year;
+
+            // let certificates = document.createElement("h4");
+            // certificates.innerText = "Certificates  / Licenses";
+            // certificates.style.color = "grey"; 
+
+
+            div.append(nameDiv,address,mobile,work,hr1,workin,workComp,workyears,workDesc,ed,hr,edin,uni,edyears);
+            cont.append(div);
+        })
+    }
+    renderDom(data)
+
+
+    let data1 = ["AJAX", "HTML5", "JavaScript", "Angular", "Magento", "MySQL", "PHP", "Wordpress"];
+    let container = document.getElementById("appendSkills");
+    let clickInfo = JSON.parse(localStorage.getItem("clickData")) || [];
+
+    for (let i = 0; i < data1.length; i++) {
+        let div = document.createElement("div");
+        div.className = "changeDiv";
+
+        let button = document.createElement("button");
+        button.className = "SkillBtn"
+
+        button.innerText = data1[i];
+        div.onclick = () => {
+            button.innerText = "Added Below";
+            button.style.backgroundColor = "cyan";
+            button.style.color = "black";
+            console.log(data1[i]);
+            if (clickInfo.length === data1.length) {
+                return;
+            } else {
+                clickInfo.push(data1[i]);
+                localStorage.setItem("clickData", JSON.stringify(clickInfo))
+            }
+         let cont = document.getElementById("renderDiv");
+            //cont.innerHTML = null;
+            let newDiv = document.createElement("div");
+            let p=document.createElement("p");
+            p.innerText = clickInfo[i];
+            hr = document.createElement("hr");
+            newDiv.append(hr,p);
+            cont.append(newDiv);
+        
+         }
+        div.append(button);
+        container.append(div);
+
+    }
+    let addSkill = () =>{
+        let skill = document.getElementById("new_skill").value;
+        console.log(skill)
+        let cont2 =document.getElementById("renderDiv");
+        let newDiv = document.createElement("div");
+            let p=document.createElement("p");
+            p.innerText = skill;
+            hr = document.createElement("hr");
+            newDiv.append(hr,p);
+            cont2.append(newDiv);
+            document.getElementById("new_skill").value = null;     
+    }
+
+
+     let renderDom2 = (data) => {
+        let cont2 = document.getElementById("display2");
+        cont2.innerHTML = null;
+        data.forEach(function (el) {
+            let div = document.createElement("div");
+            div.id= "TotalDisplay2";
+
+            let certificates = document.createElement("h4");
+            certificates.innerText = "Certificates  / Licenses";
+            certificates.style.color = "grey"; 
+
+
+            div.append(certificates);
+            cont2.append(div);
+        })
+    }
+    renderDom2(data)
+
+    let nextPage = () => {
+        window.location.href = "./resumePage5.html"
+    }
+            
+</script>

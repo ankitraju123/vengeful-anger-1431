@@ -11,6 +11,7 @@
         href="https://fonts.googleapis.com/css2family=Noto+Sans&family=Poppins:wght@500&display=swap"
         rel="stylesheet">
     <title>Resumepage 4</title>
+    <link rel="stylesheet" href="./resumeNavbar.css">
     <style>
          body{
             font-family: 'Noto Sans', sans-serif;
@@ -135,6 +136,9 @@
 </head>
 
 <body>
+    <div id="navbar">
+
+    </div>
     <div id="topDiv">
         <h2>Create an Indeed Resume</h2>
         <p class="lowcase">Step 4 of 5</p>
@@ -165,7 +169,7 @@
         </p>
         <div id="newSkillDiv">
             <input type="text" id="new_skill">
-            <button id="addBtn">Add</button>
+            <button id="addBtn" onclick="addSkill()">Add</button>
         </div>
 
         <div id="renderDiv">
@@ -190,7 +194,13 @@
 </body>
 
 </html>
-<script>
+<script type="module">
+
+import navbar from  "./components/ResumeNav.js";
+
+console.log(navbar());
+document.getElementById("navbar").innerHTML = navbar();
+
     let data = ["AJAX", "HTML5", "JavaScript", "Angular", "Magento", "MySQL", "PHP", "Wordpress"];
     let container = document.getElementById("appendSkills");
     let clickInfo = JSON.parse(localStorage.getItem("clickData")) || [];
@@ -227,6 +237,18 @@
         div.append(button);
         container.append(div);
 
+    }
+    let addSkill = () =>{
+        let skill = document.getElementById("new_skill").value;
+        console.log(skill)
+        let cont2 =document.getElementById("renderDiv");
+        let newDiv = document.createElement("div");
+            let p=document.createElement("p");
+            p.innerText = skill;
+            hr = document.createElement("hr");
+            newDiv.append(hr,p);
+            cont2.append(newDiv);
+            document.getElementById("new_skill").value = null;     
     }
 
 </script>

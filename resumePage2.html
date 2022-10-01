@@ -11,6 +11,7 @@
         href="https://fonts.googleapis.com/css2family=Noto+Sans&family=Poppins:wght@500&display=swap"
         rel="stylesheet">
     <title>Resume Page 2</title>
+    <link rel="stylesheet" href="./resumeNavbar.css">
     <style>
         body{
             font-family: 'Noto Sans', sans-serif;
@@ -135,6 +136,9 @@
 </head>
 
 <body>
+    <div id="navbar">
+
+    </div>
     <div id="topDiv">
         <h2>Create an Indeed Resume</h2>
         <p class="lowcase">Step 2 of 5</p>
@@ -266,7 +270,12 @@
 </body>
 
 </html>
-<script>
+<script type="module">
+    import navbar from  "./components/ResumeNav.js";
+
+console.log(navbar());
+document.getElementById("navbar").innerHTML = navbar();
+
     let next2 = () => {
         degree = document.getElementById("degree").value;
         fieldStudy = document.getElementById("fieldStudy").value;
