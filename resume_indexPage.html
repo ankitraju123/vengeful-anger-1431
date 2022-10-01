@@ -87,7 +87,7 @@
 
     <div id="upper">
         <h2 class="heading">Create an Indeed Resume</h2>
-        <p>abc@gmail.com</p>
+        <p id="email">abc@gmail.com</p>
         <p class="highSize">There are two ways to create editable online resume. When you upload a resume to start, your
             file will also be saved and available when you apply.</p>
         <div id="flex">
@@ -112,6 +112,9 @@
 
 </html>
 <script>
+     let emailLS = JSON.parse(localStorage.getItem("sign"));
+     document.getElementById("email").innerText = emailLS;
+
     let uploadResume = () => {
        // console.log("iam working")
     }

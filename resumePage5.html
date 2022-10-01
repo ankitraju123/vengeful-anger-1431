@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2family=Noto+Sans&family=Poppins:wght@500&display=swap"
+        rel="stylesheet">
+    <title>Resume Page 5</title>
+    <style>
+        body {
+            font-family: 'Noto Sans', sans-serif;
+            background-color: #f6f6f6;
+        }
+
+
+        #resume1 ,#resume2{
+            margin: auto;
+            width: 38%;
+            height: auto;
+            border: 1px solid teal;
+            border: none;
+            background-color: white;
+            padding: 15px 15px 25px 15px;
+            margin-top: 20px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+
+        }
+
+        input {
+            width: 97%;
+            height: 28px;
+            /* margin-top: -20px;
+            margin-bottom: -20px; */
+        }
+
+        .red {
+            color: red;
+            margin-left: 5px;
+        }
+
+        .blue {
+            color: #085ff7;
+        }
+
+        #topDiv {
+            width: 39%;
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+        }
+
+        .side {
+
+            width: 39%;
+
+            margin: auto;
+        }
+
+        .flexDiv {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-bottom: -15px;
+            margin-top: -10px;
+        }
+
+
+        #check,
+        #check1 {
+            width: 12px;
+            height: 12px;
+            margin-left: 5px;
+        }
+
+        #nextBtn {
+            padding: 13px 20px;
+            background-color:
+                #085ff7;
+            color: white;
+            border-radius: 30px;
+            border: none;
+            font-size: 17px;
+            margin: 15px 20px 15px 400px;
+        }
+
+       
+
+        #topDiv>h2 {
+            margin-bottom: -30px;
+        }
+
+        .adjust {
+            margin-bottom: -12px;
+        }
+
+       
+
+        .lower {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 12px;
+        }
+
+        .lower1 {
+            font-size: 12px;
+        }
+
+        .lowcase,
+        #lowcase2,
+        #lowcase1 {
+            font-size: 15px;
+            color: grey;
+        }
+
+        #required {
+            margin-bottom: -15px;
+        }
+
+        #nextDiv {
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+            padding: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #085ff7;
+        }
+
+        #filling {
+            width: 40%;
+            display: flex;
+            align-items: center;
+            margin: auto;
+            font-size:14px;   
+            margin-top:-7px;
+            margin-bottom:-10px;
+
+        }
+
+        .check {
+            width: 12px;
+            height: 12px;
+            margin-right:7px;
+        }
+
+        .jobTypesDiv {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+        #desired_salary{
+            width:30%;
+        }
+        #salary_select{
+       width:100px;
+       height:35px;
+        margin-left:5px;
+        }
+        .salary_div{
+            display:flex;
+            align-items: center;
+        }
+        h5{
+            margin-bottom:-10px;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div id="topDiv">
+        <h2>Additional Information</h2>
+        <p class="lowcase">Step 5 of 5</p>
+    </div>
+    <div id="filling">
+        
+        <p >
+            These questions are optional but increase the chances that you will match an employer's search on Indeed
+            Resume.
+        </p>
+
+    </div>
+
+
+    <div id="resume1">
+        <h3>Job preferences</h3>
+       
+
+
+        <div class="flexDiv">
+            <h4> Desired Job Title</h4>
+            <p class="red">*</p>
+        </div>
+        <input type="text" id="jobTitle2" required>
+        <h4>Desired Job Types</h4>
+        <div class="jobTypesDiv">
+
+            <div class="flexDiv">
+                <input type="checkbox" name="" class="check">
+                <p class="lowcase">Full-Time</p>
+            </div>
+            <div class="flexDiv">
+                <input type="checkbox" name="" class="check">
+                <p class="lowcase">Part-time</p>
+            </div>
+            <div class="flexDiv">
+                <input type="checkbox" name="" class="check">
+                <p class="lowcase">Regular / Permanent</p>
+            </div>
+            <div class="flexDiv">
+                <input type="checkbox" name="" class="check">
+                <p class="lowcase">Contractual / Temporary</p>
+            </div>
+            <div class="flexDiv">
+                <input type="checkbox" name="" class="check">
+                <p class="lowcase">Freelance</p>
+            </div>
+            <div class="flexDiv">
+                <input type="checkbox" name="" class="check">
+                <p class="lowcase">Volunteer</p>
+            </div>
+            <div class="flexDiv">
+                <input type="checkbox" name="" class="check">
+                <p class="lowcase">Internship</p>
+            </div>
+            <div class="flexDiv">
+                <input type="checkbox" name="" class="check">
+                <p class="lowcase">Fresher</p>
+            </div>
+
+        </div>
+
+
+
+        <h4> Desired Work Schedule</h4>
+        <p>Day Ranges</p>
+        <div class="flexDiv">
+            <input type="checkbox" name="" class="check">
+            <p class="lowcase">Monday to Friday</p>
+        </div>
+        <div class="flexDiv">
+            <input type="checkbox" name="" class="check">
+            <p class="lowcase">Weekend availability</p>
+        </div>
+        <div class="flexDiv">
+            <input type="checkbox" name="" class="check">
+            <p class="lowcase">Weekend only</p>
+        </div>
+    
+        <p>Shifts</p>
+        
+        <div class="flexDiv">
+            <input type="checkbox" name="" class="check">
+            <p class="lowcase">Morning shift</p>
+        </div>
+        
+        <div class="flexDiv">
+            <input type="checkbox" name="" class="check">
+            <p class="lowcase">Day shift</p>
+        </div>
+        
+        <div class="flexDiv">
+            <input type="checkbox" name="" class="check">
+            <p class="lowcase">Evening shift</p>
+        </div>
+        
+        <div class="flexDiv">
+            <input type="checkbox" name="" class="check">
+            <p class="lowcase">Night shift</p>
+        </div>
+        
+        <div class="flexDiv">
+            <input type="checkbox" name="" class="check">
+            <p class="lowcase">Flexible shift</p>
+        </div>
+        
+        <div class="flexDiv">
+            <input type="checkbox" name="" class="check">
+            <p class="lowcase">Rotational shift</p>
+        </div>
+        
+        <div class="flexDiv">
+            <input type="checkbox" name="" class="check">
+            <p class="lowcase">Fixed shift</p>
+        </div>
+        
+        <div class="flexDiv">
+            <input type="checkbox" name="" class="check">
+            <p class="lowcase">UK shift</p>
+        </div>
+        
+        <div class="flexDiv">
+            <input type="checkbox" name="" class="check">
+            <p class="lowcase">US shift</p>
+        </div>
+
+       
+        <h4>Desired Salary</h4>
+        <div class=salary_div>
+            <p>Rs.</p>
+            <input type="number" id="desired_salary">
+    
+            <select name="" id="salary_select">
+                <option value="per hour">per hour</option>
+                <option value="per day">per day</option>
+                <option value="per week">per week</option>
+                <option value="per month">per month</option>
+    
+            </select>
+        </div>
+
+        <h5>Relocation</h5>
+        <div class="flexDiv" id="relocate"re>
+            <input type="checkbox" name="" class="check">
+            <p class="lowcase">I am willing to relocate</p>
+        </div>
+
+    
+    
+    </div>
+
+    <div id= "resume2">
+        <h3>Online Profile</h3>
+         <div class="flexDiv" id="required">
+            <p class="red">*</p>
+            <p class="lowcase" >Required fields</p>
+        </div>
+
+        <div class="flexDiv">
+            <h4>Link Address</h4>
+            <p class="red">*</p>
+        </div>
+       <p class="lower1" style="color:grey">e.g. Address of your GitHub or StackOverflow profile</p>
+       <input type="text" id="profileAddress" style="width:97%; height:35px;margin:10px 0px" required>
+    </div>
+    
+
+
+
+    
+    <div id="nextDiv">
+        <button id="nextBtn" onclick="next5()">Next</button>
+        
+    </div>
+    <div class="lower">
+        <span><span>&#169 2022 <a href="#">Indeed</a> - </span><span><a href="#">Cookies</a>,
+
+            </span><span><a href="#">Privacy and Terms</a></span></span>
+
+    </div>
+
+
+
+</body>
+
+</html>
+<script>
+    let next5 = () => {
+        //console.log("hi")
+       
+        jobTitle2 = document.getElementById("jobTitle2").value;
+        desired_salary =+ document.getElementById("desired_salary").value;
+        salary_select = document.getElementById("salary_select").value;
+        profileAddress = document.getElementById("profileAddress").value;
+        
+
+        let R_data5 = {
+            jobTitle2,
+            profileAddress,
+            salary_select,
+            desired_salary   
+        };
+
+        console.log("R_data5");
+        if(jobTitle2.length<=0 || profileAddress.length<=0){
+            alert("Fill the mandatory details");
+        }else{
+            localStorage.setItem("R_data5", JSON.stringify(R_data5));
+            window.location.href = "totalResumePreview.html";
+        }
+
+        
+    }
+</script>
