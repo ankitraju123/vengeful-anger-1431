@@ -13,6 +13,7 @@
     <style>
         body {
             font-family: 'Noto Sans', sans-serif;
+            background-color:#f6f6f6 ;
         }
 
 
@@ -22,6 +23,7 @@
             height: auto;
             border: 1px solid teal;
             border: none;
+            background-color: white;
             padding: 15px;
             margin-top: 20px;
             box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
@@ -193,6 +195,9 @@
 
 </html>
 <script>
+      let emailLS = JSON.parse(localStorage.getItem("sign"));
+     document.getElementById("email").innerText = emailLS;
+
     let next1 = () => {
         f_name = document.getElementById("f_name").value;
         l_name = document.getElementById("l_name").value;
@@ -200,10 +205,13 @@
         city = document.getElementById("city").value;
         mobile = document.getElementById("mobile").value;
 
+       
+
         let R_data1 = {
             f_name,
             l_name,
             address,
+            email:emailLS,
             city,
             mobile,
         };
