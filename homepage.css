@@ -380,3 +380,11 @@ color: rgb(14, 72, 188);
        margin: 5px;
        padding: 7px;
 }
+#applybtn{
+    background-color: rgb(37,87,167);
+       color: white;
+       border: none;
+       border-radius: 10px;
+       margin: 5px;
+       padding: 8px;
+}
