@@ -36,7 +36,7 @@
             border: none;
             background-color: white;
             padding: 15px;
-            margin-top: 20px;
+            margin-top:20px;
             box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
 
         }
@@ -244,7 +244,10 @@ document.getElementById("navbar").innerHTML = navbar();
     }
     let addSkill = () =>{
         let skill = document.getElementById("new_skill").value;
-        console.log(skill)
+        console.log(skill);
+
+        R_data4 =JSON.parse(localStorage.getItem("R_data4")) || [];
+        R_data4.push(skill);
         let cont2 =document.getElementById("renderDiv");
         let newDiv = document.createElement("div");
             let p=document.createElement("p");
@@ -253,5 +256,7 @@ document.getElementById("navbar").innerHTML = navbar();
             newDiv.append(hr,p);
             cont2.append(newDiv);
             document.getElementById("new_skill").value = null;     
+
+            localStorage.setItem("R_data4",JSON.stringify(R_data4))
     }
 </script>
