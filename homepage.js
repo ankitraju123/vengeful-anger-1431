@@ -111,7 +111,13 @@ let viewmore = (data) => {
 
     
 let apply=()=>{
-    window.location.href="resume_indexPage.html"
+    let islogin=JSON.parse(localStorage.getItem("islogin"))
+    if(islogin==true){
+        window.location.href="resume_indexPage.html"
+    }else{
+        window.location.href="signup.html"
+    }
+   
 }
     
 
