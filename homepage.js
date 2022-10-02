@@ -270,7 +270,20 @@ let vishal=(islogin)=>{
 }
 vishal(islogin)
 
+document.getElementById("h3-spann").addEventListener("click",function(){
+    reDirect()
+})
+
+let reDirect=()=>{
+    // let islogin=JSON.parse(localStorage.getItem("islogin"))
+    let islogin=false
+    if (islogin==true){
+        window.location.href="input1.html"
+    }else{
+        window.location.href="post.html"
+    }
+ } 
+//  reDirect()
 
 
-            
-
+// h3-span
