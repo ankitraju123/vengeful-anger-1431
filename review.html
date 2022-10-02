@@ -1,128 +1,548 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-#work{
-    font-size: 40px;
-    margin-top: 80px;
-    font-weight: bold;
-    font-family: sans-serif;
-}
-#p{
-    color: grey;
-font-size: 23px;
-margin-top: -10px;
-}
-#container{
-    width: 70%;
-    margin: auto;
-}
-#search{
-    width: 70%;
-    padding: 12px;
-    border-radius: 12px;
-    margin-bottom: 20px;
-}
-#input{
-    display: flex;
-    gap: 20px;
-}
-#btn{
-    width: 30%;
-    height: 45px;
+      #work {
+        font-size: 40px;
+        margin-top: 80px;
+        font-weight: bold;
+        font-family: sans-serif;
+      }
+      #p {
+        color: grey;
+        font-size: 23px;
+        margin-top: -10px;
+      }
+      #container {
+        width: 70%;
+        margin: auto;
+      }
+      #search {
+        width: 70%;
+        padding: 12px;
+        border-radius: 12px;
+        margin-bottom: 20px;
+      }
+      #input {
+        display: flex;
+        gap: 20px;
+      }
+      #btn {
+        width: 30%;
+        height: 45px;
 
-    border-radius: 12px;
-    font-size: 15px;
-    color: white;
-    background-color: rgb(91, 91, 241);
-    font-weight: bold;
-    border: none;
-}
-a {
-    color: rgb(37, 37, 182);
-    font-size: 18px;
-    
-}
-#content{
-    width: 100%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 20px;
-    /* border: 1px solid black; */
-}
-/* #content>div{
-    /* width: 100%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3,1fr); */
-    /* border: 1px solid black; */
-/* } */ 
-#top{
-    display: flex;
-    gap: 5px;
-    /* padding: 10px; */
-}
-#top>img{
-    /* display: flex; */
-    /* gap: 5px; */
-    /* padding: 10px; */
-    width: 50px;
-    height: 40px;
-    border-radius: 10px;
-}
-#bot{
-   display: flex;
-   gap: 10px;
-   padding: 3px;
-}
-#sub_child{
-    display: flex;
-    gap: 20px;
-}
-#sub_child img{
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    border-radius: 14px;
-    height: 60px;
-}
-#div2{
-    display: flex;
-    gap: 20px;
-}
+        border-radius: 12px;
+        font-size: 15px;
+        color: white;
+        background-color: rgb(91, 91, 241);
+        font-weight: bold;
+        border: none;
+      }
+      a {
+        color: rgb(21, 21, 232);
+        font-size: 18px;
+      }
+      #content {
+        width: 100%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+        /* border: 1px solid black; */
+      }
+      #content #child {
+        width: 100%;
+        /* border: 1px solid red;  */
+        margin-bottom: 20px;
+      }
 
+      #sub_child {
+        display: flex;
+        gap: 20px;
+      }
+      #sub_child img {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 14px;
+        height: 60px;
+      }
+      #bottom {
+        display: flex;
+        /* justify-content: space-between; */
+        margin-top: 10px;
+        color: grey;
+        font-size: 18px;
+        gap: 16px;
+      }
+
+      #star {
+        display: flex;
+        gap: 4px;
+        margin-left: 70px;
+        margin-top: -10px;
+      }
+      #rating {
+        width: 20px;
+        height: 20px;
+      }
+      #cont {
+        width: 100%;
+        border: 1px solid black;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-between;
+
+        gap: 20px;
+      }
+      #cont > div {
+        border: 1px solid red;
+        width: 100%;
+        border-radius: 15px;
+        padding: 20px;
+        display: flex;
+      }
+      .pro div {
+        display: flex;
+        gap: 20px;
+      }
+      .pro div img {
+        border-radius: 13px;
+        width: 30px;
+        height: 10px;
+      }
+      #spam {
+        margin-left: 60px;
+        font-size: 20px;
+        color: grey;
+      }
+      #last {
+        margin-left: -60px;
+      }
     </style>
-</head>
-<body>
-    <div id = "container">
-    <p id = "work">Find great places to work</p>
+  </head>
+  <body>
+    <div id="container">
+      <p id="work">Find great places to work</p>
 
-    <p id = "p">Get access to millions of company reviews</p>
+      <p id="p">Get access to millions of company reviews</p>
 
-    <h3>Company name or job title</h3>
-    <div id = "input">
-    <input type="text" id = "search" placeholder="Search">
-    <button id = "btn">Find Companies</button>
-</div>
+      <h3>Company name or job title</h3>
+      <div id="input">
+        <input type="text" id="search" placeholder="Search" />
+        <button id="btn">Find Companies</button>
+      </div>
 
-<a href="">Do you want to search for salaries?</a>
-<h1>Popular companies</h1>
+      <a href="">Do you want to search for salaries?</a>
+      <h1>Popular companies</h1>
 
-<div id = "content">
-    <!-- <div id = "child">
-        <div id = "sub_child">
-            <img src="https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/64x64/3e9d43f5c277de169808abdcaf49ba2c" alt="">
+      <div id="content">
+        <div id="child">
+          <div id="sub_child">
+            <img
+              src="https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/64x64/3e9d43f5c277de169808abdcaf49ba2c"
+              alt=""
+            />
             <h3>Amazon.com</h3>
+          </div>
+          <div id="star">
+            <img
+              id="rating"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtmf8aayiLpd-Qf3dSUtfzFQRZyghwt22f1fizRJg&s"
+              alt=""
+            />
+            <img
+              id="rating"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtmf8aayiLpd-Qf3dSUtfzFQRZyghwt22f1fizRJg&s"
+              alt=""
+            />
+            <img
+              id="rating"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtmf8aayiLpd-Qf3dSUtfzFQRZyghwt22f1fizRJg&s"
+              alt=""
+            />
+            <img
+              id="rating"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtmf8aayiLpd-Qf3dSUtfzFQRZyghwt22f1fizRJg&s"
+              alt=""
+            />
+            <img
+              id="rating"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtmf8aayiLpd-Qf3dSUtfzFQRZyghwt22f1fizRJg&s"
+              alt=""
+            />
 
+            <a href="">420 reviews</a>
+          </div>
+          <div id="bottom">
+            <div>Salaries</div>
+            <div>Questions</div>
+            <div>Jobs</div>
+          </div>
         </div>
-       
-    </div> -->
 
-</div>
-</div>
-</body>
+        <div id="child">
+          <div id="sub_child">
+            <img
+              src="https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/64x64/eece435f10a54eaced0d7b3e59bc816d"
+              alt=""
+            />
+            <h3>Wells Fargo</h3>
+          </div>
+          <div id="star">
+            <img
+              id="rating"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtmf8aayiLpd-Qf3dSUtfzFQRZyghwt22f1fizRJg&s"
+              alt=""
+            />
+            <img
+              id="rating"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtmf8aayiLpd-Qf3dSUtfzFQRZyghwt22f1fizRJg&s"
+              alt=""
+            />
+            <img
+              id="rating"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtmf8aayiLpd-Qf3dSUtfzFQRZyghwt22f1fizRJg&s"
+              alt=""
+            />
+            <img
+              id="rating"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtmf8aayiLpd-Qf3dSUtfzFQRZyghwt22f1fizRJg&s"
+              alt=""
+            />
+            <img
+              id="rating"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtmf8aayiLpd-Qf3dSUtfzFQRZyghwt22f1fizRJg&s"
+              alt=""
+            />
+
+            <a href="">78645 reviews</a>
+          </div>
+          <div id="bottom">
+            <div>Salaries</div>
+            <div>Questions</div>
+            <div>Jobs</div>
+          </div>
+        </div>
+
+        <div id="child">
+          <div id="sub_child">
+            <img
+              src="https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/64x64/c8f427fe261be5c5bdc628e88abebb43"
+              alt=""
+            />
+            <h3>Seimens</h3>
+          </div>
+          <div id="star">
+            <img
+              id="rating"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtmf8aayiLpd-Qf3dSUtfzFQRZyghwt22f1fizRJg&s"
+              alt=""
+            />
+            <img
+              id="rating"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtmf8aayiLpd-Qf3dSUtfzFQRZyghwt22f1fizRJg&s"
+              alt=""
+            />
+            <img
+              id="rating"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtmf8aayiLpd-Qf3dSUtfzFQRZyghwt22f1fizRJg&s"
+              alt=""
+            />
+            <img
+              id="rating"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtmf8aayiLpd-Qf3dSUtfzFQRZyghwt22f1fizRJg&s"
+              alt=""
+            />
+            <img
+              id="rating"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtmf8aayiLpd-Qf3dSUtfzFQRZyghwt22f1fizRJg&s"
+              alt=""
+            />
+
+            <a href="">3456 reviews</a>
+          </div>
+          <div id="bottom">
+            <div>Salaries</div>
+            <div>Questions</div>
+            <div>Jobs</div>
+          </div>
+        </div>
+
+        <div id="child">
+          <div id="sub_child">
+            <img
+              src="https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/64x64/c1e88bb71d075bbc247a2dd8ffeb4b75"
+              alt=""
+            />
+            <h3>HDFC Bank</h3>
+          </div>
+          <div id="star">
+            <img
+              id="rating"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtmf8aayiLpd-Qf3dSUtfzFQRZyghwt22f1fizRJg&s"
+              alt=""
+            />
+            <img
+              id="rating"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtmf8aayiLpd-Qf3dSUtfzFQRZyghwt22f1fizRJg&s"
+              alt=""
+            />
+            <img
+              id="rating"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtmf8aayiLpd-Qf3dSUtfzFQRZyghwt22f1fizRJg&s"
+              alt=""
+            />
+            <img
+              id="rating"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtmf8aayiLpd-Qf3dSUtfzFQRZyghwt22f1fizRJg&s"
+              alt=""
+            />
+            <img
+              id="rating"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtmf8aayiLpd-Qf3dSUtfzFQRZyghwt22f1fizRJg&s"
+              alt=""
+            />
+
+            <a href="">65789 reviews</a>
+          </div>
+          <div id="bottom">
+            <div>Salaries</div>
+            <div>Questions</div>
+            <div>Jobs</div>
+          </div>
+        </div>
+
+        <div id="child">
+          <div id="sub_child">
+            <img
+              src="https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/64x64/0ad968a5f25c45aeaac51671e6b83552"
+              alt=""
+            />
+            <h3>EY</h3>
+          </div>
+          <div id="star">
+            <img
+              id="rating"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtmf8aayiLpd-Qf3dSUtfzFQRZyghwt22f1fizRJg&s"
+              alt=""
+            />
+            <img
+              id="rating"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtmf8aayiLpd-Qf3dSUtfzFQRZyghwt22f1fizRJg&s"
+              alt=""
+            />
+            <img
+              id="rating"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtmf8aayiLpd-Qf3dSUtfzFQRZyghwt22f1fizRJg&s"
+              alt=""
+            />
+            <img
+              id="rating"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtmf8aayiLpd-Qf3dSUtfzFQRZyghwt22f1fizRJg&s"
+              alt=""
+            />
+            <img
+              id="rating"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtmf8aayiLpd-Qf3dSUtfzFQRZyghwt22f1fizRJg&s"
+              alt=""
+            />
+
+            <a href="">5667 reviews</a>
+          </div>
+          <div id="bottom">
+            <div>Salaries</div>
+            <div>Questions</div>
+            <div>Jobs</div>
+          </div>
+        </div>
+
+        <div id="child">
+          <div id="sub_child">
+            <img
+              src="https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/64x64/5335229f1b22e90f1e5eafb892704339"
+              alt=""
+            />
+            <h3>Indigo Airlines</h3>
+          </div>
+          <div id="star">
+            <img
+              id="rating"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtmf8aayiLpd-Qf3dSUtfzFQRZyghwt22f1fizRJg&s"
+              alt=""
+            />
+            <img
+              id="rating"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtmf8aayiLpd-Qf3dSUtfzFQRZyghwt22f1fizRJg&s"
+              alt=""
+            />
+            <img
+              id="rating"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtmf8aayiLpd-Qf3dSUtfzFQRZyghwt22f1fizRJg&s"
+              alt=""
+            />
+            <img
+              id="rating"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtmf8aayiLpd-Qf3dSUtfzFQRZyghwt22f1fizRJg&s"
+              alt=""
+            />
+            <img
+              id="rating"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtmf8aayiLpd-Qf3dSUtfzFQRZyghwt22f1fizRJg&s"
+              alt=""
+            />
+
+            <a href="">42056 reviews</a>
+          </div>
+          <div id="bottom">
+            <div>Salaries</div>
+            <div>Questions</div>
+            <div>Jobs</div>
+          </div>
+        </div>
+
+        <div id="child">
+          <div id="sub_child">
+            <img
+              src="https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/64x64/08f9772288de0157ee1f9a21f4ef38a0"
+              alt=""
+            />
+            <h3>Samsung Electronics</h3>
+          </div>
+          <div id="star">
+            <img
+              id="rating"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtmf8aayiLpd-Qf3dSUtfzFQRZyghwt22f1fizRJg&s"
+              alt=""
+            />
+            <img
+              id="rating"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtmf8aayiLpd-Qf3dSUtfzFQRZyghwt22f1fizRJg&s"
+              alt=""
+            />
+            <img
+              id="rating"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtmf8aayiLpd-Qf3dSUtfzFQRZyghwt22f1fizRJg&s"
+              alt=""
+            />
+            <img
+              id="rating"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtmf8aayiLpd-Qf3dSUtfzFQRZyghwt22f1fizRJg&s"
+              alt=""
+            />
+            <img
+              id="rating"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtmf8aayiLpd-Qf3dSUtfzFQRZyghwt22f1fizRJg&s"
+              alt=""
+            />
+
+            <a href="">5687 reviews</a>
+          </div>
+          <div id="bottom">
+            <div>Salaries</div>
+            <div>Questions</div>
+            <div>Jobs</div>
+          </div>
+        </div>
+
+        <div id="child">
+          <div id="sub_child">
+            <img
+              src="https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/64x64/cccfe6abfac987d8cb5ec9b0f2dd66cb"
+              alt=""
+            />
+            <h3>Planet Spark</h3>
+          </div>
+          <div id="star">
+            <img
+              id="rating"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtmf8aayiLpd-Qf3dSUtfzFQRZyghwt22f1fizRJg&s"
+              alt=""
+            />
+            <img
+              id="rating"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtmf8aayiLpd-Qf3dSUtfzFQRZyghwt22f1fizRJg&s"
+              alt=""
+            />
+            <img
+              id="rating"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtmf8aayiLpd-Qf3dSUtfzFQRZyghwt22f1fizRJg&s"
+              alt=""
+            />
+            <img
+              id="rating"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtmf8aayiLpd-Qf3dSUtfzFQRZyghwt22f1fizRJg&s"
+              alt=""
+            />
+            <img
+              id="rating"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtmf8aayiLpd-Qf3dSUtfzFQRZyghwt22f1fizRJg&s"
+              alt=""
+            />
+
+            <a href="">657 reviews</a>
+          </div>
+          <div id="bottom">
+            <div>Salaries</div>
+            <div>Questions</div>
+            <div>Jobs</div>
+          </div>
+        </div>
+
+        <div id="child">
+          <div id="sub_child">
+            <img
+              src="https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/64x64/13b693b4dcc055d2344351b4c9a148e9"
+              alt=""
+            />
+            <h3>Tata Consultancy Services</h3>
+          </div>
+          <div id="star">
+            <img
+              id="rating"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtmf8aayiLpd-Qf3dSUtfzFQRZyghwt22f1fizRJg&s"
+              alt=""
+            />
+            <img
+              id="rating"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtmf8aayiLpd-Qf3dSUtfzFQRZyghwt22f1fizRJg&s"
+              alt=""
+            />
+            <img
+              id="rating"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtmf8aayiLpd-Qf3dSUtfzFQRZyghwt22f1fizRJg&s"
+              alt=""
+            />
+            <img
+              id="rating"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtmf8aayiLpd-Qf3dSUtfzFQRZyghwt22f1fizRJg&s"
+              alt=""
+            />
+            <img
+              id="rating"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtmf8aayiLpd-Qf3dSUtfzFQRZyghwt22f1fizRJg&s"
+              alt=""
+            />
+
+            <a href="">98875 reviews</a>
+          </div>
+          <div id="bottom">
+            <div>Salaries</div>
+            <div>Questions</div>
+            <div>Jobs</div>
+          </div>
+        </div>
+      </div>
+
+      <h1>Compare working at</h1>
+
+      <img id="last" src="./img/Screenshot (584).png" alt="" />
+
+      <img src="./img/Screenshot (585).png" alt="" />
+    </div>
+  </body>
 </html>
-<script src="review.js"></script>
+<!-- <script src="review.js"></script> -->
