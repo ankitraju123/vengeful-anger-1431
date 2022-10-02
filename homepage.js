@@ -210,7 +210,6 @@ total work: 3 years (Preferred)`
 }
 
 let vishal=(islogin)=>{
-    islogin=true
     if (islogin==true){
         let cont=document.getElementById("navbar-right")
 
@@ -229,7 +228,14 @@ let vishal=(islogin)=>{
             window.location.href="input1.html"
         })
 
-        cont.append(image1,image2,image3,employe)
+        let sout = document.createElement("h4");
+        sout.innerText = "Sign-Out";
+        sout.addEventListener("click",() => {
+            localStorage.setItem("islogin",false)
+            window.location.href = "homepage.html"
+         })
+
+        cont.append(image1,image2,image3,sout,employe)
     }    else{
         let cont=document.getElementById("navbar-right") 
 

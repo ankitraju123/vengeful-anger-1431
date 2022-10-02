@@ -151,7 +151,7 @@
         </div>
         <input type="text" id="address">
         <div class="flexDiv">
-            <h4>City - India</h4>
+            <h4>Country - India</h4>
             <p>(</p>
             <p class="blue">change</p>
             <p>)</p>
@@ -162,7 +162,7 @@
         <h5 class="adjust">Email Addresss</h5>
         <p class="adjust" id="lowcase1">only provided to employer you apply or respond to.</p>
         <div class="flexDiv" class="adjust">
-            <h4 id="email">abc@gmail.com</h4><a href="#">edit</a>
+            <h4 id="email"></h4><a href="#">edit</a>
         </div>
         <h5 class="Phoneadjust">Phone Number</h5>
         <input type="number" id="mobile">
@@ -203,10 +203,16 @@
 
 console.log(navbar());
 document.getElementById("navbar").innerHTML = navbar();
-
-
-      let emailLS = JSON.parse(localStorage.getItem("sign"));
+   
+</script>
+<script>
+    let emailLS = JSON.parse(localStorage.getItem("sign"));
+     let e = () => {
+        
      document.getElementById("email").innerText = emailLS;
+     console.log(emailLS);
+     }
+     e();
 
     let next1 = () => {
         f_name = document.getElementById("f_name").value;
