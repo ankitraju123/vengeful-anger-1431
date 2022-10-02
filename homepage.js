@@ -258,7 +258,7 @@ let vishal=(islogin)=>{
         let employe=document.createElement("h4")
         employe.innerText="Employer/Post Job"
         employe.addEventListener("click",function(){
-            window.location.href="input1.html"
+            window.location.href="post.html"
         })
 
     cont.append(signup,post,employe)
@@ -276,12 +276,12 @@ document.getElementById("h3-spann").addEventListener("click",function(){
 
 let reDirect=()=>{
     // let islogin=JSON.parse(localStorage.getItem("islogin"))
-    let islogin=false
-    if (islogin==true){
-        window.location.href="input1.html"
-    }else{
-        window.location.href="post.html"
-    }
+    // let islogin=false
+    // if (islogin==true){
+    //     window.location.href="input1.html"
+    // }else{
+    //     window.location.href="post.html"
+    // }
  } 
 //  reDirect()
 
