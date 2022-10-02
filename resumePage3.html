@@ -11,9 +11,11 @@
         href="https://fonts.googleapis.com/css2family=Noto+Sans&family=Poppins:wght@500&display=swap"
         rel="stylesheet">
     <title>Resume Page 3</title>
+    <link rel="stylesheet" href="./resumeNavbar.css">
     <style>
         body{
             font-family: 'Noto Sans', sans-serif;
+            background-color:#f6f6f6 ;
         }
        
 
@@ -23,6 +25,7 @@
             height: auto;
             border: 1px solid teal;
             border: none;
+            background-color: white;
             padding: 15px;
             margin-top: 20px;
             box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
@@ -132,7 +135,7 @@
         .from_to_div{
             display:flex;
         }
-        #Work_from_year,#work_to_year,#work_from_month,#work_to_month{
+        #work_from_year,#work_to_year,#work_from_month,#work_to_month{
             margin-left:10px;
             padding:8px;
             font-weight:bold;
@@ -140,7 +143,9 @@
         }
         #work_from_month,#work_to_month{
             width:200px;
+           
         }
+       
         #filling{
             width:38%;
             display:flex;
@@ -158,6 +163,8 @@
 </head>
 
 <body>
+    <div id="navbar"></div>
+
     <div id="topDiv">
         <h2>Create an Indeed Resume</h2>
         <p class="lowcase">Step 3 of 5</p>
@@ -294,7 +301,13 @@
 </body>
 
 </html>
-<script>
+<script type="module">
+
+import navbar from  "./components/ResumeNav.js";
+
+console.log(navbar());
+document.getElementById("navbar").innerHTML = navbar();
+
     let next3 = () => {
         jobTitle = document.getElementById("jobTitle").value;
         company = document.getElementById("company").value;

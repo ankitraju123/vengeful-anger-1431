@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+#work{
+    font-size: 40px;
+    margin-top: 80px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+#p{
+    color: grey;
+font-size: 23px;
+margin-top: -10px;
+}
+#container{
+    width: 70%;
+    margin: auto;
+}
+#search{
+    width: 70%;
+    padding: 12px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+#input{
+    display: flex;
+    gap: 20px;
+}
+#btn{
+    width: 30%;
+    height: 45px;
+
+    border-radius: 12px;
+    font-size: 15px;
+    color: white;
+    background-color: rgb(91, 91, 241);
+    font-weight: bold;
+    border: none;
+}
+a {
+    color: rgb(37, 37, 182);
+    font-size: 18px;
+    
+}
+#content{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    /* border: 1px solid black; */
+}
+/* #content>div{
+    /* width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr); */
+    /* border: 1px solid black; */
+/* } */ 
+#top{
+    display: flex;
+    gap: 5px;
+    /* padding: 10px; */
+}
+#top>img{
+    /* display: flex; */
+    /* gap: 5px; */
+    /* padding: 10px; */
+    width: 50px;
+    height: 40px;
+    border-radius: 10px;
+}
+#bot{
+   display: flex;
+   gap: 10px;
+   padding: 3px;
+}
+#sub_child{
+    display: flex;
+    gap: 20px;
+}
+#sub_child img{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 14px;
+    height: 60px;
+}
+#div2{
+    display: flex;
+    gap: 20px;
+}
+
+    </style>
+</head>
+<body>
+    <div id = "container">
+    <p id = "work">Find great places to work</p>
+
+    <p id = "p">Get access to millions of company reviews</p>
+
+    <h3>Company name or job title</h3>
+    <div id = "input">
+    <input type="text" id = "search" placeholder="Search">
+    <button id = "btn">Find Companies</button>
+</div>
+
+<a href="">Do you want to search for salaries?</a>
+<h1>Popular companies</h1>
+
+<div id = "content">
+    <!-- <div id = "child">
+        <div id = "sub_child">
+            <img src="https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/64x64/3e9d43f5c277de169808abdcaf49ba2c" alt="">
+            <h3>Amazon.com</h3>
+
+        </div>
+       
+    </div> -->
+
+</div>
+</div>
+</body>
+</html>
+<script src="review.js"></script>
