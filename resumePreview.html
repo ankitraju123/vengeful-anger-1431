@@ -87,8 +87,8 @@
             /* border: 1px solid teal; */
             border: none;
             background-color: white;
-            padding: 15px;
-            margin-top: 20px;
+            padding: 0px;
+            margin-top:-10px;
             /* box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset; */
 
         }
@@ -267,6 +267,7 @@
                     <div id="appendSkills">
 
                     </div>
+                   
 
                 </div>
 
@@ -274,6 +275,9 @@
 
                 <div id="renderDiv">
 
+
+                </div>
+                <div id="skillsLS">
 
                 </div>
 
@@ -366,7 +370,7 @@
 
     import navbar from "./components/ResumeNav.js";
 
-    console.log(navbar());
+    // console.log(navbar());
     document.getElementById("navbar").innerHTML = navbar();
 
     </script>
@@ -375,14 +379,15 @@
     let R_data1 = JSON.parse(localStorage.getItem("R_data1"));
     let R_data2 = JSON.parse(localStorage.getItem("R_data2"));
     let R_data3 = JSON.parse(localStorage.getItem("R_data3"));
-    // let R_data4 = JSON.parse(localStorage.getItem("R_data4"));
+    let R_data4 = JSON.parse(localStorage.getItem("R_data4"));
+    console.log(R_data4)
 
-    let mainData = Object.assign({}, R_data1, R_data2, R_data3);
+    let resumeMainData = Object.assign({}, R_data1, R_data2, R_data3);
     let data = [];
-    data.push(mainData);
+    data.push(resumeMainData);
     console.log(R_data3);
 
-    localStorage.setItem("maindata", JSON.stringify(mainData));
+    localStorage.setItem("resumeMaindata", JSON.stringify(resumeMainData));
 
     let renderDom = (data) => {
         let cont = document.getElementById("display");
@@ -424,6 +429,7 @@
 
             let workDesc = document.createElement("p");
             workDesc.innerText = el.jobRoleDesc;
+            workDesc.style.width = "520px"
 
             let ed = document.createElement("h4");
             ed.innerText = "Education";
@@ -441,7 +447,7 @@
             edyears.innerText = el.from_month + " " + el.from_year + " to " + el.to_month + " " + el.to_year;
 
 
-            div.append(flname, address, mobile, work, hr1, workin, workComp, workyears, workDesc, ed, hr, edin, uni, edyears);
+            div.append(flname, address,email, mobile, work, hr1, workin, workComp, workyears, workDesc, ed, hr, edin, uni, edyears);
             cont.append(div);
         })
     }
@@ -485,6 +491,24 @@
         container.append(div);
 
     }
+
+    let skillsData = () => {
+        console.log(R_data4);
+        let container = document.getElementById("skillsLS");
+        container.innerHTML = null;
+      for(let i=0;i<R_data4.length;i++){
+        let newDiv = document.createElement("div");
+            let p=document.createElement("p");
+            p.innerText = R_data4[i];
+            hr = document.createElement("hr");
+            newDiv.append(p,hr);
+            container.append(newDiv);
+      }
+            
+    
+
+    }
+    skillsData();
 
 
 
