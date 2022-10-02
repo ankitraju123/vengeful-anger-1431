@@ -104,10 +104,15 @@ let viewmore = (data) => {
 
     let applybtn=document.createElement("button");
     applybtn.innerText="Apply"
+    applybtn.addEventListener("click",function(){
+        apply()
+    })
     applybtn.setAttribute("id","applybtn")
 
     
-
+let apply=()=>{
+    window.location.href="resume_indexPage.html"
+}
     
 
     // let title = document.createElement("p");
@@ -232,7 +237,7 @@ let vishal=(islogin)=>{
         sout.innerText = "Sign-Out";
         sout.addEventListener("click",() => {
             localStorage.setItem("islogin",false)
-            window.location.href = "homepage.html"
+            window.location.href = "index.html"
          })
 
         cont.append(image1,image2,image3,sout,employe)

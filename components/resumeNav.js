@@ -5,9 +5,9 @@ let navbar = () => {
             alt="" srcset=""></h1>
     <h2> <img class="flower_logo" src="https://d3fw5vlhllyvee.cloudfront.net/dist/header/ukraine_support.7ad2b5d444bc427dbc5d.png"
             alt=""> </h2>
-    <h4> <a href="#">Find jobs</a></h4>
-    <h4> <a href="#">Company Reviews</a></h4>
-    <h4> <a href="#">Salary Guide</a></h4>
+    <h4> <a href="index.html">Find jobs</a></h4>
+    <h4> <a href="review.html">Company Reviews</a></h4>
+    <h4> <a href="salaryGuide.html">Salary Guide</a></h4>
 </div>
 
 <div id="navbar-right">

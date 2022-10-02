@@ -37,6 +37,7 @@
             display: flex;
             align-items: center;
             justify-content: space-around;
+            gap: 20px;
         }
 
         .redirectBtn {
@@ -77,6 +78,10 @@
             margin: auto;
             margin-top: 70px;
         }
+        #choose_file{
+            text-align: center;width: 90px;
+            font-size: 10px;
+        }
     </style>
 </head>
 
@@ -91,7 +96,7 @@
         <p class="highSize">There are two ways to create editable online resume. When you upload a resume to start, your
             file will also be saved and available when you apply.</p>
         <div id="flex">
-            <button class="redirectBtn" id="uploadBtn" onclick = uploadResume()>Upload your resume </button>
+            <button class="redirectBtn" id="uploadBtn" onclick = uploadResume()>Upload your resume  <input type="file" name="" id="choose_file"> </button>
             <p>or</p>
            <a href="./resumePage1.html"><button class="redirectBtn">Build a new resume</button></a> 
         </div>

@@ -50,10 +50,18 @@ h4,p,h2,input,select {
     background-color: rgb(37, 87, 167);
     border-radius: 5px;
     padding: 10px 20px;
-    color: white;
+    /* color: white; */
     font-weight: bolder;
 }
 
+#cb>a {
+    background-color: rgb(37, 87, 167);
+    /* border-radius: 5px; */
+    /* padding: 10px 20px; */
+    color: white;
+    text-decoration: none;
+    /* font-weight: bolder; */
+}
 .div2{
     display: flex;
     justify-content: space-around;
